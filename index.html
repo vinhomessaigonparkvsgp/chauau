@@ -1,379 +1,1119 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Châu Âu Huyền Diệu | Vietkite Travel Luxury</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Châu Âu Huyền Diệu | Vietkite Travel Luxury</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --gold: #C5A059;
+      --gold-light: #E8C97B;
+      --gold-dark: #8B6914;
+      --dark: #001529;
+      --dark2: #002347;
+      --cream: #FDFAF5;
+    }
+
+    * { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; background: #fff; color: var(--dark); overflow-x: hidden; }
     
-    <style>
-        :root {
-            --gold: #C5A059;
-            --dark-blue: #001529;
-            --pearl: #FDFDFD;
-        }
+    /* ──── TYPOGRAPHY ──── */
+    .font-serif { font-family: 'Playfair Display', serif; }
+    .font-elegant { font-family: 'Cormorant Garamond', serif; }
 
-        body { font-family: 'Montserrat', sans-serif; background-color: #fff; color: var(--dark-blue); }
-        .font-serif { font-family: 'Playfair Display', serif; }
+    /* ──── GOLD TEXT GRADIENT ──── */
+    .text-gold {
+      background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 40%, #B38728 60%, #FBF5B7 80%, #AA771C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .text-gold-solid { color: var(--gold); }
 
-        /* Luxury Gold Gradient */
-        .text-gold {
-            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    /* ──── BUTTONS ──── */
+    .btn-gold {
+      background: linear-gradient(135deg, #BF953F 0%, #C8A84B 50%, #B38728 100%);
+      color: #fff;
+      padding: 16px 44px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 25px rgba(179,135,40,0.35);
+      display: inline-block;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-gold::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #D4A84B, #E8C97B, #BF953F);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .btn-gold:hover::before { opacity: 1; }
+    .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(179,135,40,0.5); }
+    .btn-gold span { position: relative; z-index: 1; }
 
-        /* Nav & Footer Style từ mẫu của bạn nhưng nâng cấp Luxury */
-        .nav {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 0 52px; height: 80px;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(20px); border-bottom: 1px solid rgba(197, 160, 89, 0.2);
-            transition: all 0.4s;
-        }
-        .nav.scrolled { height: 70px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .btn-outline {
+      padding: 16px 44px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: all 0.4s ease;
+      border: 1.5px solid rgba(255,255,255,0.6);
+      color: #fff;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.15); border-color: white; transform: translateY(-2px); }
 
-        /* Hero Parallax */
-        .hero {
-            position: relative; height: 100vh; overflow: hidden;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .hero-img {
-            position: absolute; inset: 0; width: 100%; height: 100%;
-            background: url('https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/1.jpg') center/cover no-repeat;
-            transform: scale(1.1); animation: zoomOut 20s infinite alternate;
-        }
-        @keyframes zoomOut { from { transform: scale(1.1); } to { transform: scale(1); } }
+    /* ──── NAV ──── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      height: 80px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 48px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(197,160,89,0.15);
+      transition: all 0.4s;
+    }
+    #nav.scrolled { height: 68px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+    .nav-link {
+      font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--dark); transition: color 0.3s; text-decoration: none; position: relative;
+    }
+    .nav-link::after {
+      content: ''; position: absolute; bottom: -3px; left: 0; right: 0; height: 1px;
+      background: var(--gold); transform: scaleX(0); transition: transform 0.3s; transform-origin: left;
+    }
+    .nav-link:hover { color: var(--gold); }
+    .nav-link:hover::after { transform: scaleX(1); }
 
-        /* Masonry Gallery cho 17 ảnh */
-        .gallery-container {
-            columns: 2; column-gap: 15px;
-        }
-        @media (min-width: 768px) { .gallery-container { columns: 3; } }
-        @media (min-width: 1024px) { .gallery-container { columns: 4; } }
-        .gallery-item {
-            break-inside: avoid; margin-bottom: 15px; border-radius: 10px;
-            overflow: hidden; transition: all 0.5s; cursor: pointer;
-            position: relative; border: 1px solid rgba(197, 160, 89, 0.1);
-        }
-        .gallery-item:hover { transform: scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
-        .gallery-item:hover img { filter: brightness(0.8); }
+    /* ──── MOBILE MENU ──── */
+    #mobile-menu {
+      position: fixed; inset: 0; z-index: 998;
+      background: var(--dark);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px;
+      transform: translateX(100%);
+      transition: transform 0.5s cubic-bezier(0.77,0,0.175,1);
+    }
+    #mobile-menu.open { transform: translateX(0); }
+    .mobile-nav-link {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px; color: white; text-decoration: none;
+      transition: color 0.3s; letter-spacing: 2px;
+    }
+    .mobile-nav-link:hover { color: var(--gold); }
+    #hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1000; }
+    #hamburger span {
+      display: block; width: 26px; height: 2px; background: var(--dark);
+      transition: all 0.4s;
+    }
+    #hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #hamburger.active span:nth-child(2) { opacity: 0; }
+    #hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    #hamburger.active span { background: white; }
+    @media (max-width: 1024px) {
+      #hamburger { display: flex; }
+      #nav-links { display: none; }
+      #nav { padding: 0 24px; }
+    }
 
-        /* Social Proof Luxury */
-        #social-proof {
-            position: fixed; bottom: 30px; left: 30px; z-index: 1000;
-            background: white; padding: 15px 25px; border-radius: 50px;
-            box-shadow: 0 15px 45px rgba(0,0,0,0.15);
-            display: flex; align-items: center; gap: 15px;
-            border-left: 5px solid var(--gold);
-            transform: translateX(-150%); transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        #social-proof.active { transform: translateX(0); }
+    /* ──── HERO ──── */
+    #hero {
+      position: relative; height: 100vh; min-height: 700px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    #hero-bg {
+      position: absolute; inset: 0;
+      background: url('https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/1.jpg') center/cover no-repeat;
+      transform: scale(1.08);
+      animation: heroZoom 18s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom { from { transform: scale(1.08); } to { transform: scale(1.0); } }
+    #hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(0,0,0,0.55) 0%, rgba(0,21,41,0.4) 50%, rgba(0,0,0,0.6) 100%);
+    }
 
-        /* Pricing Card */
-        .price-card {
-            background: white; border: 1px solid #eee; border-radius: 20px;
-            padding: 40px; text-align: center; transition: 0.4s;
-            position: relative; overflow: hidden;
-        }
-        .price-card:hover { border-color: var(--gold); transform: translateY(-10px); }
-        .price-card.featured { background: var(--dark-blue); color: white; }
+    /* ──── ABOUT ──── */
+    .stat-card {
+      padding: 28px 24px; text-align: center;
+      border: 1px solid rgba(197,160,89,0.2);
+      border-radius: 16px;
+      transition: all 0.4s;
+      background: white;
+    }
+    .stat-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(197,160,89,0.15); }
 
-        /* Countdown */
-        .timer-box {
-            background: linear-gradient(135deg, #001529, #002b5b);
-            color: white; padding: 40px; border-radius: 30px;
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-        }
+    /* ──── TOURS ──── */
+    .tour-card {
+      border-radius: 20px; overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      transition: all 0.5s ease;
+      background: white;
+      position: relative;
+    }
+    .tour-card:hover { transform: translateY(-8px); box-shadow: 0 24px 60px rgba(0,0,0,0.18); }
+    .tour-card-img { position: relative; height: 280px; overflow: hidden; }
+    .tour-card-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .tour-card:hover .tour-card-img img { transform: scale(1.08); }
+    .tour-card-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,21,41,0.7) 0%, transparent 60%);
+    }
+    .tour-badge {
+      position: absolute; top: 16px; left: 16px;
+      background: var(--gold); color: white;
+      font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 999px;
+    }
+    .tour-highlight {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: #555; padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .tour-highlight:last-child { border-bottom: none; }
+    .tour-highlight i { color: var(--gold); width: 16px; }
 
-        /* Buttons */
-        .btn-luxury {
-            background: linear-gradient(135deg, #BF953F 0%, #B38728 100%);
-            color: white; padding: 18px 45px; border-radius: 999px;
-            font-weight: 700; letter-spacing: 1px; transition: 0.4s;
-            box-shadow: 0 10px 20px rgba(179, 135, 40, 0.3);
-        }
-        .btn-luxury:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(179, 135, 40, 0.5); }
+    /* ──── GALLERY ──── */
+    .gallery-grid {
+      columns: 2; column-gap: 12px;
+    }
+    @media (min-width: 640px) { .gallery-grid { columns: 3; } }
+    @media (min-width: 1024px) { .gallery-grid { columns: 4; } }
+    .gallery-item {
+      break-inside: avoid; margin-bottom: 12px;
+      border-radius: 12px; overflow: hidden;
+      position: relative; cursor: pointer;
+      transition: all 0.4s ease;
+    }
+    .gallery-item img {
+      width: 100%; display: block;
+      transition: all 0.5s ease;
+    }
+    .gallery-item-overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,21,41,0);
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.4s;
+    }
+    .gallery-item-overlay i {
+      color: white; font-size: 28px;
+      opacity: 0; transform: scale(0.7);
+      transition: all 0.4s;
+    }
+    .gallery-item:hover { transform: scale(1.01); box-shadow: 0 12px 35px rgba(0,0,0,0.2); }
+    .gallery-item:hover .gallery-item-overlay { background: rgba(0,21,41,0.4); }
+    .gallery-item:hover .gallery-item-overlay i { opacity: 1; transform: scale(1); }
 
-    </style>
+    /* ──── LIGHTBOX ──── */
+    #lightbox {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,0.95);
+      align-items: center; justify-content: center;
+    }
+    #lightbox.active { display: flex; }
+    #lightbox img {
+      max-width: 90vw; max-height: 88vh;
+      border-radius: 8px;
+      object-fit: contain;
+      animation: lbIn 0.3s ease;
+    }
+    @keyframes lbIn { from { opacity: 0; transform: scale(0.93); } to { opacity: 1; transform: scale(1); } }
+    #lb-close {
+      position: absolute; top: 20px; right: 28px;
+      color: white; font-size: 36px; cursor: pointer; line-height: 1;
+      transition: color 0.3s; z-index: 2;
+    }
+    #lb-close:hover { color: var(--gold); }
+    #lb-prev, #lb-next {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: white; width: 52px; height: 52px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.3s; font-size: 18px;
+    }
+    #lb-prev { left: 20px; }
+    #lb-next { right: 20px; }
+    #lb-prev:hover, #lb-next:hover { background: var(--gold); border-color: var(--gold); }
+    #lb-counter {
+      position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.6); font-size: 13px; letter-spacing: 2px;
+    }
+
+    /* ──── PRICING ──── */
+    .price-card {
+      background: white; border: 1.5px solid #eee;
+      border-radius: 24px; padding: 40px 32px;
+      text-align: center; transition: all 0.4s;
+      position: relative; overflow: hidden;
+    }
+    .price-card:hover { border-color: var(--gold); transform: translateY(-8px); box-shadow: 0 24px 60px rgba(197,160,89,0.15); }
+    .price-card.featured { background: var(--dark); color: white; border-color: var(--gold); }
+    .price-card.featured:hover { transform: translateY(-8px) scale(1.01); }
+    .price-check { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; text-align: left; }
+    .price-check i { color: var(--gold); flex-shrink: 0; }
+
+    /* ──── TESTIMONIALS ──── */
+    .testimonial-card {
+      background: var(--cream); border-radius: 20px;
+      padding: 32px; position: relative;
+      border: 1px solid rgba(197,160,89,0.15);
+      transition: all 0.4s;
+    }
+    .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(197,160,89,0.12); }
+    .testimonial-card::before {
+      content: '"'; position: absolute; top: 16px; left: 24px;
+      font-family: 'Playfair Display', serif; font-size: 72px;
+      color: rgba(197,160,89,0.15); line-height: 1;
+    }
+    .star-rating { color: var(--gold); font-size: 13px; letter-spacing: 2px; }
+
+    /* ──── COUNTDOWN ──── */
+    .timer-box {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
+      border-radius: 24px; padding: 40px;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    }
+    .timer-unit {
+      text-align: center; padding: 20px 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(197,160,89,0.2);
+      border-radius: 16px;
+    }
+    .timer-num {
+      font-size: 42px; font-weight: 700; display: block;
+      background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      font-family: 'Playfair Display', serif;
+      line-height: 1.1;
+    }
+    .timer-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2.5px; color: rgba(255,255,255,0.4); margin-top: 6px; }
+
+    /* ──── BOOKING FORM ──── */
+    .form-input {
+      width: 100%; padding: 16px 20px;
+      background: white; border: 1.5px solid #e8e8e8;
+      border-radius: 14px; outline: none;
+      font-family: 'Montserrat', sans-serif; font-size: 14px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      color: var(--dark);
+    }
+    .form-input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(197,160,89,0.15); }
+    .form-input::placeholder { color: #bbb; }
+
+    /* ──── SOCIAL PROOF ──── */
+    #social-proof {
+      position: fixed; bottom: 32px; left: 28px; z-index: 997;
+      background: white; padding: 14px 22px;
+      border-radius: 14px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+      display: flex; align-items: center; gap: 14px;
+      border-left: 4px solid var(--gold);
+      transform: translateX(-140%);
+      transition: transform 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+      max-width: 320px;
+    }
+    #social-proof.show { transform: translateX(0); }
+    .sp-icon {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: linear-gradient(135deg, #BF953F, #B38728);
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 15px; flex-shrink: 0;
+    }
+
+    /* ──── FLOATING BUTTONS ──── */
+    #float-btns {
+      position: fixed; right: 24px; bottom: 100px; z-index: 997;
+      display: flex; flex-direction: column; gap: 12px; align-items: center;
+    }
+    .float-btn {
+      width: 52px; height: 52px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 22px; cursor: pointer;
+      transition: all 0.3s; text-decoration: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .float-btn:hover { transform: scale(1.1) translateY(-3px); }
+    .float-zalo { background: #0068FF; }
+    .float-phone { background: linear-gradient(135deg, #BF953F, #B38728); }
+
+    /* ──── BACK TO TOP ──── */
+    #back-top {
+      position: fixed; right: 24px; bottom: 32px; z-index: 997;
+      width: 46px; height: 46px; border-radius: 50%;
+      background: var(--dark); color: white;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.4s;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      opacity: 0; pointer-events: none;
+    }
+    #back-top.show { opacity: 1; pointer-events: all; }
+    #back-top:hover { background: var(--gold); transform: translateY(-3px); }
+
+    /* ──── DIVIDER ──── */
+    .gold-divider {
+      display: flex; align-items: center; gap: 16px; justify-content: center;
+      margin: 16px 0;
+    }
+    .gold-divider::before, .gold-divider::after {
+      content: ''; flex: 1; max-width: 80px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold));
+    }
+    .gold-divider::after { background: linear-gradient(to left, transparent, var(--gold)); }
+
+    /* ──── FOOTER ──── */
+    footer { background: var(--dark); color: white; }
+
+    /* ──── IMAGE FALLBACK ──── */
+    img { background-color: #f0ece4; }
+
+    /* ──── SECTION LABEL ──── */
+    .section-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 4px;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 12px; display: block;
+    }
+
+    /* ──── ANIMATIONS ──── */
+    @keyframes pulse-ring {
+      0% { transform: scale(1); opacity: 0.7; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+    .pulse-dot::before {
+      content: ''; position: absolute; inset: -6px;
+      border-radius: 50%; border: 2px solid var(--gold);
+      animation: pulse-ring 1.5s ease-out infinite;
+    }
+
+    /* ──── SCROLLBAR ──── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+  </style>
 </head>
 <body>
 
-<!-- SOCIAL PROOF -->
-<div id="social-proof">
-    <div class="w-10 h-10 bg-gold flex items-center justify-center rounded-full text-white">
-        <i class="fas fa-shopping-cart"></i>
-    </div>
-    <div class="text-sm">
-        <p id="sp-text" class="font-semibold">Anh Trần Văn B. vừa đăng ký thành công</p>
-        <p class="text-gray-400 text-xs">cách đây 1 phút</p>
-    </div>
+<!-- ══════════════════════════════════════════
+     LIGHTBOX
+══════════════════════════════════════════ -->
+<div id="lightbox" role="dialog" aria-modal="true">
+  <span id="lb-close" onclick="closeLightbox()" aria-label="Đóng">&times;</span>
+  <button id="lb-prev" onclick="lbNav(-1)" aria-label="Ảnh trước"><i class="fas fa-chevron-left"></i></button>
+  <img id="lb-img" src="" alt="Gallery">
+  <button id="lb-next" onclick="lbNav(1)" aria-label="Ảnh tiếp theo"><i class="fas fa-chevron-right"></i></button>
+  <div id="lb-counter"></div>
 </div>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-    <a href="#" class="h-full py-3">
-        <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" class="h-full object-contain" alt="Vietkite Travel">
-    </a>
-    <ul class="hidden lg:flex gap-10 text-xs font-bold uppercase tracking-widest leading-none">
-        <li><a href="#about" class="hover:text-gold transition">Trải nghiệm</a></li>
-        <li><a href="#tours" class="hover:text-gold transition">Hành trình</a></li>
-        <li><a href="#gallery" class="hover:text-gold transition">Thư viện</a></li>
-        <li><a href="#pricing" class="hover:text-gold transition">Báo giá</a></li>
-        <li><a href="#booking" class="btn-luxury py-3 px-8 text-[10px]">Đăng ký ngay</a></li>
-    </ul>
+<!-- ══════════════════════════════════════════
+     MOBILE MENU
+══════════════════════════════════════════ -->
+<div id="mobile-menu">
+  <a href="#about" class="mobile-nav-link" onclick="closeMobile()">Trải nghiệm</a>
+  <a href="#tours" class="mobile-nav-link" onclick="closeMobile()">Hành trình</a>
+  <a href="#gallery" class="mobile-nav-link" onclick="closeMobile()">Thư viện</a>
+  <a href="#pricing" class="mobile-nav-link" onclick="closeMobile()">Báo giá</a>
+  <a href="#testimonials" class="mobile-nav-link" onclick="closeMobile()">Khách hàng</a>
+  <a href="#booking" class="btn-gold mt-4" onclick="closeMobile()"><span>Đăng ký ngay</span></a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     NAV
+══════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#" style="height:100%;padding:10px 0;display:block;">
+    <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" 
+         style="height:100%;object-fit:contain;display:block;" alt="Vietkite Travel"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span style="display:none;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--dark)">VIETKITE</span>
+  </a>
+  <ul id="nav-links" style="display:flex;gap:36px;list-style:none;margin:0;padding:0;align-items:center;">
+    <li><a href="#about" class="nav-link">Trải nghiệm</a></li>
+    <li><a href="#tours" class="nav-link">Hành trình</a></li>
+    <li><a href="#gallery" class="nav-link">Thư viện</a></li>
+    <li><a href="#pricing" class="nav-link">Báo giá</a></li>
+    <li><a href="#testimonials" class="nav-link">Khách hàng</a></li>
+    <li><a href="#booking" class="btn-gold" style="padding:12px 28px;font-size:11px;"><span>Đăng ký ngay</span></a></li>
+  </ul>
+  <div id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-img"></div>
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div class="relative z-10 text-center px-6 max-w-5xl">
-        <div class="mb-6 inline-block py-2 px-6 border border-white/30 backdrop-blur-md rounded-full text-white text-xs tracking-[4px] uppercase underline-offset-4" data-aos="fade-down">
-            Cơ hội cuối cùng trong năm
+<!-- ══════════════════════════════════════════
+     SOCIAL PROOF POPUP
+══════════════════════════════════════════ -->
+<div id="social-proof">
+  <div class="sp-icon"><i class="fas fa-user-check"></i></div>
+  <div>
+    <p id="sp-text" style="font-size:13px;font-weight:600;color:var(--dark);margin:0 0 2px;"></p>
+    <p style="font-size:11px;color:#aaa;margin:0;">cách đây vài phút</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section id="hero">
+  <div id="hero-bg"></div>
+  <div id="hero-overlay"></div>
+  <div style="position:relative;z-index:10;text-align:center;padding:0 24px;max-width:860px;margin:0 auto;">
+    <div data-aos="fade-down" style="display:inline-block;margin-bottom:24px;padding:8px 24px;border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(8px);border-radius:999px;color:rgba(255,255,255,0.9);font-size:10px;letter-spacing:4px;text-transform:uppercase;">
+      ✦ Cơ hội cuối cùng trong năm ✦
+    </div>
+    <h1 data-aos="zoom-in" data-aos-delay="150" class="font-serif" style="font-size:clamp(42px,8vw,90px);color:white;line-height:1.1;margin-bottom:20px;font-weight:700;">
+      Chạm Vào<br>
+      <em class="text-gold">Châu Âu Huyền Diệu</em>
+    </h1>
+    <p data-aos="fade-up" data-aos-delay="300" style="color:rgba(255,255,255,0.8);font-size:clamp(14px,2vw,18px);font-weight:300;line-height:1.7;max-width:580px;margin:0 auto 40px;">
+      Cùng Vietkite Travel kiến tạo những ký ức không phai — hành trình đẳng cấp 4 sao qua trái tim Châu Âu.
+    </p>
+    <div data-aos="fade-up" data-aos-delay="450" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="#booking" class="btn-gold"><span>🎁 Nhận ưu đãi 7 triệu</span></a>
+      <a href="#gallery" class="btn-outline">Xem ảnh thực tế</a>
+    </div>
+    <!-- Scroll indicator -->
+    <div data-aos="fade-up" data-aos-delay="700" style="margin-top:60px;">
+      <div style="width:1px;height:50px;background:linear-gradient(to bottom,rgba(255,255,255,0.6),transparent);margin:0 auto;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT / WHY VIETKITE
+══════════════════════════════════════════ -->
+<section id="about" style="padding:100px 24px;max-width:1200px;margin:0 auto;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" class="about-grid">
+    <div data-aos="fade-right">
+      <span class="section-label">Về Vietkite Travel</span>
+      <h2 class="font-serif" style="font-size:clamp(28px,4vw,48px);line-height:1.2;margin-bottom:20px;">
+        Hơn 16 Năm Kiến Tạo<br>Những Kỷ Niệm Vô Giá
+      </h2>
+      <div class="gold-divider" style="justify-content:flex-start;margin:20px 0;"><i class="fas fa-star" style="color:var(--gold);font-size:10px;"></i></div>
+      <p style="color:#666;line-height:1.8;margin-bottom:16px;font-size:15px;">
+        Vietkite Travel – Thương hiệu hàng đầu chuyên tổ chức tour Châu Âu cao cấp. Chúng tôi không chỉ bán tour, chúng tôi tạo những kỷ niệm vô giá cho mỗi gia đình Việt.
+      </p>
+      <p style="color:#666;line-height:1.8;margin-bottom:32px;font-size:15px;">
+        Quy trình xử lý hồ sơ chuyên nghiệp, tối ưu hóa hồ sơ cá nhân giúp đạt tỷ lệ đậu <strong>Visa Schengen cao nhất</strong>. Trưởng đoàn kinh nghiệm từ Việt Nam theo suốt hành trình, chăm sóc từng bữa ăn, giấc ngủ của bạn.
+      </p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+        <div class="stat-card">
+          <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:4px;">16+</div>
+          <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;">Năm kinh nghiệm</div>
         </div>
-        <h1 class="font-serif text-5xl md:text-8xl text-white mb-6 leading-tight" data-aos="zoom-in" data-aos-delay="200">
-            Hành Trình <br><span class="text-gold italic">Châu Âu Đẳng Cấp</span>
-        </h1>
-        <p class="text-white/80 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="400">
-            Đã đến lúc tạm gác lại công việc, cùng Vietkite Travel "phá đảo" Châu Âu ngay thôi!
+        <div class="stat-card">
+          <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:4px;">99%</div>
+          <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;">Tỷ lệ đậu Visa</div>
+        </div>
+        <div class="stat-card">
+          <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:4px;">5K+</div>
+          <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;">Khách hài lòng</div>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-left" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
+      <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/2.jpg" 
+           style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);margin-top:40px;display:block;"
+           alt="Vietkite Travel Châu Âu" loading="lazy"
+           onerror="this.src='https://via.placeholder.com/400x500/C5A059/ffffff?text=Châu+Âu'">
+      <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/3.jpg" 
+           style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);display:block;"
+           alt="Vietkite Travel Châu Âu" loading="lazy"
+           onerror="this.src='https://via.placeholder.com/400x500/C5A059/ffffff?text=Châu+Âu'">
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TOURS / HÀNH TRÌNH
+══════════════════════════════════════════ -->
+<section id="tours" style="padding:80px 24px;background:var(--cream);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
+      <span class="section-label">3 Tuyến Đặc Quyền</span>
+      <h2 class="font-serif" style="font-size:clamp(28px,4vw,52px);margin-bottom:16px;">Chọn Hành Trình Của Bạn</h2>
+      <p style="color:#888;font-size:14px;max-width:500px;margin:0 auto;">Bay cùng <strong>Vietnam Airlines</strong> & <strong>Turkish Airlines 5★</strong></p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="tours-grid">
+      
+      <!-- Tour 1: Tây Âu -->
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="tour-card-img">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/4.jpg" 
+               alt="Tây Âu Hoa Lệ" loading="lazy"
+               onerror="this.src='https://via.placeholder.com/600x400/C5A059/fff?text=Tây+Âu'">
+          <div class="tour-card-img-overlay"></div>
+          <span class="tour-badge">Siêu Vip</span>
+          <div style="position:absolute;bottom:16px;left:16px;color:white;">
+            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px;">Tây Âu</div>
+            <div class="font-serif" style="font-size:20px;font-weight:700;">6 Quốc Gia</div>
+          </div>
+        </div>
+        <div style="padding:24px;">
+          <h3 class="font-serif" style="font-size:20px;margin-bottom:4px;">Tây Âu Hoa Lệ</h3>
+          <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:20px;">Đức – Hà Lan – Bỉ – Pháp – Thụy Sĩ – Ý</p>
+          <div style="border-top:1px solid #f0f0f0;padding-top:20px;margin-bottom:20px;">
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Tháp Eiffel & Paris ánh sáng</span></div>
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Colosseum Rome cổ kính</span></div>
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Interlaken – Thụy Sĩ thơ mộng</span></div>
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Vườn Tulip Keukenhof hà lan</span></div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <span style="text-decoration:line-through;color:#bbb;font-size:12px;">72.000.000 đ</span>
+              <div class="font-serif text-gold" style="font-size:24px;font-weight:700;">64.900.000 đ</div>
+            </div>
+            <a href="#booking" class="btn-gold" style="padding:12px 24px;font-size:11px;"><span>Đăng ký</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour 2: Đông Âu (FEATURED) -->
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="100" style="border:2px solid var(--gold);transform:translateY(-12px);">
+        <div style="position:absolute;top:0;left:0;right:0;background:var(--gold);color:white;text-align:center;padding:8px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;z-index:2;">
+          ⭐ Bán Chạy Nhất
+        </div>
+        <div class="tour-card-img" style="margin-top:36px;">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.jpg" 
+               alt="Đông Âu Cổ Kính" loading="lazy"
+               onerror="this.src='https://via.placeholder.com/600x400/001529/C5A059?text=Đông+Âu'">
+          <div class="tour-card-img-overlay"></div>
+          <div style="position:absolute;bottom:16px;left:16px;color:white;">
+            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px;">Đông Âu</div>
+            <div class="font-serif" style="font-size:20px;font-weight:700;">5 Quốc Gia</div>
+          </div>
+        </div>
+        <div style="padding:24px;">
+          <h3 class="font-serif" style="font-size:20px;margin-bottom:4px;">Đông Âu Cổ Kính</h3>
+          <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:20px;">Đức – Séc – Slovakia – Hungary – Áo</p>
+          <div style="border-top:1px solid #f0f0f0;padding-top:20px;margin-bottom:20px;">
+            <div class="tour-highlight"><i class="fas fa-castle"></i><span>Lâu đài Prague & Cầu Charles</span></div>
+            <div class="tour-highlight"><i class="fas fa-castle"></i><span>Neuschwanstein – cảm hứng Disney</span></div>
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Thị trấn cổ tích Hallstatt</span></div>
+            <div class="tour-highlight"><i class="fas fa-clock"></i><span>10 Ngày 9 Đêm trọn vẹn</span></div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <span style="text-decoration:line-through;color:#bbb;font-size:12px;">69.000.000 đ</span>
+              <div class="font-serif text-gold" style="font-size:24px;font-weight:700;">63.900.000 đ</div>
+            </div>
+            <a href="#booking" class="btn-gold" style="padding:12px 24px;font-size:11px;"><span>Đăng ký</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour 3: Bắc Âu -->
+      <div class="tour-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="tour-card-img">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/6.jpg" 
+               alt="Bắc Âu Hùng Vĩ" loading="lazy"
+               onerror="this.src='https://via.placeholder.com/600x400/C5A059/fff?text=Bắc+Âu'">
+          <div class="tour-card-img-overlay"></div>
+          <span class="tour-badge">Cao cấp</span>
+          <div style="position:absolute;bottom:16px;left:16px;color:white;">
+            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px;">Bắc Âu</div>
+            <div class="font-serif" style="font-size:20px;font-weight:700;">4 Quốc Gia</div>
+          </div>
+        </div>
+        <div style="padding:24px;">
+          <h3 class="font-serif" style="font-size:20px;margin-bottom:4px;">Bắc Âu Hùng Vĩ</h3>
+          <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:20px;">Thụy Điển – Phần Lan – Na Uy – Đan Mạch</p>
+          <div style="border-top:1px solid #f0f0f0;padding-top:20px;margin-bottom:20px;">
+            <div class="tour-highlight"><i class="fas fa-ship"></i><span>Du thuyền Vịnh Geirangerfjord</span></div>
+            <div class="tour-highlight"><i class="fas fa-globe"></i><span>Di sản thiên nhiên thế giới</span></div>
+            <div class="tour-highlight"><i class="fas fa-star"></i><span>Dịch vụ 5 sao quốc tế</span></div>
+            <div class="tour-highlight"><i class="fas fa-clock"></i><span>11 Ngày trải nghiệm</span></div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div>
+              <span style="text-decoration:line-through;color:#bbb;font-size:12px;">112.000.000 đ</span>
+              <div class="font-serif text-gold" style="font-size:24px;font-weight:700;">109.000.000 đ</div>
+            </div>
+            <a href="#booking" class="btn-gold" style="padding:12px 24px;font-size:11px;"><span>Đăng ký</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     GALLERY (17 HÌNH + LIGHTBOX)
+══════════════════════════════════════════ -->
+<section id="gallery" style="padding:100px 24px;background:white;">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
+      <span class="section-label">Thư Viện Hình Ảnh</span>
+      <h2 class="font-serif" style="font-size:clamp(28px,4vw,56px);margin-bottom:16px;">Cảm Hứng Châu Âu</h2>
+      <p style="color:#999;font-size:14px;font-style:italic;">Hình ảnh thực tế từ khách hàng của Vietkite Travel</p>
+    </div>
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Images 1-17 injected by JS for cleaner code -->
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PRICING
+══════════════════════════════════════════ -->
+<section id="pricing" style="padding:100px 24px;background:var(--cream);">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
+      <span class="section-label">Bảng Giá Vàng</span>
+      <h2 class="font-serif" style="font-size:clamp(28px,4vw,52px);margin-bottom:12px;">Báo Giá Đặc Quyền</h2>
+      <p style="color:#aaa;font-size:12px;letter-spacing:3px;text-transform:uppercase;">Bay cùng Vietnam Airlines & Turkish Airlines 5★</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start;" class="pricing-grid">
+      
+      <div class="price-card" data-aos="fade-up">
+        <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Tây Âu Hoa Lệ</h3>
+        <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:24px;">Đức – Hà Lan – Bỉ – Pháp – Thụy Sĩ – Ý</p>
+        <p style="color:#ccc;font-size:13px;margin-bottom:4px;">Siêu VIP Package</p>
+        <div style="text-decoration:line-through;color:#ccc;margin-bottom:4px;font-size:13px;">72.000.000 đ</div>
+        <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">64.900.000 đ</div>
+        <div style="margin-bottom:28px;">
+          <div class="price-check"><i class="fas fa-check"></i><span>Trải nghiệm Siêu VIP</span></div>
+          <div class="price-check"><i class="fas fa-check"></i><span>Khách sạn 4★ trung tâm</span></div>
+          <div class="price-check"><i class="fas fa-check"></i><span>Bữa ăn cao cấp mỗi ngày</span></div>
+          <div class="price-check"><i class="fas fa-check"></i><span>Visa Schengen hỗ trợ 99%</span></div>
+        </div>
+        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;"
+           onmouseover="this.style.background='var(--gold)';this.style.color='white'"
+           onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">
+          Chọn hành trình
+        </a>
+      </div>
+
+      <div class="price-card featured" data-aos="fade-up" data-aos-delay="100" style="transform:scale(1.04);">
+        <div style="position:absolute;top:20px;right:20px;background:var(--gold);color:white;font-size:9px;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:1px;text-transform:uppercase;">Bán chạy nhất</div>
+        <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Đông Âu Cổ Kính</h3>
+        <p style="color:rgba(255,255,255,0.4);font-size:12px;font-style:italic;margin-bottom:24px;">10 Ngày 9 Đêm</p>
+        <p style="color:rgba(255,255,255,0.3);font-size:13px;margin-bottom:4px;">Best Seller</p>
+        <div style="text-decoration:line-through;color:rgba(255,255,255,0.25);margin-bottom:4px;font-size:13px;">69.000.000 đ</div>
+        <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">63.900.000 đ</div>
+        <div style="margin-bottom:28px;">
+          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Prague & Lâu đài Disney</span></div>
+          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Hallstatt thị trấn cổ tích</span></div>
+          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Trưởng đoàn tận tâm 24/7</span></div>
+          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Neuschwanstein huyền thoại</span></div>
+        </div>
+        <a href="#booking" class="btn-gold" style="display:block;text-align:center;padding:14px 24px;"><span>ĐĂNG KÝ NGAY</span></a>
+      </div>
+
+      <div class="price-card" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Bắc Âu Hùng Vĩ</h3>
+        <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:24px;">11 Ngày Trải Nghiệm</p>
+        <p style="color:#ccc;font-size:13px;margin-bottom:4px;">Premium Package</p>
+        <div style="text-decoration:line-through;color:#ccc;margin-bottom:4px;font-size:13px;">112.000.000 đ</div>
+        <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">109.000.000 đ</div>
+        <div style="margin-bottom:28px;">
+          <div class="price-check"><i class="fas fa-check"></i><span>Du thuyền Vịnh Na Uy</span></div>
+          <div class="price-check"><i class="fas fa-check"></i><span>Di sản thế giới nghẹt thở</span></div>
+          <div class="price-check"><i class="fas fa-check"></i><span>Dịch vụ 5 sao quốc tế</span></div>
+          <div class="price-check"><i class="fas fa-check"></i><span>Khách sạn 4★ chuẩn quốc tế</span></div>
+        </div>
+        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;"
+           onmouseover="this.style.background='var(--gold)';this.style.color='white'"
+           onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">
+          Chọn hành trình
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════ -->
+<section id="testimonials" style="padding:100px 24px;background:white;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
+      <span class="section-label">Khách Hàng Nói Gì</span>
+      <h2 class="font-serif" style="font-size:clamp(28px,4vw,52px);">Hàng Nghìn Gia Đình Hạnh Phúc</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="testimonials-grid">
+      
+      <div class="testimonial-card" data-aos="fade-up">
+        <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
+        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">
+          "Chưa bao giờ đi Châu Âu mà thảnh thơi đến thế. Hướng dẫn viên của Vietkite quá nhiệt tình, khách sạn 4 sao trung tâm đúng như cam kết!"
         </p>
-        <div class="flex flex-col md:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="600">
-            <a href="#booking" class="btn-luxury">NHẬN ƯU ĐÃI 7 TRIỆU</a>
-            <a href="#gallery" class="px-10 py-5 border border-white/50 rounded-full text-white hover:bg-white hover:text-black transition duration-500">Xem ảnh thực tế</a>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/7.jpg" 
+               style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
+               alt="Khách hàng" loading="lazy"
+               onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=MA'">
+          <div>
+            <div style="font-weight:700;font-size:14px;">Chị Minh Anh</div>
+            <div style="font-size:11px;color:#aaa;">Hà Nội · Tour Tây Âu</div>
+          </div>
         </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
+        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">
+          "Gia đình tôi 5 người, lo lắng về visa nhưng Vietkite xử lý cực nhanh. Tour Đông Âu Prague cực kỳ ấn tượng, con gái mê Hallstatt lắm!"
+        </p>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/8.jpg" 
+               style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
+               alt="Khách hàng" loading="lazy"
+               onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=TH'">
+          <div>
+            <div style="font-weight:700;font-size:14px;">Anh Trọng Hiếu</div>
+            <div style="font-size:11px;color:#aaa;">TP.HCM · Tour Đông Âu</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
+        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">
+          "Du thuyền Bắc Âu là trải nghiệm không thể quên trong đời. Vietkite lo từng chi tiết nhỏ, tôi chỉ việc tận hưởng. Năm sau chắc chắn đăng ký tiếp!"
+        </p>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/9.jpg" 
+               style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
+               alt="Khách hàng" loading="lazy"
+               onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=LA'">
+          <div>
+            <div style="font-weight:700;font-size:14px;">Chị Lan Phương</div>
+            <div style="font-size:11px;color:#aaa;">Đà Nẵng · Tour Bắc Âu</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- SECTION 2: GIỚI THIỆU -->
-<section class="py-24 px-6 max-w-7xl mx-auto" id="about">
-    <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div data-aos="fade-right">
-            <span class="text-gold font-bold tracking-widest text-sm uppercase mb-4 block">Về chúng tôi</span>
-            <h2 class="font-serif text-4xl md:text-5xl mb-8 leading-snug">Hơn 16 Năm Kiến Tạo <br>Những Kỷ Niệm Vô Giá</h2>
-            <p class="text-gray-600 leading-relaxed mb-6">
-                Vietkite Travel – Thương hiệu hàng đầu chuyên tổ chức tour Châu Âu cao cấp. Chúng tôi không chỉ bán tour, chúng tôi tạo những kỷ niệm vô giá. Quy trình xử lý hồ sơ đi châu Âu chuyên nghiệp, tối ưu hóa hồ sơ cá nhân giúp đạt tỷ lệ đậu Visa Schengen cao nhất.
-            </p>
-            <div class="grid grid-cols-2 gap-6">
-                <div>
-                    <h3 class="text-3xl font-bold text-gold mb-1">99%</h3>
-                    <p class="text-xs uppercase tracking-tighter text-gray-400">Tỷ lệ đậu Visa</p>
-                </div>
-                <div>
-                    <h3 class="text-3xl font-bold text-gold mb-1">16+</h3>
-                    <p class="text-xs uppercase tracking-tighter text-gray-400">Năm kinh nghiệm</p>
-                </div>
-            </div>
-        </div>
-        <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
-            <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/2.jpg" class="rounded-2xl shadow-2xl mt-12" alt="Europe">
-            <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/3.jpg" class="rounded-2xl shadow-2xl" alt="Europe">
-        </div>
+<!-- ══════════════════════════════════════════
+     BOOKING + COUNTDOWN
+══════════════════════════════════════════ -->
+<section id="booking" style="padding:100px 24px;background:linear-gradient(135deg,var(--dark) 0%,#002347 100%);">
+  <div style="max-width:860px;margin:0 auto;">
+    
+    <!-- Urgency bar -->
+    <div style="background:rgba(197,160,89,0.15);border:1px solid rgba(197,160,89,0.3);border-radius:12px;padding:14px 24px;text-align:center;margin-bottom:40px;" data-aos="fade-up">
+      <span style="color:var(--gold-light);font-size:13px;">⚡ </span>
+      <span style="color:rgba(255,255,255,0.9);font-size:13px;font-weight:500;">Chỉ còn đúng <strong style="color:var(--gold-light);">3 suất</strong> giá khuyến mãi cuối cùng!</span>
     </div>
+
+    <!-- Countdown -->
+    <div class="timer-box" data-aos="zoom-in">
+      <div class="timer-unit">
+        <span class="timer-num" id="t-days">00</span>
+        <span class="timer-label">Ngày</span>
+      </div>
+      <div class="timer-unit">
+        <span class="timer-num" id="t-hours">00</span>
+        <span class="timer-label">Giờ</span>
+      </div>
+      <div class="timer-unit">
+        <span class="timer-num" id="t-mins">00</span>
+        <span class="timer-label">Phút</span>
+      </div>
+      <div class="timer-unit">
+        <span class="timer-num" id="t-secs">00</span>
+        <span class="timer-label">Giây</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin:48px 0 36px;" data-aos="fade-up">
+      <span class="section-label">Đăng Ký Tư Vấn Miễn Phí</span>
+      <h2 class="font-serif" style="font-size:clamp(24px,4vw,40px);color:white;margin-bottom:12px;">Nhận Ưu Đãi Giảm 7 Triệu</h2>
+      <p style="color:rgba(255,255,255,0.5);font-size:13px;">Ưu đãi chỉ áp dụng cho <strong style="color:var(--gold);">15 khách hàng đăng ký sớm nhất!</strong></p>
+    </div>
+
+    <!-- Form -->
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;" data-aos="fade-up">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;" class="form-row">
+        <input type="text" id="f-name" class="form-input" placeholder="Họ và tên của bạn *" required>
+        <input type="tel" id="f-phone" class="form-input" placeholder="Số điện thoại *" required>
+      </div>
+      <select id="f-tour" class="form-input" style="margin-bottom:16px;cursor:pointer;">
+        <option value="">— Chọn tuyến tour bạn quan tâm —</option>
+        <option value="tay-au">Tây Âu Hoa Lệ (6 Nước) – 64.900.000đ</option>
+        <option value="dong-au">Đông Âu Cổ Kính (5 Nước) – 63.900.000đ</option>
+        <option value="bac-au">Bắc Âu Hùng Vĩ (4 Nước) – 109.000.000đ</option>
+      </select>
+      <input type="text" id="f-note" class="form-input" placeholder="Ghi chú thêm (số người, thời gian mong muốn...)" style="margin-bottom:24px;">
+      <button onclick="submitForm()" class="btn-gold" style="width:100%;font-size:15px;padding:20px;text-align:center;border:none;cursor:pointer;">
+        <span>🎁 NHẬN ƯU ĐÃI GIẢM 7 TRIỆU NGAY</span>
+      </button>
+      <p style="text-align:center;font-size:10px;color:rgba(255,255,255,0.3);margin-top:16px;letter-spacing:2px;text-transform:uppercase;">
+        🔒 Thông tin của bạn được bảo mật tuyệt đối
+      </p>
+    </div>
+    <!-- Success message -->
+    <div id="form-success" style="display:none;text-align:center;padding:40px;background:rgba(197,160,89,0.1);border:1px solid var(--gold);border-radius:24px;margin-top:20px;">
+      <div style="font-size:48px;margin-bottom:16px;">✅</div>
+      <h3 class="font-serif" style="color:white;font-size:24px;margin-bottom:8px;">Đăng ký thành công!</h3>
+      <p style="color:rgba(255,255,255,0.6);font-size:14px;">Tư vấn viên Vietkite sẽ liên hệ với bạn trong vòng <strong style="color:var(--gold);">30 phút</strong>.</p>
+    </div>
+  </div>
 </section>
 
-<!-- SECTION 3: MASONRY GALLERY (TẤT CẢ 17 HÌNH) -->
-<section class="py-24 bg-gray-50 px-6" id="gallery">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="font-serif text-4xl md:text-6xl mb-4">Cảm Hứng Châu Âu</h2>
-            <p class="text-gray-400 italic">Hình ảnh thực tế từ khách hàng của Vietkite Travel</p>
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer style="background:var(--dark);">
+  <div style="max-width:1200px;margin:0 auto;padding:80px 24px 40px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:60px;" class="footer-grid">
+      <div>
+        <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" 
+             style="height:48px;margin-bottom:24px;filter:brightness(0) invert(1);display:block;object-fit:contain;"
+             alt="Vietkite"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="font-serif" style="display:none;color:white;font-size:20px;font-weight:700;margin-bottom:24px;display:block;">VIETKITE TRAVEL</span>
+        <p style="color:rgba(255,255,255,0.4);line-height:1.8;font-size:14px;max-width:280px;">
+          Thương hiệu hàng đầu chuyên tổ chức tour Châu Âu cao cấp. Kiến tạo những hành trình độc bản dành riêng cho quý khách.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-serif" style="color:var(--gold);font-size:18px;margin-bottom:24px;font-style:italic;">Chính sách đoàn</h4>
+        <ul style="color:rgba(255,255,255,0.45);font-size:13px;line-height:2;list-style:none;padding:0;">
+          <li>• Giá tour áp dụng từ 20 khách người lớn</li>
+          <li>• Ưu đãi trẻ em 30%–90% tùy độ tuổi</li>
+          <li>• Chuẩn bị hồ sơ trước khởi hành 45 ngày</li>
+          <li>• Trưởng đoàn VN theo suốt hành trình</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif" style="color:var(--gold);font-size:18px;margin-bottom:24px;font-style:italic;">Liên hệ</h4>
+        <ul style="color:rgba(255,255,255,0.45);font-size:13px;line-height:2;list-style:none;padding:0;">
+          <li><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>276 Nơ Trang Long, P.12, Q. Bình Thạnh, TP.HCM</li>
+          <li style="margin-top:8px;"><i class="fas fa-globe" style="color:var(--gold);margin-right:8px;"></i>vietkite.com.vn</li>
+        </ul>
+        <div style="display:flex;gap:12px;margin-top:24px;">
+          <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.3s;text-decoration:none;"
+             onmouseover="this.style.background='var(--gold)';this.style.color='white'"
+             onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.3s;text-decoration:none;"
+             onmouseover="this.style.background='var(--gold)';this.style.color='white'"
+             onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.3s;text-decoration:none;"
+             onmouseover="this.style.background='var(--gold)';this.style.color='white'"
+             onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">
+            <i class="fab fa-tiktok"></i>
+          </a>
         </div>
-        
-        <div class="gallery-container">
-            <!-- Tự động lặp qua 17 hình của bạn -->
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/1.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/2.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/3.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/4.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/6.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/7.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/8.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/9.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/10.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/11.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/12.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/13.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/14.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/15.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/16.jpg"></div>
-            <div class="gallery-item" data-aos="fade-up"><img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/17.jpg"></div>
-        </div>
+      </div>
     </div>
-</section>
-
-<!-- SECTION 4: BẢNG GIÁ -->
-<section class="py-24 px-6" id="pricing">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-20">
-            <h2 class="font-serif text-4xl md:text-5xl mb-4">Bảng Giá Đặc Quyền</h2>
-            <p class="text-gray-400 tracking-widest uppercase text-xs">Bay cùng Vietnam Airlines & Turkish Airlines 5*</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Tây Âu -->
-            <div class="price-card" data-aos="fade-up">
-                <h3 class="font-bold text-xl mb-2">Tây Âu (6 Nước)</h3>
-                <p class="text-gray-400 text-sm mb-6 italic">Đức - Hà Lan - Bỉ - Pháp - Thụy Sĩ - Ý</p>
-                <div class="text-3xl font-serif text-gold font-bold mb-2">64.900.000 đ</div>
-                <div class="text-gray-400 line-through text-sm mb-8">72.000.000 đ</div>
-                <ul class="text-left text-sm space-y-4 mb-10 text-gray-600">
-                    <li><i class="fas fa-check text-gold mr-2"></i> Trải nghiệm Siêu Vip</li>
-                    <li><i class="fas fa-check text-gold mr-2"></i> Khách sạn 4* trung tâm</li>
-                    <li><i class="fas fa-check text-gold mr-2"></i> Bữa ăn cao cấp mỗi ngày</li>
-                </ul>
-                <a href="#booking" class="block w-full py-4 border border-gold text-gold rounded-full font-bold hover:bg-gold hover:text-white transition">Chọn hành trình</a>
-            </div>
-
-            <!-- Đông Âu (Featured) -->
-            <div class="price-card featured shadow-2xl scale-105" data-aos="fade-up" data-aos-delay="200">
-                <div class="absolute top-5 right-5 bg-gold text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Bán chạy nhất</div>
-                <h3 class="font-bold text-xl mb-2">Đông Âu Cổ Kính</h3>
-                <p class="text-white/50 text-sm mb-6 italic">10 Ngày 9 Đêm</p>
-                <div class="text-4xl font-serif text-gold font-bold mb-2">63.900.000 đ</div>
-                <div class="text-white/30 line-through text-sm mb-8">69.000.000 đ</div>
-                <ul class="text-left text-sm space-y-4 mb-10 text-white/80">
-                    <li><i class="fas fa-check text-gold mr-2"></i> Prague & Lâu đài Disney</li>
-                    <li><i class="fas fa-check text-gold mr-2"></i> Thị trấn cổ tích Hallstatt</li>
-                    <li><i class="fas fa-check text-gold mr-2"></i> Trưởng đoàn tận tâm 24/7</li>
-                </ul>
-                <a href="#booking" class="btn-luxury block text-center">ĐĂNG KÝ NGAY</a>
-            </div>
-
-            <!-- Bắc Âu -->
-            <div class="price-card" data-aos="fade-up" data-aos-delay="400">
-                <h3 class="font-bold text-xl mb-2">Bắc Âu Hùng Vĩ</h3>
-                <p class="text-gray-400 text-sm mb-6 italic">11 Ngày Trải Nghiệm</p>
-                <div class="text-3xl font-serif text-gold font-bold mb-2">109.000.000 đ</div>
-                <div class="text-gray-400 line-through text-sm mb-8">112.000.000 đ</div>
-                <ul class="text-left text-sm space-y-4 mb-10 text-gray-600">
-                    <li><i class="fas fa-check text-gold mr-2"></i> Du thuyền Vịnh Na Uy</li>
-                    <li><i class="fas fa-check text-gold mr-2"></i> Di sản thế giới nghẹt thở</li>
-                    <li><i class="fas fa-check text-gold mr-2"></i> Dịch vụ 5 sao quốc tế</li>
-                </ul>
-                <a href="#booking" class="block w-full py-4 border border-gold text-gold rounded-full font-bold hover:bg-gold hover:text-white transition">Chọn hành trình</a>
-            </div>
-        </div>
+    <div style="text-align:center;padding-top:32px;font-size:10px;color:rgba(255,255,255,0.2);letter-spacing:3px;text-transform:uppercase;">
+      © 2025 VIETKITE LUXURY TRAVEL. All Rights Reserved.
     </div>
-</section>
-
-<!-- SECTION 5: ĐĂNG KÝ & COUNTDOWN -->
-<section class="py-24 px-6 bg-white" id="booking">
-    <div class="max-w-4xl mx-auto">
-        <div class="timer-box mb-12" data-aos="zoom-in">
-            <div class="text-center">
-                <span id="days" class="text-4xl font-bold block">00</span>
-                <span class="text-[10px] uppercase opacity-50">Ngày</span>
-            </div>
-            <div class="text-center">
-                <span id="hours" class="text-4xl font-bold block">00</span>
-                <span class="text-[10px] uppercase opacity-50">Giờ</span>
-            </div>
-            <div class="text-center">
-                <span id="minutes" class="text-4xl font-bold block">00</span>
-                <span class="text-[10px] uppercase opacity-50">Phút</span>
-            </div>
-            <div class="text-center">
-                <span id="seconds" class="text-4xl font-bold block">00</span>
-                <span class="text-[10px] uppercase opacity-50">Giây</span>
-            </div>
-        </div>
-
-        <div class="text-center mb-10">
-            <h2 class="font-serif text-4xl mb-4">Nhận Ưu Đãi Giảm 7 Triệu</h2>
-            <p class="text-red-500 font-bold italic animate-pulse underline underline-offset-8">
-                Chỉ còn đúng 3 suất giá khuyến mãi cuối cùng!
-            </p>
-        </div>
-
-        <form class="space-y-6 bg-gray-50 p-10 rounded-3xl border border-gray-100 shadow-xl">
-            <div class="grid md:grid-cols-2 gap-6">
-                <input type="text" placeholder="Họ và tên của bạn" class="bg-white p-5 rounded-xl border-none outline-none focus:ring-2 focus:ring-gold transition shadow-sm">
-                <input type="tel" placeholder="Số điện thoại" class="bg-white p-5 rounded-xl border-none outline-none focus:ring-2 focus:ring-gold transition shadow-sm">
-            </div>
-            <select class="w-full bg-white p-5 rounded-xl border-none outline-none focus:ring-2 focus:ring-gold transition shadow-sm">
-                <option>Tây Âu Hoa Lệ</option>
-                <option>Đông Âu Cổ Kính</option>
-                <option>Bắc Âu Hùng Vĩ</option>
-            </select>
-            <button type="submit" class="btn-luxury w-full text-xl py-6">NHẬN ƯU ĐÃI NGAY</button>
-            <p class="text-center text-[10px] text-gray-400 uppercase tracking-widest">Chúng tôi sẽ bảo mật thông tin tuyệt đối</p>
-        </form>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-dark-blue text-white py-20 px-6">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 border-b border-white/10 pb-16">
-        <div>
-            <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" class="h-12 mb-8 brightness-0 invert" alt="Vietkite">
-            <p class="text-white/50 leading-relaxed max-w-sm">
-                Vietkite Travel – Thương hiệu hàng đầu chuyên tổ chức tour Châu Âu cao cấp. Chúng tôi kiến tạo những hành trình độc bản dành riêng cho quý khách.
-            </p>
-        </div>
-        <div>
-            <h4 class="font-serif text-xl text-gold mb-6 italic">Chính sách đoàn</h4>
-            <ul class="text-white/50 space-y-4 text-sm">
-                <li>• Giá tour áp dụng cho đoàn từ 20 khách người lớn.</li>
-                <li>• Chính sách giá tốt nhất cho trẻ em (Ưu đãi 30% - 90%).</li>
-                <li>• Địa chỉ: 276 Nơ Trang Long, P.12, Q. Bình Thạnh, TP.HCM</li>
-            </ul>
-        </div>
-    </div>
-    <div class="text-center pt-10 text-[10px] text-white/30 tracking-[4px] uppercase">
-        © 2025 VIETKITE LUXURY TRAVEL. All Rights Reserved.
-    </div>
+  </div>
 </footer>
 
+<!-- ══════════════════════════════════════════
+     FLOATING BUTTONS
+══════════════════════════════════════════ -->
+<div id="float-btns">
+  <a href="https://zalo.me/" class="float-btn float-zalo" title="Chat Zalo" target="_blank">
+    <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="24" fill="#0068FF"/>
+      <path d="M24 8C15.163 8 8 14.716 8 23c0 4.573 2.197 8.674 5.664 11.47L12 38l5.122-1.637C18.924 37.41 21.4 38 24 38c8.837 0 16-6.716 16-15S32.837 8 24 8z" fill="white"/>
+      <text x="24" y="28" text-anchor="middle" fill="#0068FF" font-size="12" font-weight="bold" font-family="Arial">Zalo</text>
+    </svg>
+  </a>
+  <a href="tel:+84" class="float-btn float-phone" title="Gọi ngay">
+    <i class="fas fa-phone"></i>
+  </a>
+</div>
+
+<!-- Back to top -->
+<div id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({ duration: 1000, once: true });
+  // ── AOS Init ──────────────────────────────────────────
+  AOS.init({ duration: 900, once: true, offset: 80 });
 
-    // Navbar Scroll
-    window.addEventListener('scroll', () => {
-        const nav = document.getElementById('nav');
-        if (window.scrollY > 100) nav.classList.add('scrolled');
-        else nav.classList.remove('scrolled');
-    });
+  // ── Navbar scroll ─────────────────────────────────────
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 80);
+    document.getElementById('back-top').classList.toggle('show', window.scrollY > 400);
+  });
 
-    // Countdown Logic
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 20);
+  // ── Mobile menu ───────────────────────────────────────
+  function toggleMenu() {
+    document.getElementById('hamburger').classList.toggle('active');
+    document.getElementById('mobile-menu').classList.toggle('open');
+    document.body.style.overflow = document.getElementById('mobile-menu').classList.contains('open') ? 'hidden' : '';
+  }
+  function closeMobile() {
+    document.getElementById('hamburger').classList.remove('active');
+    document.getElementById('mobile-menu').classList.remove('open');
+    document.body.style.overflow = '';
+  }
 
-    function updateTimer() {
-        const now = new Date().getTime();
-        const diff = targetDate - now;
-        document.getElementById('days').innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-        document.getElementById('hours').innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        document.getElementById('minutes').innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        document.getElementById('seconds').innerText = Math.floor((diff % (1000 * 60)) / 1000);
+  // ── Gallery inject ────────────────────────────────────
+  const BASE = 'https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/';
+  const TOTAL = 17;
+  const gallery = document.getElementById('gallery-grid');
+  for (let i = 1; i <= TOTAL; i++) {
+    const url = BASE + i + '.jpg';
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.setAttribute('data-aos', 'fade-up');
+    item.setAttribute('data-idx', i - 1);
+    item.innerHTML = `
+      <img src="${url}" alt="Châu Âu ${i}" loading="lazy" 
+           onerror="this.parentElement.style.display='none'">
+      <div class="gallery-item-overlay">
+        <i class="fas fa-search-plus"></i>
+      </div>`;
+    item.addEventListener('click', () => openLightbox(i - 1));
+    gallery.appendChild(item);
+  }
+
+  // ── Lightbox ──────────────────────────────────────────
+  let lbCurrent = 0;
+  const lbImages = Array.from({ length: TOTAL }, (_, i) => BASE + (i + 1) + '.jpg');
+
+  function openLightbox(idx) {
+    lbCurrent = idx;
+    document.getElementById('lb-img').src = lbImages[idx];
+    document.getElementById('lb-counter').textContent = (idx + 1) + ' / ' + TOTAL;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function lbNav(dir) {
+    lbCurrent = (lbCurrent + dir + TOTAL) % TOTAL;
+    document.getElementById('lb-img').style.opacity = '0';
+    setTimeout(() => {
+      document.getElementById('lb-img').src = lbImages[lbCurrent];
+      document.getElementById('lb-img').style.opacity = '1';
+      document.getElementById('lb-counter').textContent = (lbCurrent + 1) + ' / ' + TOTAL;
+    }, 150);
+  }
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (document.getElementById('lightbox').classList.contains('active')) {
+      if (e.key === 'ArrowRight') lbNav(1);
+      if (e.key === 'ArrowLeft') lbNav(-1);
+      if (e.key === 'Escape') closeLightbox();
     }
-    setInterval(updateTimer, 1000);
+  });
+  document.getElementById('lb-img').style.transition = 'opacity 0.15s';
 
-    // Social Proof Popup
-    const notifications = [
-        "Anh Trần Văn B. vừa cọc thành công Tour Tây Âu",
-        "Chị Nguyễn Thị H. vừa đăng ký 2 suất Tour Đông Âu",
-        "Anh Minh Quân vừa nhận ưu đãi giảm 7 triệu",
-        "Chị Lan Anh vừa hoàn tất hồ sơ Visa Châu Âu"
-    ];
-    let i = 0;
-    function showSocialProof() {
-        const sp = document.getElementById('social-proof');
-        const text = document.getElementById('sp-text');
-        text.innerText = notifications[i];
-        sp.classList.add('active');
-        setTimeout(() => sp.classList.remove('active'), 6000);
-        i = (i + 1) % notifications.length;
+  // ── Countdown ─────────────────────────────────────────
+  const deadline = new Date();
+  deadline.setDate(deadline.getDate() + 20);
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    const diff = deadline - Date.now();
+    if (diff <= 0) { ['t-days','t-hours','t-mins','t-secs'].forEach(id => document.getElementById(id).textContent = '00'); return; }
+    document.getElementById('t-days').textContent  = pad(Math.floor(diff / 86400000));
+    document.getElementById('t-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
+    document.getElementById('t-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
+    document.getElementById('t-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
+  }
+  tick(); setInterval(tick, 1000);
+
+  // ── Social Proof ──────────────────────────────────────
+  const proofs = [
+    'Anh Trần Văn B. vừa cọc thành công Tour Tây Âu 6 nước',
+    'Chị Nguyễn Thị H. đã đăng ký 2 suất Tour Đông Âu',
+    'Anh Minh Quân vừa nhận ưu đãi giảm 7 triệu',
+    'Chị Lan Anh vừa hoàn tất hồ sơ Visa Châu Âu',
+    'Gia đình anh Tuấn vừa chốt Tour Bắc Âu 11 ngày'
+  ];
+  let spIdx = 0;
+  function showProof() {
+    const el = document.getElementById('social-proof');
+    document.getElementById('sp-text').textContent = proofs[spIdx];
+    el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 5500);
+    spIdx = (spIdx + 1) % proofs.length;
+  }
+  setTimeout(showProof, 3000);
+  setInterval(showProof, 30000);
+
+  // ── Form Submit ───────────────────────────────────────
+  function submitForm() {
+    const name = document.getElementById('f-name').value.trim();
+    const phone = document.getElementById('f-phone').value.trim();
+    const tour = document.getElementById('f-tour').value;
+    if (!name) { document.getElementById('f-name').focus(); document.getElementById('f-name').style.borderColor='#e74c3c'; return; }
+    if (!phone) { document.getElementById('f-phone').focus(); document.getElementById('f-phone').style.borderColor='#e74c3c'; return; }
+    // Show success
+    document.querySelector('#booking .btn-gold').closest('div').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+    // Social proof trigger
+    setTimeout(() => {
+      const sp = document.getElementById('social-proof');
+      document.getElementById('sp-text').textContent = name.split(' ').pop() + ' vừa đăng ký thành công!';
+      sp.classList.add('show');
+      setTimeout(() => sp.classList.remove('show'), 6000);
+    }, 2000);
+  }
+
+  // ── Responsive grid ───────────────────────────────────
+  function applyResponsive() {
+    const w = window.innerWidth;
+    // About grid
+    const ag = document.querySelector('.about-grid');
+    if (ag) ag.style.gridTemplateColumns = w < 768 ? '1fr' : '1fr 1fr';
+    // Tours
+    const tg = document.querySelector('.tours-grid');
+    if (tg) tg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : 'repeat(3,1fr)';
+    // Pricing
+    const pg = document.querySelector('.pricing-grid');
+    if (pg) pg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : 'repeat(3,1fr)';
+    // Testimonials
+    const tsg = document.querySelector('.testimonials-grid');
+    if (tsg) tsg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : 'repeat(3,1fr)';
+    // Form row
+    const fr = document.querySelector('.form-row');
+    if (fr) fr.style.gridTemplateColumns = w < 640 ? '1fr' : '1fr 1fr';
+    // Footer
+    const fg = document.querySelector('.footer-grid');
+    if (fg) fg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : '1fr 1fr 1fr';
+    // Tour card center featured
+    if (w < 768) {
+      const featured = document.querySelector('.tour-card[style*="translateY(-12px)"]');
+      if (featured) featured.style.transform = 'none';
     }
-    setInterval(showSocialProof, 35000);
-    setTimeout(showSocialProof, 3000); // Lần đầu hiện sau 3s
+  }
+  applyResponsive();
+  window.addEventListener('resize', applyResponsive);
 </script>
 
 </body>
