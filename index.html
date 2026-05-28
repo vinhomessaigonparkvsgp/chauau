@@ -1006,6 +1006,61 @@
       .timer-num { font-size: 32px !important; }
     }
 
+
+    /* ──── FIX 4: GALLERY ALWAYS VISIBLE ON IOS ──── */
+    #gallery-grid {
+      min-height: 320px !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    #gallery .gallery-item {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    #gallery .gallery-img-wrap,
+    #gallery .gallery-img {
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    #gallery .gallery-error::after {
+      content: 'Ảnh đang tải lại';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0,21,41,.65);
+      font-size: 12px;
+      font-weight: 700;
+      background: #f4efe4;
+      z-index: 1;
+    }
+    @media (max-width: 720px) {
+      #gallery {
+        padding-top: 72px !important;
+        padding-bottom: 72px !important;
+      }
+      #gallery .gallery-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px !important;
+      }
+      #gallery .gallery-item {
+        aspect-ratio: 1 / 1 !important;
+        min-height: 0 !important;
+        transform: none !important;
+      }
+    }
+    @media (max-width: 430px) {
+      #gallery .gallery-grid {
+        grid-template-columns: 1fr !important;
+      }
+      #gallery .gallery-item {
+        aspect-ratio: 4 / 3 !important;
+      }
+    }
+
     /* ──── SCROLLBAR ──── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #f1f1f1; }
@@ -1269,7 +1324,258 @@
       <div class="gallery-count-pill"><i class="fas fa-images"></i> Đã gắn đủ 28 hình</div>
     </div>
     <div class="gallery-grid" id="gallery-grid">
-      <!-- Images 1-17 injected by JS for cleaner code -->
+      <div class="gallery-item" data-gallery-index="0" onclick="openLightbox(0)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" alt="Cầu Charles và Lâu đài Prague, Cộng hòa Séc" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Cầu Charles và Lâu đài Prague, Cộng hòa Séc</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="1" onclick="openLightbox(1)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" alt="Amsterdam, Hà Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Amsterdam, Hà Lan</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="2" onclick="openLightbox(2)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" alt="Bảo tàng Louvre, Pháp" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Bảo tàng Louvre, Pháp</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="3" onclick="openLightbox(3)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif" alt="Cầu Charles và Lâu đài Prague" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Cầu Charles và Lâu đài Prague</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="4" onclick="openLightbox(4)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg" alt="Làng Santa Claus, Rovaniemi, Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Làng Santa Claus, Rovaniemi, Phần Lan</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="5" onclick="openLightbox(5)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg" alt="Làng Santa Claus, Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Làng Santa Claus, Phần Lan</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="6" onclick="openLightbox(6)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg" alt="Rovaniemi mùa đông, Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Rovaniemi mùa đông, Phần Lan</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="7" onclick="openLightbox(7)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg" alt="Không khí Giáng sinh tại Rovaniemi" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Không khí Giáng sinh tại Rovaniemi</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="8" onclick="openLightbox(8)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg" alt="Làng Santa Claus tuyết trắng" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Làng Santa Claus tuyết trắng</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="9" onclick="openLightbox(9)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg" alt="Trải nghiệm Bắc Âu tại Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Trải nghiệm Bắc Âu tại Phần Lan</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="10" onclick="openLightbox(10)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" alt="Phong cảnh Na Uy" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Phong cảnh Na Uy</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="11" onclick="openLightbox(11)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/NAUY.jpg" alt="Na Uy hùng vĩ" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Na Uy hùng vĩ</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="12" onclick="openLightbox(12)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg" alt="Cáp treo núi tuyết Titlis" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Cáp treo núi tuyết Titlis</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="13" onclick="openLightbox(13)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg" alt="Trượt tuyết tại núi Titlis" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Trượt tuyết tại núi Titlis</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="14" onclick="openLightbox(14)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg" alt="Núi tuyết Titlis quanh năm" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Núi tuyết Titlis quanh năm</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="15" onclick="openLightbox(15)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" alt="Thành phố nổi Venice, Ý" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Thành phố nổi Venice, Ý</div>
+      </div>
+      <div class="gallery-item gallery-rotate" data-gallery-index="16" onclick="openLightbox(16)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg" alt="Kênh đào Venice" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Kênh đào Venice</div>
+      </div>
+      <div class="gallery-item gallery-rotate" data-gallery-index="17" onclick="openLightbox(17)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg" alt="Venice lãng mạn" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Venice lãng mạn</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="18" onclick="openLightbox(18)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" alt="Tháp Eiffel và Khải Hoàn Môn" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Tháp Eiffel và Khải Hoàn Môn</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="19" onclick="openLightbox(19)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg" alt="Tháp Eiffel, Paris" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Tháp Eiffel, Paris</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="20" onclick="openLightbox(20)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg" alt="Paris và Tháp Eiffel" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Paris và Tháp Eiffel</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="21" onclick="openLightbox(21)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg" alt="Tháp nghiêng Pisa, Ý" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Tháp nghiêng Pisa, Ý</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="22" onclick="openLightbox(22)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" alt="Interlaken và Lucerne, Thụy Sĩ" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Interlaken và Lucerne, Thụy Sĩ</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="23" onclick="openLightbox(23)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg" alt="Lucerne thơ mộng" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Lucerne thơ mộng</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="24" onclick="openLightbox(24)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" alt="Vịnh hẹp Geirangerfjord, Na Uy" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Vịnh hẹp Geirangerfjord, Na Uy</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="25" onclick="openLightbox(25)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg" alt="Cung điện Versailles, Pháp" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Cung điện Versailles, Pháp</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="26" onclick="openLightbox(26)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg" alt="Cối xay gió Hà Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Cối xay gió Hà Lan</div>
+      </div>
+      <div class="gallery-item" data-gallery-index="27" onclick="openLightbox(27)">
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg" alt="Đấu trường La Mã, Ý" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
+        </div>
+        <div class="gallery-item-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="gallery-caption">Đấu trường La Mã, Ý</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1530,7 +1836,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   // ── AOS Init ──────────────────────────────────────────
-  AOS.init({ duration: 850, once: true, offset: 70, disable: () => window.innerWidth < 768 });
+  if (window.AOS) {
+    AOS.init({ duration: 850, once: true, offset: 70, disable: () => window.innerWidth < 768 });
+  }
 
   // ── Navbar scroll ─────────────────────────────────────
   window.addEventListener('scroll', () => {
@@ -1668,26 +1976,7 @@
   }
 ];
   const TOTAL = galleryImages.length;
-  const gallery = document.getElementById('gallery-grid');
-
-  galleryImages.forEach((image, idx) => {
-    const item = document.createElement('div');
-    item.className = image.rotate ? 'gallery-item gallery-rotate' : 'gallery-item';
-    item.setAttribute('data-aos', 'fade-up');
-    item.setAttribute('data-idx', idx);
-    item.innerHTML = `
-      <div class="gallery-img-wrap">
-        <img class="gallery-img" src="${image.src}" alt="${image.title}" loading="lazy" decoding="async">
-      </div>
-      <div class="gallery-item-overlay">
-        <i class="fas fa-search-plus"></i>
-      </div>
-      <div class="gallery-caption">${image.title}</div>`;
-    item.addEventListener('click', () => openLightbox(idx));
-    gallery.appendChild(item);
-  });
-
-  // ── Lightbox ──────────────────────────────────────────
+// ── Lightbox ──────────────────────────────────────────
   let lbCurrent = 0;
   const lbImages = galleryImages.map(image => image.src);
 
