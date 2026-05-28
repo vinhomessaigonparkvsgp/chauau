@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Châu Âu Huyền Diệu | Vietkite Travel Luxury</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,11 +22,11 @@
     }
 
     * { scroll-behavior: smooth; }
-    body { font-family: 'Montserrat', sans-serif; background: #fff; color: var(--dark); overflow-x: hidden; }
+    body { font-family: 'Be Vietnam Pro', Arial, sans-serif; background: #fff; color: var(--dark); overflow-x: hidden; }
     
     /* ──── TYPOGRAPHY ──── */
-    .font-serif { font-family: 'Playfair Display', serif; }
-    .font-elegant { font-family: 'Cormorant Garamond', serif; }
+    .font-serif { font-family: 'Noto Serif', 'Be Vietnam Pro', serif; }
+    .font-elegant { font-family: 'Noto Serif', 'Be Vietnam Pro', serif; }
 
     /* ──── GOLD TEXT GRADIENT ──── */
     .text-gold {
@@ -115,7 +116,7 @@
     }
     #mobile-menu.open { transform: translateX(0); }
     .mobile-nav-link {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Noto Serif', 'Be Vietnam Pro', serif;
       font-size: 28px; color: white; text-decoration: none;
       transition: color 0.3s; letter-spacing: 2px;
     }
@@ -143,7 +144,7 @@
     }
     #hero-bg {
       position: absolute; inset: 0;
-      background: url('https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/1.jpg') center/cover no-repeat;
+      background: url('https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg') center/cover no-repeat;
       transform: scale(1.08);
       animation: heroZoom 18s ease-in-out infinite alternate;
     }
@@ -241,6 +242,13 @@
       animation: lbIn 0.3s ease;
     }
     @keyframes lbIn { from { opacity: 0; transform: scale(0.93); } to { opacity: 1; transform: scale(1); } }
+
+    #lightbox img.lb-rotate {
+      transform: rotate(90deg) scale(0.72);
+      max-width: 88vh;
+      max-height: 88vw;
+    }
+
     #lb-close {
       position: absolute; top: 20px; right: 28px;
       color: white; font-size: 36px; cursor: pointer; line-height: 1;
@@ -285,7 +293,7 @@
     .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(197,160,89,0.12); }
     .testimonial-card::before {
       content: '"'; position: absolute; top: 16px; left: 24px;
-      font-family: 'Playfair Display', serif; font-size: 72px;
+      font-family: 'Noto Serif', 'Be Vietnam Pro', serif; font-size: 72px;
       color: rgba(197,160,89,0.15); line-height: 1;
     }
     .star-rating { color: var(--gold); font-size: 13px; letter-spacing: 2px; }
@@ -307,7 +315,7 @@
       font-size: 42px; font-weight: 700; display: block;
       background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Noto Serif', 'Be Vietnam Pro', serif;
       line-height: 1.1;
     }
     .timer-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2.5px; color: rgba(255,255,255,0.4); margin-top: 6px; }
@@ -317,7 +325,7 @@
       width: 100%; padding: 16px 20px;
       background: white; border: 1.5px solid #e8e8e8;
       border-radius: 14px; outline: none;
-      font-family: 'Montserrat', sans-serif; font-size: 14px;
+      font-family: 'Be Vietnam Pro', Arial, sans-serif; font-size: 14px;
       transition: border-color 0.3s, box-shadow 0.3s;
       color: var(--dark);
     }
@@ -408,6 +416,260 @@
       animation: pulse-ring 1.5s ease-out infinite;
     }
 
+
+
+    /* ──── VIETNAMESE FONT FIX ──── */
+    html, body, input, select, textarea, button { font-family: 'Be Vietnam Pro', Arial, sans-serif; }
+    .font-serif, .font-elegant { font-family: 'Noto Serif', 'Be Vietnam Pro', serif; }
+    em, i { font-synthesis: none; }
+
+    /* ──── UPDATED GALLERY ──── */
+    .gallery-item { background: #f4efe4; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .gallery-item img { min-height: 190px; object-fit: cover; background: #f4efe4; }
+    .gallery-caption {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 34px 14px 12px;
+      color: #fff;
+      font-size: 12px; font-weight: 600; line-height: 1.45;
+      background: linear-gradient(to top, rgba(0,0,0,0.74), rgba(0,0,0,0));
+      opacity: 0; transform: translateY(10px); transition: all 0.35s ease;
+    }
+    .gallery-item:hover .gallery-caption { opacity: 1; transform: translateY(0); }
+    .gallery-count-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(197,160,89,0.10);
+      border: 1px solid rgba(197,160,89,0.28);
+      color: var(--gold-dark);
+      padding: 9px 18px; border-radius: 999px;
+      font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+      margin-top: 18px;
+    }
+
+    /* ──── UPDATED FOOTER ──── */
+    .footer-vietkite {
+      background: #020f08;
+      color: #eef6ee;
+      border-top: 1px solid rgba(197,160,89,0.18);
+    }
+    .footer-vietkite-wrap {
+      max-width: 1180px; margin: 0 auto; padding: 64px 24px 34px;
+      display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px;
+      align-items: start;
+    }
+    .footer-logo {
+      width: 64px; height: 64px; object-fit: contain; background: #fff;
+      display: block; margin-bottom: 24px;
+    }
+    .footer-slogan {
+      font-family: 'Noto Serif', 'Be Vietnam Pro', serif;
+      font-size: 20px; font-style: italic; font-weight: 700;
+      color: rgba(238,246,238,0.58);
+      margin-bottom: 18px; line-height: 1.55;
+    }
+    .footer-desc {
+      color: rgba(238,246,238,0.58); line-height: 1.85; font-size: 15px; max-width: 500px;
+    }
+    .footer-heading {
+      color: #fff; font-size: 14px; font-weight: 800; letter-spacing: 4px;
+      text-transform: uppercase; padding-bottom: 16px; margin-bottom: 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.09);
+    }
+    .footer-phone {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(111,62,10,0.36);
+      border: 1px solid rgba(255,122,26,0.32);
+      color: #ff7a1a; text-decoration: none;
+      border-radius: 14px; padding: 14px 28px; margin-bottom: 24px;
+      font-size: 21px; font-weight: 800; letter-spacing: .5px;
+    }
+    .footer-contact-list { display: grid; gap: 16px; }
+    .footer-contact-row {
+      display: grid; grid-template-columns: 24px 1fr; gap: 12px;
+      color: rgba(238,246,238,0.68); font-size: 15px; line-height: 1.65;
+    }
+    .footer-contact-row .ico { text-align: center; opacity: .88; }
+    .footer-contact-row strong { color: rgba(255,255,255,0.88); font-weight: 800; }
+    .footer-bottom {
+      max-width: 1180px; margin: 0 auto; padding: 20px 24px 32px;
+      color: rgba(255,255,255,0.24); font-size: 10px; letter-spacing: 2.5px;
+      text-transform: uppercase; border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .footer-vietkite-wrap { grid-template-columns: 1fr; gap: 42px; padding-top: 48px; }
+      .footer-slogan { font-size: 18px; }
+      .footer-phone { width: 100%; justify-content: center; font-size: 19px; }
+      .gallery-caption { opacity: 1; transform: none; }
+    }
+
+
+
+    /* ──── FIX 2: CLEAN MOBILE MENU + NO VIETNAMESE FONT BREAK + HERO/GALLERY ──── */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body, input, select, textarea, button,
+    .font-serif, .font-elegant,
+    h1, h2, h3, h4, h5, h6,
+    em, strong, .tour-card, .testimonial-card, .footer-slogan {
+      font-family: 'Be Vietnam Pro', Arial, sans-serif !important;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      font-kerning: normal;
+    }
+    em { font-style: normal !important; }
+
+    #nav {
+      padding-left: clamp(22px, 3vw, 48px) !important;
+      padding-right: clamp(22px, 3vw, 48px) !important;
+    }
+    #nav-links {
+      gap: clamp(18px, 2.1vw, 36px) !important;
+      white-space: nowrap;
+    }
+    #nav-links .btn-gold {
+      padding: 12px 24px !important;
+      min-width: 142px;
+      text-align: center;
+    }
+
+    #hero {
+      padding-top: 92px;
+      min-height: 720px;
+      height: 100svh;
+    }
+    #hero-bg {
+      background-size: cover !important;
+      background-position: center center !important;
+      transform: none !important;
+      animation: none !important;
+    }
+    #hero-content {
+      transform: translateY(24px);
+    }
+    .hero-badge {
+      margin-bottom: 22px !important;
+      letter-spacing: 5px !important;
+    }
+    #hero-title {
+      font-weight: 800 !important;
+      letter-spacing: -0.055em;
+      line-height: 1.02 !important;
+      font-size: clamp(38px, 5.5vw, 76px) !important;
+      text-wrap: balance;
+    }
+    #hero-title .hero-title-main,
+    #hero-title .hero-title-gold {
+      display: block;
+    }
+    #hero-title .hero-title-gold {
+      font-size: .92em;
+      white-space: nowrap;
+      letter-spacing: -0.06em;
+    }
+
+    /* Gallery is now a stable responsive grid, so tall/rotated photos cannot break the layout */
+    .gallery-grid {
+      columns: unset !important;
+      display: grid !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .gallery-item {
+      break-inside: unset !important;
+      margin-bottom: 0 !important;
+      height: 255px;
+      border-radius: 18px !important;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .gallery-item:nth-child(7n + 1) { grid-row: span 2; height: 526px; }
+    .gallery-item:nth-child(9n + 4) { grid-column: span 2; }
+    .gallery-img-wrap {
+      width: 100%; height: 100%; overflow: hidden; background: #f4efe4;
+    }
+    .gallery-item img.gallery-img {
+      width: 100%; height: 100%; min-height: 0 !important;
+      object-fit: cover; display: block;
+      transition: transform 0.55s ease, filter 0.55s ease;
+    }
+    .gallery-item:hover img.gallery-img { transform: scale(1.06); }
+    .gallery-item.gallery-rotate img.gallery-img {
+      width: 100%; height: 100%;
+      transform: rotate(90deg) scale(1.38);
+      object-fit: cover;
+    }
+    .gallery-item.gallery-rotate:hover img.gallery-img {
+      transform: rotate(90deg) scale(1.46);
+    }
+    .gallery-caption {
+      opacity: 1 !important;
+      transform: none !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0 !important;
+    }
+
+    @media (max-width: 1180px) {
+      .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .gallery-item:nth-child(9n + 4) { grid-column: span 1; }
+      #hero-title { font-size: clamp(40px, 7vw, 70px) !important; }
+    }
+
+    @media (max-width: 1024px) {
+      #nav { height: 72px !important; padding: 0 20px !important; }
+      #nav.scrolled { height: 64px !important; }
+      #nav > a { height: 100% !important; padding: 8px 0 !important; }
+      #nav-links { display: none !important; }
+      #hamburger { display: flex !important; }
+      #mobile-menu { z-index: 998; padding-top: 90px; }
+      .mobile-nav-link {
+        font-family: 'Be Vietnam Pro', Arial, sans-serif !important;
+        font-size: 22px !important;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+      #hero {
+        padding-top: 72px;
+        min-height: 720px;
+      }
+      #hero-content { transform: translateY(14px); }
+      #hero-bg { background-position: center center !important; }
+      .hero-badge { font-size: 9px !important; letter-spacing: 3px !important; }
+    }
+
+    @media (max-width: 720px) {
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .gallery-item, .gallery-item:nth-child(7n + 1) { height: 220px; grid-row: auto; }
+      .gallery-item:nth-child(5n + 1) { grid-column: span 2; height: 260px; }
+      #hero { min-height: 690px; }
+      #hero-title {
+        font-size: clamp(36px, 12.2vw, 58px) !important;
+        letter-spacing: -0.065em;
+      }
+      #hero-title .hero-title-gold {
+        white-space: normal;
+        font-size: .92em;
+      }
+      #hero p { max-width: 92vw !important; }
+      #hero .btn-gold, #hero .btn-outline {
+        width: min(310px, 86vw);
+        text-align: center;
+      }
+      #float-btns { right: 14px; bottom: 88px; }
+      .float-btn { width: 50px; height: 50px; }
+    }
+
+    @media (max-width: 420px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item, .gallery-item:nth-child(5n + 1), .gallery-item:nth-child(7n + 1) {
+        grid-column: span 1; height: 255px;
+      }
+      #hero-title { font-size: clamp(34px, 13vw, 50px) !important; }
+      .hero-badge { max-width: 92vw; line-height: 1.6; }
+    }
+
+
     /* ──── SCROLLBAR ──── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #f1f1f1; }
@@ -447,7 +709,7 @@
     <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" 
          style="height:100%;object-fit:contain;display:block;" alt="Vietkite Travel"
          onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-    <span style="display:none;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--dark)">VIETKITE</span>
+    <span style="display:none;font-family:'Noto Serif','Be Vietnam Pro',serif;font-size:18px;font-weight:700;color:var(--dark)">VIETKITE</span>
   </a>
   <ul id="nav-links" style="display:flex;gap:36px;list-style:none;margin:0;padding:0;align-items:center;">
     <li><a href="#about" class="nav-link">Trải nghiệm</a></li>
@@ -479,13 +741,13 @@
 <section id="hero">
   <div id="hero-bg"></div>
   <div id="hero-overlay"></div>
-  <div style="position:relative;z-index:10;text-align:center;padding:0 24px;max-width:860px;margin:0 auto;">
-    <div data-aos="fade-down" style="display:inline-block;margin-bottom:24px;padding:8px 24px;border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(8px);border-radius:999px;color:rgba(255,255,255,0.9);font-size:10px;letter-spacing:4px;text-transform:uppercase;">
+  <div id="hero-content" style="position:relative;z-index:10;text-align:center;padding:0 24px;max-width:920px;margin:0 auto;">
+    <div class="hero-badge" data-aos="fade-down" style="display:inline-block;margin-bottom:24px;padding:8px 24px;border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(8px);border-radius:999px;color:rgba(255,255,255,0.9);font-size:10px;letter-spacing:4px;text-transform:uppercase;">
       ✦ Cơ hội cuối cùng trong năm ✦
     </div>
-    <h1 data-aos="zoom-in" data-aos-delay="150" class="font-serif" style="font-size:clamp(42px,8vw,90px);color:white;line-height:1.1;margin-bottom:20px;font-weight:700;">
-      Chạm Vào<br>
-      <em class="text-gold">Châu Âu Huyền Diệu</em>
+    <h1 id="hero-title" data-aos="zoom-in" data-aos-delay="150" class="font-serif" style="font-size:clamp(42px,8vw,90px);color:white;line-height:1.1;margin-bottom:20px;font-weight:700;">
+      <span class="hero-title-main">Chạm Vào</span>
+      <span class="hero-title-gold text-gold">Châu Âu Huyền Diệu</span>
     </h1>
     <p data-aos="fade-up" data-aos-delay="300" style="color:rgba(255,255,255,0.8);font-size:clamp(14px,2vw,18px);font-weight:300;line-height:1.7;max-width:580px;margin:0 auto 40px;">
       Cùng Vietkite Travel kiến tạo những ký ức không phai — hành trình đẳng cấp 4 sao qua trái tim Châu Âu.
@@ -534,11 +796,11 @@
       </div>
     </div>
     <div data-aos="fade-left" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
-      <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/2.jpg" 
+      <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" 
            style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);margin-top:40px;display:block;"
            alt="Vietkite Travel Châu Âu" loading="lazy"
            onerror="this.src='https://via.placeholder.com/400x500/C5A059/ffffff?text=Châu+Âu'">
-      <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/3.jpg" 
+      <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" 
            style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);display:block;"
            alt="Vietkite Travel Châu Âu" loading="lazy"
            onerror="this.src='https://via.placeholder.com/400x500/C5A059/ffffff?text=Châu+Âu'">
@@ -561,7 +823,7 @@
       <!-- Tour 1: Tây Âu -->
       <div class="tour-card" data-aos="fade-up" data-aos-delay="0">
         <div class="tour-card-img">
-          <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/4.jpg" 
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" 
                alt="Tây Âu Hoa Lệ" loading="lazy"
                onerror="this.src='https://via.placeholder.com/600x400/C5A059/fff?text=Tây+Âu'">
           <div class="tour-card-img-overlay"></div>
@@ -596,7 +858,7 @@
           ⭐ Bán Chạy Nhất
         </div>
         <div class="tour-card-img" style="margin-top:36px;">
-          <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/5.jpg" 
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" 
                alt="Đông Âu Cổ Kính" loading="lazy"
                onerror="this.src='https://via.placeholder.com/600x400/001529/C5A059?text=Đông+Âu'">
           <div class="tour-card-img-overlay"></div>
@@ -627,7 +889,7 @@
       <!-- Tour 3: Bắc Âu -->
       <div class="tour-card" data-aos="fade-up" data-aos-delay="200">
         <div class="tour-card-img">
-          <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/6.jpg" 
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" 
                alt="Bắc Âu Hùng Vĩ" loading="lazy"
                onerror="this.src='https://via.placeholder.com/600x400/C5A059/fff?text=Bắc+Âu'">
           <div class="tour-card-img-overlay"></div>
@@ -660,14 +922,15 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     GALLERY (17 HÌNH + LIGHTBOX)
+     GALLERY (28 HÌNH + LIGHTBOX)
 ══════════════════════════════════════════ -->
 <section id="gallery" style="padding:100px 24px;background:white;">
   <div style="max-width:1400px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
       <span class="section-label">Thư Viện Hình Ảnh</span>
       <h2 class="font-serif" style="font-size:clamp(28px,4vw,56px);margin-bottom:16px;">Cảm Hứng Châu Âu</h2>
-      <p style="color:#999;font-size:14px;font-style:italic;">Hình ảnh thực tế từ khách hàng của Vietkite Travel</p>
+      <p style="color:#777;font-size:14px;line-height:1.8;max-width:620px;margin:0 auto;">Trọn bộ 28 hình ảnh Châu Âu được gắn trực tiếp từ thư mục GitHub — Paris, Venice, Prague, Thụy Sĩ, Bắc Âu, Hà Lan và nhiều điểm đến nổi bật.</p>
+      <div class="gallery-count-pill"><i class="fas fa-images"></i> Đã gắn đủ 28 hình</div>
     </div>
     <div class="gallery-grid" id="gallery-grid">
       <!-- Images 1-17 injected by JS for cleaner code -->
@@ -761,7 +1024,7 @@
           "Chưa bao giờ đi Châu Âu mà thảnh thơi đến thế. Hướng dẫn viên của Vietkite quá nhiệt tình, khách sạn 4 sao trung tâm đúng như cam kết!"
         </p>
         <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/7.jpg" 
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" 
                style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
                alt="Khách hàng" loading="lazy"
                onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=MA'">
@@ -778,7 +1041,7 @@
           "Gia đình tôi 5 người, lo lắng về visa nhưng Vietkite xử lý cực nhanh. Tour Đông Âu Prague cực kỳ ấn tượng, con gái mê Hallstatt lắm!"
         </p>
         <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/8.jpg" 
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" 
                style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
                alt="Khách hàng" loading="lazy"
                onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=TH'">
@@ -795,7 +1058,7 @@
           "Du thuyền Bắc Âu là trải nghiệm không thể quên trong đời. Vietkite lo từng chi tiết nhỏ, tôi chỉ việc tận hưởng. Năm sau chắc chắn đăng ký tiếp!"
         </p>
         <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/9.jpg" 
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" 
                style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
                alt="Khách hàng" loading="lazy"
                onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=LA'">
@@ -879,71 +1142,45 @@
 <!-- ══════════════════════════════════════════
      FOOTER
 ══════════════════════════════════════════ -->
-<footer style="background:var(--dark);">
-  <div style="max-width:1200px;margin:0 auto;padding:80px 24px 40px;">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:60px;" class="footer-grid">
-      <div>
-        <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" 
-             style="height:48px;margin-bottom:24px;filter:brightness(0) invert(1);display:block;object-fit:contain;"
-             alt="Vietkite"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-        <span class="font-serif" style="display:none;color:white;font-size:20px;font-weight:700;margin-bottom:24px;display:block;">VIETKITE TRAVEL</span>
-        <p style="color:rgba(255,255,255,0.4);line-height:1.8;font-size:14px;max-width:280px;">
-          Thương hiệu hàng đầu chuyên tổ chức tour Châu Âu cao cấp. Kiến tạo những hành trình độc bản dành riêng cho quý khách.
-        </p>
-      </div>
-      <div>
-        <h4 class="font-serif" style="color:var(--gold);font-size:18px;margin-bottom:24px;font-style:italic;">Chính sách đoàn</h4>
-        <ul style="color:rgba(255,255,255,0.45);font-size:13px;line-height:2;list-style:none;padding:0;">
-          <li>• Giá tour áp dụng từ 20 khách người lớn</li>
-          <li>• Ưu đãi trẻ em 30%–90% tùy độ tuổi</li>
-          <li>• Chuẩn bị hồ sơ trước khởi hành 45 ngày</li>
-          <li>• Trưởng đoàn VN theo suốt hành trình</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-serif" style="color:var(--gold);font-size:18px;margin-bottom:24px;font-style:italic;">Liên hệ</h4>
-        <ul style="color:rgba(255,255,255,0.45);font-size:13px;line-height:2;list-style:none;padding:0;">
-          <li><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:8px;"></i>276 Nơ Trang Long, P.12, Q. Bình Thạnh, TP.HCM</li>
-          <li style="margin-top:8px;"><i class="fas fa-globe" style="color:var(--gold);margin-right:8px;"></i>vietkite.com.vn</li>
-        </ul>
-        <div style="display:flex;gap:12px;margin-top:24px;">
-          <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.3s;text-decoration:none;"
-             onmouseover="this.style.background='var(--gold)';this.style.color='white'"
-             onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.3s;text-decoration:none;"
-             onmouseover="this.style.background='var(--gold)';this.style.color='white'"
-             onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="#" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);transition:all 0.3s;text-decoration:none;"
-             onmouseover="this.style.background='var(--gold)';this.style.color='white'"
-             onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">
-            <i class="fab fa-tiktok"></i>
-          </a>
-        </div>
-      </div>
+<footer class="footer-vietkite">
+  <div class="footer-vietkite-wrap footer-grid">
+    <div>
+      <img class="footer-logo" src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" alt="Vietkite Travel">
+      <div class="footer-slogan">Đồng hành cùng bạn trong mọi chuyến đi</div>
+      <p class="footer-desc">
+        Công ty TNHH TM DV Du Lịch Vietkite — đơn vị lữ hành chuyên nghiệp tổ chức tour trong và ngoài nước,
+        teambuilding, visa và vé máy bay từ năm 2011.
+      </p>
     </div>
-    <div style="text-align:center;padding-top:32px;font-size:10px;color:rgba(255,255,255,0.2);letter-spacing:3px;text-transform:uppercase;">
-      © 2025 VIETKITE LUXURY TRAVEL. All Rights Reserved.
+
+    <div>
+      <div class="footer-heading">Liên hệ</div>
+      <a class="footer-phone" href="tel:+84912992447"><i class="fas fa-phone"></i> 0912.992.447</a>
+      <div class="footer-contact-list">
+        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 1:</strong> 276 Nơ Trang Long, Phường Bình Thạnh, TP HCM, Việt Nam</span></div>
+        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 2:</strong> 160/25/31 Bùi Đình Túy, khu phố 17, Phường Bình Thạnh, TP Hồ Chí Minh, Việt Nam</span></div>
+        <div class="footer-contact-row"><span class="ico">✉️</span><span>info@vietkite.com.vn</span></div>
+        <div class="footer-contact-row"><span class="ico">🕘</span><span>Thứ 2–6: 8:30–17:30<br>Thứ 7: 8:30–12:00</span></div>
+        <div class="footer-contact-row"><span class="ico">🔢</span><span><strong>MST:</strong> 0311304593</span></div>
+        <div class="footer-contact-row"><span class="ico">🏢</span><span><strong>Thành lập:</strong> 02/11/2011</span></div>
+      </div>
     </div>
   </div>
+  <div class="footer-bottom">© 2026 VIETKITE TRAVEL. All Rights Reserved.</div>
 </footer>
 
 <!-- ══════════════════════════════════════════
      FLOATING BUTTONS
 ══════════════════════════════════════════ -->
 <div id="float-btns">
-  <a href="https://zalo.me/" class="float-btn float-zalo" title="Chat Zalo" target="_blank">
+  <a href="https://zalo.me/84912992447" class="float-btn float-zalo" title="Chat Zalo" target="_blank">
     <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="48" height="48" rx="24" fill="#0068FF"/>
       <path d="M24 8C15.163 8 8 14.716 8 23c0 4.573 2.197 8.674 5.664 11.47L12 38l5.122-1.637C18.924 37.41 21.4 38 24 38c8.837 0 16-6.716 16-15S32.837 8 24 8z" fill="white"/>
       <text x="24" y="28" text-anchor="middle" fill="#0068FF" font-size="12" font-weight="bold" font-family="Arial">Zalo</text>
     </svg>
   </a>
-  <a href="tel:+84" class="float-btn float-phone" title="Gọi ngay">
+  <a href="tel:+84912992447" class="float-btn float-phone" title="Gọi ngay">
     <i class="fas fa-phone"></i>
   </a>
 </div>
@@ -977,34 +1214,154 @@
     document.body.style.overflow = '';
   }
 
-  // ── Gallery inject ────────────────────────────────────
-  const BASE = 'https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/';
-  const TOTAL = 17;
+  // ── Gallery inject: 28 real GitHub images ─────────────────
+  const galleryImages = [
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg",
+    "title": "Cầu Charles và Lâu đài Prague, Cộng hòa Séc"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg",
+    "title": "Amsterdam, Hà Lan"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg",
+    "title": "Bảo tàng Louvre, Pháp"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif",
+    "title": "Cầu Charles và Lâu đài Prague"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg",
+    "title": "Làng Santa Claus, Rovaniemi, Phần Lan"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg",
+    "title": "Làng Santa Claus, Phần Lan"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg",
+    "title": "Rovaniemi mùa đông, Phần Lan"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg",
+    "title": "Không khí Giáng sinh tại Rovaniemi"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg",
+    "title": "Làng Santa Claus tuyết trắng"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg",
+    "title": "Trải nghiệm Bắc Âu tại Phần Lan"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg",
+    "title": "Phong cảnh Na Uy"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg",
+    "title": "Na Uy hùng vĩ"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg",
+    "title": "Cáp treo núi tuyết Titlis"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg",
+    "title": "Trượt tuyết tại núi Titlis"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg",
+    "title": "Núi tuyết Titlis quanh năm"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg",
+    "title": "Thành phố nổi Venice, Ý"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg",
+    "title": "Kênh đào Venice",
+    "rotate": true
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg",
+    "title": "Venice lãng mạn",
+    "rotate": true
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg",
+    "title": "Tháp Eiffel và Khải Hoàn Môn"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg",
+    "title": "Tháp Eiffel, Paris"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg",
+    "title": "Paris và Tháp Eiffel"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg",
+    "title": "Tháp nghiêng Pisa, Ý"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg",
+    "title": "Interlaken và Lucerne, Thụy Sĩ"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg",
+    "title": "Lucerne thơ mộng"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg",
+    "title": "Vịnh hẹp Geirangerfjord, Na Uy"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg",
+    "title": "Cung điện Versailles, Pháp"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg",
+    "title": "Cối xay gió Hà Lan"
+  },
+  {
+    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg",
+    "title": "Đấu trường La Mã, Ý"
+  }
+];
+  const TOTAL = galleryImages.length;
   const gallery = document.getElementById('gallery-grid');
-  for (let i = 1; i <= TOTAL; i++) {
-    const url = BASE + i + '.jpg';
+
+  galleryImages.forEach((image, idx) => {
     const item = document.createElement('div');
-    item.className = 'gallery-item';
+    item.className = image.rotate ? 'gallery-item gallery-rotate' : 'gallery-item';
     item.setAttribute('data-aos', 'fade-up');
-    item.setAttribute('data-idx', i - 1);
+    item.setAttribute('data-idx', idx);
     item.innerHTML = `
-      <img src="${url}" alt="Châu Âu ${i}" loading="lazy" 
-           onerror="this.parentElement.style.display='none'">
+      <div class="gallery-img-wrap">
+        <img class="gallery-img" src="${image.src}" alt="${image.title}" loading="lazy" decoding="async">
+      </div>
       <div class="gallery-item-overlay">
         <i class="fas fa-search-plus"></i>
-      </div>`;
-    item.addEventListener('click', () => openLightbox(i - 1));
+      </div>
+      <div class="gallery-caption">${image.title}</div>`;
+    item.addEventListener('click', () => openLightbox(idx));
     gallery.appendChild(item);
-  }
+  });
 
   // ── Lightbox ──────────────────────────────────────────
   let lbCurrent = 0;
-  const lbImages = Array.from({ length: TOTAL }, (_, i) => BASE + (i + 1) + '.jpg');
+  const lbImages = galleryImages.map(image => image.src);
 
   function openLightbox(idx) {
     lbCurrent = idx;
-    document.getElementById('lb-img').src = lbImages[idx];
-    document.getElementById('lb-counter').textContent = (idx + 1) + ' / ' + TOTAL;
+    const lbImg = document.getElementById('lb-img');
+    lbImg.src = lbImages[idx];
+    lbImg.alt = galleryImages[idx].title;
+    lbImg.classList.toggle('lb-rotate', !!galleryImages[idx].rotate);
+    document.getElementById('lb-counter').textContent = (idx + 1) + ' / ' + TOTAL + ' — ' + galleryImages[idx].title;
     document.getElementById('lightbox').classList.add('active');
     document.body.style.overflow = 'hidden';
   }
@@ -1016,9 +1373,12 @@
     lbCurrent = (lbCurrent + dir + TOTAL) % TOTAL;
     document.getElementById('lb-img').style.opacity = '0';
     setTimeout(() => {
-      document.getElementById('lb-img').src = lbImages[lbCurrent];
-      document.getElementById('lb-img').style.opacity = '1';
-      document.getElementById('lb-counter').textContent = (lbCurrent + 1) + ' / ' + TOTAL;
+      const lbImg = document.getElementById('lb-img');
+      lbImg.src = lbImages[lbCurrent];
+      lbImg.alt = galleryImages[lbCurrent].title;
+      lbImg.classList.toggle('lb-rotate', !!galleryImages[lbCurrent].rotate);
+      lbImg.style.opacity = '1';
+      document.getElementById('lb-counter').textContent = (lbCurrent + 1) + ' / ' + TOTAL + ' — ' + galleryImages[lbCurrent].title;
     }, 150);
   }
   document.getElementById('lightbox').addEventListener('click', function(e) {
@@ -1105,7 +1465,7 @@
     if (fr) fr.style.gridTemplateColumns = w < 640 ? '1fr' : '1fr 1fr';
     // Footer
     const fg = document.querySelector('.footer-grid');
-    if (fg) fg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : '1fr 1fr 1fr';
+    if (fg) fg.style.gridTemplateColumns = w < 768 ? '1fr' : '0.9fr 1.1fr';
     // Tour card center featured
     if (w < 768) {
       const featured = document.querySelector('.tour-card[style*="translateY(-12px)"]');
