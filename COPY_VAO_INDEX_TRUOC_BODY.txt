@@ -1,5 +1,0 @@
-Dán đúng 1 dòng này vào index.html, ngay trước thẻ đóng </body>:
-
-<script src="/assets/cms-bind.js" defer></script>
-
-Không cần đổi layout, không cần đổi CSS, không thay toàn bộ index.
