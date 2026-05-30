@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>CMS Vietkite Travel</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    :root{
+      --cms-bg:#0d1724;
+      --cms-gold:#d7a84f;
+      --cms-cream:#fff7e8;
+      --cms-card:#132238;
+    }
+    html,body{margin:0;min-height:100%;background:var(--cms-bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+    body::before{
+      content:"VIETKITE CMS";
+      position:fixed;
+      right:22px;
+      bottom:18px;
+      z-index:999999;
+      color:rgba(255,247,232,.16);
+      font-weight:900;
+      letter-spacing:.18em;
+      pointer-events:none;
+    }
+    #cms-loading{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding:24px;
+      background:
+        radial-gradient(circle at 20% 0%,rgba(215,168,79,.24),transparent 32%),
+        linear-gradient(135deg,#0d1724,#132238 55%,#0d1724);
+      color:var(--cms-cream);
+      text-align:center;
+    }
+    .cms-card{
+      width:min(620px,100%);
+      border:1px solid rgba(215,168,79,.28);
+      border-radius:32px;
+      padding:36px;
+      background:rgba(255,255,255,.07);
+      backdrop-filter:blur(20px);
+      box-shadow:0 30px 90px rgba(0,0,0,.28);
+    }
+    .cms-logo{
+      width:76px;height:76px;border-radius:24px;object-fit:cover;background:#fff;margin:0 auto 20px;
+      box-shadow:0 16px 46px rgba(215,168,79,.25);
+    }
+    h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2rem,7vw,4rem);line-height:1;margin:0 0 12px;color:#f4d68e}
+    p{margin:0;color:rgba(255,247,232,.78);font-size:1.05rem}
+    .cms-note{margin-top:18px;font-size:.92rem;color:rgba(255,247,232,.55)}
+
+    /* Làm giao diện Decap mềm và sang hơn */
+    [class*="AppHeader"]{background:#0d1724!important;border-bottom:1px solid rgba(215,168,79,.18)!important}
+    [class*="Sidebar"]{background:#101d30!important;border-right:1px solid rgba(215,168,79,.14)!important}
+    [class*="CollectionTopContainer"],[class*="EditorContainer"],[class*="ControlPaneContainer"]{background:#fffaf0!important}
+    [class*="Card"],[class*="EditorControlBar"]{border-radius:18px!important}
+    button[class*="Button"],a[class*="Button"]{border-radius:999px!important;font-weight:800!important}
+    [class*="WorkflowTopContainer"]{background:#fff7e8!important}
+  </style>
+</head>
+<body>
+  <div id="cms-loading">
+    <div class="cms-card">
+      <img class="cms-logo" src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" alt="Vietkite" />
+      <h1>Vietkite CMS</h1>
+      <p>Khu vực quản trị nội dung: thay text, thay ảnh, chỉnh tour, bảng giá, thư viện và thông tin liên hệ.</p>
+      <p class="cms-note">Đang mở giao diện quản trị...</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      var loading = document.getElementById('cms-loading');
+      if (loading) setTimeout(function(){ loading.remove(); }, 900);
+      if (window.CMS) {
+        CMS.registerPreviewStyle('/admin/preview.css');
+      }
+    });
+  </script>
+</body>
+</html>

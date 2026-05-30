@@ -1,1966 +1,746 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Châu Âu Huyền Diệu | Vietkite Travel Luxury</title>
-
-  <!-- ══ FAVICON ══ -->
-  <link rel="icon" type="image/jpeg" href="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg">
-  <link rel="shortcut icon" type="image/jpeg" href="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg">
-  <link rel="apple-touch-icon" href="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg">
-
-  <!-- ══ OPEN GRAPH / ZALO / FACEBOOK PREVIEW ══ -->
-  <meta property="og:title" content="Châu Âu Huyền Diệu | Vietkite Travel Luxury">
-  <meta property="og:description" content="Cùng Vietkite Travel kiến tạo những ký ức không phai — hành trình đẳng cấp 4 sao qua trái tim Châu Âu. Ưu đãi giảm 7 triệu!">
-  <meta property="og:image" content="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://tourchauauvietkite.click/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Vietkite Travel">
-  <meta name="description" content="Cùng Vietkite Travel kiến tạo những ký ức không phai — hành trình đẳng cấp 4 sao qua trái tim Châu Âu. Ưu đãi giảm 7 triệu!">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Châu Âu Huyền Diệu | Vietkite Travel</title>
+  <meta name="description" content="Tour Châu Âu cao cấp cùng Vietkite Travel: Tây Âu, Đông Âu, Bắc Âu, khách sạn 4 sao, hỗ trợ Visa Schengen và trưởng đoàn tận tâm." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://tourchauauvietkite.click/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:site_name" content="Vietkite Travel" />
+  <meta property="og:title" content="Châu Âu Huyền Diệu | Vietkite Travel" />
+  <meta property="og:description" content="Tour Châu Âu cao cấp cùng Vietkite Travel: Tây Âu, Đông Âu, Bắc Âu, khách sạn 4 sao, hỗ trợ Visa Schengen và trưởng đoàn tận tâm." />
+  <meta property="og:image" content="/CHÂU ÂU/Tháp Eiffel va khải hoàn môn.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0e1a2a" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
-    :root {
-      --gold: #C5A059;
-      --gold-light: #E8C97B;
-      --gold-dark: #8B6914;
-      --dark: #001529;
-      --dark2: #002347;
-      --cream: #FDFAF5;
+    :root{
+      --bg:#0d1724;
+      --bg-soft:#132238;
+      --card:#fffdf8;
+      --ink:#132238;
+      --muted:#6b7280;
+      --cream:#fff7e8;
+      --gold:#d7a84f;
+      --gold-dark:#9b6a21;
+      --accent:#1c7c73;
+      --white:#ffffff;
+      --shadow:0 24px 70px rgba(13,23,36,.18);
+      --radius:28px;
+      --font-heading:Georgia,'Times New Roman',serif;
+      --font-body:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     }
 
-    * { scroll-behavior: smooth; }
-    body { font-family: 'Be Vietnam Pro', Arial, sans-serif; background: #fff; color: var(--dark); overflow-x: hidden; }
-    
-    /* ──── TYPOGRAPHY ──── */
-    .font-serif { font-family: 'Noto Serif', 'Be Vietnam Pro', serif; }
-    .font-elegant { font-family: 'Noto Serif', 'Be Vietnam Pro', serif; }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:var(--font-body);
+      color:var(--ink);
+      background:var(--cream);
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    body.menu-open{overflow:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
 
-    /* ──── GOLD TEXT GRADIENT ──── */
-    .text-gold {
-      background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 40%, #B38728 60%, #FBF5B7 80%, #AA771C 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .site-loader{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      background:radial-gradient(circle at top,var(--bg-soft),var(--bg));
+      color:var(--cream);
+      padding:24px;
+      text-align:center;
     }
-    .text-gold-solid { color: var(--gold); }
+    .site-loader__mark{
+      width:64px;height:64px;border-radius:50%;
+      border:1px solid rgba(215,168,79,.45);
+      border-top-color:var(--gold);
+      animation:spin 1s linear infinite;
+      margin:0 auto 18px;
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
 
-    /* ──── BUTTONS ──── */
-    .btn-gold {
-      background: linear-gradient(135deg, #BF953F 0%, #C8A84B 50%, #B38728 100%);
-      color: #fff;
-      padding: 16px 44px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      transition: all 0.4s ease;
-      box-shadow: 0 8px 25px rgba(179,135,40,0.35);
-      display: inline-block;
-      cursor: pointer;
-      border: none;
-      text-decoration: none;
-      position: relative;
-      overflow: hidden;
-    }
-    .btn-gold::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, #D4A84B, #E8C97B, #BF953F);
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
-    .btn-gold:hover::before { opacity: 1; }
-    .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(179,135,40,0.5); }
-    .btn-gold span { position: relative; z-index: 1; }
+    .site-shell{display:none;min-height:100vh;background:var(--cream)}
+    .site-shell.is-ready{display:block}
 
-    .btn-outline {
-      padding: 16px 44px;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      transition: all 0.4s ease;
-      border: 1.5px solid rgba(255,255,255,0.6);
-      color: #fff;
-      display: inline-block;
-      cursor: pointer;
-      text-decoration: none;
+    .container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+    .section{padding:96px 0;position:relative}
+    .section--dark{background:var(--bg);color:var(--white)}
+    .section--soft{background:#fbf0d9}
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:var(--gold-dark);
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      font-size:.76rem;
     }
-    .btn-outline:hover { background: rgba(255,255,255,0.15); border-color: white; transform: translateY(-2px); }
+    .section--dark .eyebrow{color:#f2d694}
+    .eyebrow::before,.eyebrow::after{content:"";width:28px;height:1px;background:currentColor;opacity:.65}
+    h1,h2,h3,p{margin:0}
+    h1,h2,h3{font-family:var(--font-heading);font-weight:700;line-height:1.05;letter-spacing:-.035em}
+    h1{font-size:clamp(3rem,9vw,7.8rem)}
+    h2{font-size:clamp(2.35rem,5.4vw,4.8rem)}
+    h3{font-size:clamp(1.35rem,2.4vw,2rem)}
+    .lead{font-size:clamp(1rem,2vw,1.24rem);color:rgba(255,255,255,.82);max-width:680px}
+    .section-intro{display:grid;gap:18px;max-width:760px;margin-bottom:42px}
+    .text-muted{color:var(--muted)}
 
-    /* ──── NAV ──── */
-    #nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-      height: 80px;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 48px;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(197,160,89,0.15);
-      transition: all 0.4s;
+    .topbar{
+      position:fixed;
+      inset:0 0 auto 0;
+      z-index:100;
+      padding:16px 0;
+      transition:.25s ease;
+      color:var(--white);
     }
-    #nav.scrolled { height: 68px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
-    .nav-link {
-      font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-      color: var(--dark); transition: color 0.3s; text-decoration: none; position: relative;
+    .topbar.is-scrolled{
+      background:rgba(13,23,36,.88);
+      backdrop-filter:blur(16px);
+      box-shadow:0 16px 50px rgba(0,0,0,.18);
     }
-    .nav-link::after {
-      content: ''; position: absolute; bottom: -3px; left: 0; right: 0; height: 1px;
-      background: var(--gold); transform: scaleX(0); transition: transform 0.3s; transform-origin: left;
+    .nav{
+      width:min(1220px,calc(100% - 32px));
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
     }
-    .nav-link:hover { color: var(--gold); }
-    .nav-link:hover::after { transform: scaleX(1); }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .brand-logo{width:42px;height:42px;border-radius:50%;object-fit:cover;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28)}
+    .brand-name{font-size:.95rem}
+    .nav-links{display:flex;align-items:center;gap:8px}
+    .nav-link{padding:10px 13px;border-radius:999px;font-weight:700;font-size:.92rem;color:rgba(255,255,255,.86);transition:.2s ease}
+    .nav-link:hover{background:rgba(255,255,255,.12);color:#fff}
+    .nav-cta{background:var(--gold);color:#241600;padding:11px 17px;border-radius:999px;font-weight:900;box-shadow:0 12px 34px rgba(215,168,79,.28)}
+    .menu-toggle{display:none;border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:14px;padding:10px 12px;font-weight:900}
 
-    /* ──── MOBILE MENU ──── */
-    #mobile-menu {
-      position: fixed; inset: 0; z-index: 998;
-      background: var(--dark);
-      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px;
-      transform: translateX(100%);
-      transition: transform 0.5s cubic-bezier(0.77,0,0.175,1);
-    }
-    #mobile-menu.open { transform: translateX(0); }
-    .mobile-nav-link {
-      font-family: 'Noto Serif', 'Be Vietnam Pro', serif;
-      font-size: 28px; color: white; text-decoration: none;
-      transition: color 0.3s; letter-spacing: 2px;
-    }
-    .mobile-nav-link:hover { color: var(--gold); }
-    #hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1000; }
-    #hamburger span {
-      display: block; width: 26px; height: 2px; background: var(--dark);
-      transition: all 0.4s;
-    }
-    #hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    #hamburger.active span:nth-child(2) { opacity: 0; }
-    #hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-    #hamburger.active span { background: white; }
-    @media (max-width: 1024px) {
-      #hamburger { display: flex; }
-      #nav-links { display: none; }
-      #nav { padding: 0 24px; }
-    }
-
-    /* ──── HERO ──── */
-    #hero {
-      position: relative; height: 100vh; min-height: 700px;
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden;
-    }
-    #hero-bg {
-      position: absolute; inset: 0;
-      background: url('https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.png') center/cover no-repeat;
-      transform: scale(1.08);
-      animation: heroZoom 18s ease-in-out infinite alternate;
-    }
-    @keyframes heroZoom { from { transform: scale(1.08); } to { transform: scale(1.0); } }
-    #hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(160deg, rgba(0,0,0,0.55) 0%, rgba(0,21,41,0.4) 50%, rgba(0,0,0,0.6) 100%);
-    }
-
-    /* ──── ABOUT ──── */
-    .stat-card {
-      padding: 28px 24px; text-align: center;
-      border: 1px solid rgba(197,160,89,0.2);
-      border-radius: 16px;
-      transition: all 0.4s;
-      background: white;
-    }
-    .stat-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(197,160,89,0.15); }
-
-    /* ──── TOURS ──── */
-    .tour-card {
-      border-radius: 20px; overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-      transition: all 0.5s ease;
-      background: white;
-      position: relative;
-    }
-    .tour-card:hover { transform: translateY(-8px); box-shadow: 0 24px 60px rgba(0,0,0,0.18); }
-    .tour-card-img { position: relative; height: 280px; overflow: hidden; }
-    .tour-card-img img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 0.6s ease;
-    }
-    .tour-card:hover .tour-card-img img { transform: scale(1.08); }
-    .tour-card-img-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(0,21,41,0.7) 0%, transparent 60%);
-    }
-    .tour-badge {
-      position: absolute; top: 16px; left: 16px;
-      background: var(--gold); color: white;
-      font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-      padding: 6px 14px; border-radius: 999px;
-    }
-    .tour-highlight {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 13px; color: #555; padding: 8px 0;
-      border-bottom: 1px solid #f0f0f0;
-    }
-    .tour-highlight:last-child { border-bottom: none; }
-    .tour-highlight i { color: var(--gold); width: 16px; }
-
-    /* ──── GALLERY ──── */
-    .gallery-grid {
-      columns: 2; column-gap: 12px;
-    }
-    @media (min-width: 640px) { .gallery-grid { columns: 3; } }
-    @media (min-width: 1024px) { .gallery-grid { columns: 4; } }
-    .gallery-item {
-      break-inside: avoid; margin-bottom: 12px;
-      border-radius: 12px; overflow: hidden;
-      position: relative; cursor: pointer;
-      transition: all 0.4s ease;
-    }
-    .gallery-item img {
-      width: 100%; display: block;
-      transition: all 0.5s ease;
-    }
-    .gallery-item-overlay {
-      position: absolute; inset: 0;
-      background: rgba(0,21,41,0);
-      display: flex; align-items: center; justify-content: center;
-      transition: all 0.4s;
-    }
-    .gallery-item-overlay i {
-      color: white; font-size: 28px;
-      opacity: 0; transform: scale(0.7);
-      transition: all 0.4s;
-    }
-    .gallery-item:hover { transform: scale(1.01); box-shadow: 0 12px 35px rgba(0,0,0,0.2); }
-    .gallery-item:hover .gallery-item-overlay { background: rgba(0,21,41,0.4); }
-    .gallery-item:hover .gallery-item-overlay i { opacity: 1; transform: scale(1); }
-
-    /* ──── LIGHTBOX ──── */
-    #lightbox {
-      display: none; position: fixed; inset: 0; z-index: 9999;
-      background: rgba(0,0,0,0.95);
-      align-items: center; justify-content: center;
-    }
-    #lightbox.active { display: flex; }
-    #lightbox img {
-      max-width: 90vw; max-height: 88vh;
-      border-radius: 8px;
-      object-fit: contain;
-      animation: lbIn 0.3s ease;
-    }
-    @keyframes lbIn { from { opacity: 0; transform: scale(0.93); } to { opacity: 1; transform: scale(1); } }
-
-    #lightbox img.lb-rotate {
-      transform: rotate(90deg) scale(0.72);
-      max-width: 88vh;
-      max-height: 88vw;
-    }
-
-    #lb-close {
-      position: absolute; top: 20px; right: 28px;
-      color: white; font-size: 36px; cursor: pointer; line-height: 1;
-      transition: color 0.3s; z-index: 2;
-    }
-    #lb-close:hover { color: var(--gold); }
-    #lb-prev, #lb-next {
-      position: absolute; top: 50%; transform: translateY(-50%);
-      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-      color: white; width: 52px; height: 52px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer; transition: all 0.3s; font-size: 18px;
-    }
-    #lb-prev { left: 20px; }
-    #lb-next { right: 20px; }
-    #lb-prev:hover, #lb-next:hover { background: var(--gold); border-color: var(--gold); }
-    #lb-counter {
-      position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
-      color: rgba(255,255,255,0.6); font-size: 13px; letter-spacing: 2px;
-    }
-
-    /* ──── PRICING ──── */
-    .price-card {
-      background: white; border: 1.5px solid #eee;
-      border-radius: 24px; padding: 40px 32px;
-      text-align: center; transition: all 0.4s;
-      position: relative; overflow: hidden;
-    }
-    .price-card:hover { border-color: var(--gold); transform: translateY(-8px); box-shadow: 0 24px 60px rgba(197,160,89,0.15); }
-    .price-card.featured { background: var(--dark); color: white; border-color: var(--gold); }
-    .price-card.featured:hover { transform: translateY(-8px) scale(1.01); }
-    .price-check { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; text-align: left; }
-    .price-check i { color: var(--gold); flex-shrink: 0; }
-
-    /* ──── TESTIMONIALS ──── */
-    .testimonial-card {
-      background: var(--cream); border-radius: 20px;
-      padding: 32px; position: relative;
-      border: 1px solid rgba(197,160,89,0.15);
-      transition: all 0.4s;
-    }
-    .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(197,160,89,0.12); }
-    .testimonial-card::before {
-      content: '"'; position: absolute; top: 16px; left: 24px;
-      font-family: 'Noto Serif', 'Be Vietnam Pro', serif; font-size: 72px;
-      color: rgba(197,160,89,0.15); line-height: 1;
-    }
-    .star-rating { color: var(--gold); font-size: 13px; letter-spacing: 2px; }
-
-    /* ──── COUNTDOWN ──── */
-    .timer-box {
-      background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
-      border-radius: 24px; padding: 40px;
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-    }
-    .timer-unit {
-      text-align: center; padding: 20px 12px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(197,160,89,0.2);
-      border-radius: 16px;
-    }
-    .timer-num {
-      font-size: 42px; font-weight: 700; display: block;
-      background: linear-gradient(135deg, #BF953F, #FCF6BA, #B38728);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-      font-family: 'Noto Serif', 'Be Vietnam Pro', serif;
-      line-height: 1.1;
-    }
-    .timer-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2.5px; color: rgba(255,255,255,0.4); margin-top: 6px; }
-
-    /* ──── BOOKING FORM ──── */
-    .form-input {
-      width: 100%; padding: 16px 20px;
-      background: white; border: 1.5px solid #e8e8e8;
-      border-radius: 14px; outline: none;
-      font-family: 'Be Vietnam Pro', Arial, sans-serif; font-size: 14px;
-      transition: border-color 0.3s, box-shadow 0.3s;
-      color: var(--dark);
-    }
-    .form-input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(197,160,89,0.15); }
-    .form-input::placeholder { color: #bbb; }
-
-    /* ──── SOCIAL PROOF ──── */
-    #social-proof {
-      position: fixed; bottom: 32px; left: 28px; z-index: 997;
-      background: white; padding: 14px 22px;
-      border-radius: 14px;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-      display: flex; align-items: center; gap: 14px;
-      border-left: 4px solid var(--gold);
-      transform: translateX(-140%);
-      transition: transform 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
-      max-width: 320px;
-    }
-    #social-proof.show { transform: translateX(0); }
-    .sp-icon {
-      width: 40px; height: 40px; border-radius: 50%;
-      background: linear-gradient(135deg, #BF953F, #B38728);
-      display: flex; align-items: center; justify-content: center;
-      color: white; font-size: 15px; flex-shrink: 0;
-    }
-
-    /* ──── FLOATING BUTTONS ──── */
-    #float-btns {
-      position: fixed; right: 24px; bottom: 100px; z-index: 997;
-      display: flex; flex-direction: column; gap: 12px; align-items: center;
-    }
-    .float-btn {
-      width: 52px; height: 52px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      color: white; font-size: 22px; cursor: pointer;
-      transition: all 0.3s; text-decoration: none;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    }
-    .float-btn:hover { transform: scale(1.1) translateY(-3px); }
-    .float-zalo { background: #0068FF; }
-    .float-phone { background: linear-gradient(135deg, #BF953F, #B38728); }
-
-    /* ──── BACK TO TOP ──── */
-    #back-top {
-      position: fixed; right: 24px; bottom: 32px; z-index: 997;
-      width: 46px; height: 46px; border-radius: 50%;
-      background: var(--dark); color: white;
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer; transition: all 0.4s;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-      opacity: 0; pointer-events: none;
-    }
-    #back-top.show { opacity: 1; pointer-events: all; }
-    #back-top:hover { background: var(--gold); transform: translateY(-3px); }
-
-    /* ──── DIVIDER ──── */
-    .gold-divider {
-      display: flex; align-items: center; gap: 16px; justify-content: center;
-      margin: 16px 0;
-    }
-    .gold-divider::before, .gold-divider::after {
-      content: ''; flex: 1; max-width: 80px; height: 1px;
-      background: linear-gradient(to right, transparent, var(--gold));
-    }
-    .gold-divider::after { background: linear-gradient(to left, transparent, var(--gold)); }
-
-    /* ──── FOOTER ──── */
-    footer { background: var(--dark); color: white; }
-
-    /* ──── IMAGE FALLBACK ──── */
-    img { background-color: #f0ece4; }
-
-    /* ──── SECTION LABEL ──── */
-    .section-label {
-      font-size: 10px; font-weight: 700; letter-spacing: 4px;
-      text-transform: uppercase; color: var(--gold);
-      margin-bottom: 12px; display: block;
-    }
-
-    /* ──── ANIMATIONS ──── */
-    @keyframes pulse-ring {
-      0% { transform: scale(1); opacity: 0.7; }
-      100% { transform: scale(1.4); opacity: 0; }
-    }
-    .pulse-dot::before {
-      content: ''; position: absolute; inset: -6px;
-      border-radius: 50%; border: 2px solid var(--gold);
-      animation: pulse-ring 1.5s ease-out infinite;
-    }
-
-    /* ──── VIETNAMESE FONT FIX ──── */
-    html, body, input, select, textarea, button { font-family: 'Be Vietnam Pro', Arial, sans-serif; }
-    .font-serif, .font-elegant { font-family: 'Noto Serif', 'Be Vietnam Pro', serif; }
-    em, i { font-synthesis: none; }
-
-    /* ──── UPDATED GALLERY ──── */
-    .gallery-item { background: #f4efe4; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-    .gallery-item img { min-height: 190px; object-fit: cover; background: #f4efe4; }
-    .gallery-caption {
-      position: absolute; left: 0; right: 0; bottom: 0;
-      padding: 34px 14px 12px;
-      color: #fff;
-      font-size: 12px; font-weight: 600; line-height: 1.45;
-      background: linear-gradient(to top, rgba(0,0,0,0.74), rgba(0,0,0,0));
-      opacity: 0; transform: translateY(10px); transition: all 0.35s ease;
-    }
-    .gallery-item:hover .gallery-caption { opacity: 1; transform: translateY(0); }
-    .gallery-count-pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(197,160,89,0.10);
-      border: 1px solid rgba(197,160,89,0.28);
-      color: var(--gold-dark);
-      padding: 9px 18px; border-radius: 999px;
-      font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
-      margin-top: 18px;
-    }
-
-    /* ──── UPDATED FOOTER ──── */
-    .footer-vietkite {
-      background: #020f08;
-      color: #eef6ee;
-      border-top: 1px solid rgba(197,160,89,0.18);
-    }
-    .footer-vietkite-wrap {
-      max-width: 1180px; margin: 0 auto; padding: 64px 24px 34px;
-      display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px;
-      align-items: start;
-    }
-    .footer-logo {
-      width: 64px; height: 64px; object-fit: contain; background: #fff;
-      display: block; margin-bottom: 24px;
-    }
-    .footer-slogan {
-      font-family: 'Noto Serif', 'Be Vietnam Pro', serif;
-      font-size: 20px; font-style: italic; font-weight: 700;
-      color: rgba(238,246,238,0.58);
-      margin-bottom: 18px; line-height: 1.55;
-    }
-    .footer-desc {
-      color: rgba(238,246,238,0.58); line-height: 1.85; font-size: 15px; max-width: 500px;
-    }
-    .footer-heading {
-      color: #fff; font-size: 14px; font-weight: 800; letter-spacing: 4px;
-      text-transform: uppercase; padding-bottom: 16px; margin-bottom: 28px;
-      border-bottom: 1px solid rgba(255,255,255,0.09);
-    }
-    .footer-phone {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: rgba(111,62,10,0.36);
-      border: 1px solid rgba(255,122,26,0.32);
-      color: #ff7a1a; text-decoration: none;
-      border-radius: 14px; padding: 14px 28px; margin-bottom: 24px;
-      font-size: 21px; font-weight: 800; letter-spacing: .5px;
-    }
-    .footer-contact-list { display: grid; gap: 16px; }
-    .footer-contact-row {
-      display: grid; grid-template-columns: 24px 1fr; gap: 12px;
-      color: rgba(238,246,238,0.68); font-size: 15px; line-height: 1.65;
-    }
-    .footer-contact-row .ico { text-align: center; opacity: .88; }
-    .footer-contact-row strong { color: rgba(255,255,255,0.88); font-weight: 800; }
-    .footer-bottom {
-      max-width: 1180px; margin: 0 auto; padding: 20px 24px 32px;
-      color: rgba(255,255,255,0.24); font-size: 10px; letter-spacing: 2.5px;
-      text-transform: uppercase; border-top: 1px solid rgba(255,255,255,0.06);
-      text-align: center;
-    }
-    @media (max-width: 768px) {
-      .footer-vietkite-wrap { grid-template-columns: 1fr; gap: 42px; padding-top: 48px; }
-      .footer-slogan { font-size: 18px; }
-      .footer-phone { width: 100%; justify-content: center; font-size: 19px; }
-      .gallery-caption { opacity: 1; transform: none; }
-    }
-
-    *, *::before, *::after { box-sizing: border-box; }
-
-    html, body, input, select, textarea, button,
-    .font-serif, .font-elegant,
-    h1, h2, h3, h4, h5, h6,
-    em, strong, .tour-card, .testimonial-card, .footer-slogan {
-      font-family: 'Be Vietnam Pro', Arial, sans-serif !important;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      font-kerning: normal;
-    }
-    em { font-style: normal !important; }
-
-    #nav {
-      padding-left: clamp(22px, 3vw, 48px) !important;
-      padding-right: clamp(22px, 3vw, 48px) !important;
-    }
-    #nav-links {
-      gap: clamp(18px, 2.1vw, 36px) !important;
-      white-space: nowrap;
-    }
-    #nav-links .btn-gold {
-      padding: 12px 24px !important;
-      min-width: 142px;
-      text-align: center;
-    }
-
-    #hero {
-      padding-top: 92px;
-      min-height: 720px;
-      height: 100svh;
-    }
-    #hero-bg {
-      background-size: cover !important;
-      background-position: center center !important;
-      transform: none !important;
-      animation: none !important;
-    }
-    #hero-content {
-      transform: translateY(24px);
-    }
-    .hero-badge {
-      margin-bottom: 22px !important;
-      letter-spacing: 5px !important;
-    }
-    #hero-title {
-      font-weight: 800 !important;
-      letter-spacing: -0.055em;
-      line-height: 1.02 !important;
-      font-size: clamp(38px, 5.5vw, 76px) !important;
-      text-wrap: balance;
-    }
-    #hero-title .hero-title-main,
-    #hero-title .hero-title-gold {
-      display: block;
-    }
-    #hero-title .hero-title-gold {
-      font-size: .92em;
-      white-space: nowrap;
-      letter-spacing: -0.06em;
-    }
-
-    .gallery-grid {
-      columns: unset !important;
-      display: grid !important;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-    }
-    .gallery-item {
-      break-inside: unset !important;
-      margin-bottom: 0 !important;
-      height: 255px;
-      border-radius: 18px !important;
-      overflow: hidden;
-      isolation: isolate;
-    }
-    .gallery-item:nth-child(7n + 1) { grid-row: span 2; height: 526px; }
-    .gallery-item:nth-child(9n + 4) { grid-column: span 2; }
-    .gallery-img-wrap {
-      width: 100%; height: 100%; overflow: hidden; background: #f4efe4;
-    }
-    .gallery-item img.gallery-img {
-      width: 100%; height: 100%; min-height: 0 !important;
-      object-fit: cover; display: block;
-      transition: transform 0.55s ease, filter 0.55s ease;
-    }
-    .gallery-item:hover img.gallery-img { transform: scale(1.06); }
-    .gallery-item.gallery-rotate img.gallery-img {
-      width: 100%; height: 100%;
-      transform: rotate(90deg) scale(1.38);
-      object-fit: cover;
-    }
-    .gallery-item.gallery-rotate:hover img.gallery-img {
-      transform: rotate(90deg) scale(1.46);
-    }
-    .gallery-caption {
-      opacity: 1 !important;
-      transform: none !important;
-      font-size: 12px !important;
-      font-weight: 700 !important;
-      letter-spacing: 0 !important;
-    }
-
-    @media (max-width: 1180px) {
-      .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .gallery-item:nth-child(9n + 4) { grid-column: span 1; }
-      #hero-title { font-size: clamp(40px, 7vw, 70px) !important; }
-    }
-
-    @media (max-width: 1024px) {
-      #nav { height: 72px !important; padding: 0 20px !important; }
-      #nav.scrolled { height: 64px !important; }
-      #nav > a { height: 100% !important; padding: 8px 0 !important; }
-      #nav-links { display: none !important; }
-      #hamburger { display: flex !important; }
-      #mobile-menu { z-index: 998; padding-top: 90px; }
-      .mobile-nav-link {
-        font-family: 'Be Vietnam Pro', Arial, sans-serif !important;
-        font-size: 22px !important;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-      }
-      #hero {
-        padding-top: 72px;
-        min-height: 720px;
-      }
-      #hero-content { transform: translateY(14px); }
-      #hero-bg { background-position: center center !important; }
-      .hero-badge { font-size: 9px !important; letter-spacing: 3px !important; }
-    }
-
-    @media (max-width: 720px) {
-      .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-      .gallery-item, .gallery-item:nth-child(7n + 1) { height: 220px; grid-row: auto; }
-      .gallery-item:nth-child(5n + 1) { grid-column: span 2; height: 260px; }
-      #hero { min-height: 690px; }
-      #hero-title {
-        font-size: clamp(36px, 12.2vw, 58px) !important;
-        letter-spacing: -0.065em;
-      }
-      #hero-title .hero-title-gold {
-        white-space: normal;
-        font-size: .92em;
-      }
-      #hero p { max-width: 92vw !important; }
-      #hero .btn-gold, #hero .btn-outline {
-        width: min(310px, 86vw);
-        text-align: center;
-      }
-      #float-btns { right: 14px; bottom: 88px; }
-      .float-btn { width: 50px; height: 50px; }
-    }
-
-    @media (max-width: 420px) {
-      .gallery-grid { grid-template-columns: 1fr; }
-      .gallery-item, .gallery-item:nth-child(5n + 1), .gallery-item:nth-child(7n + 1) {
-        grid-column: span 1; height: 255px;
-      }
-      #hero-title { font-size: clamp(34px, 13vw, 50px) !important; }
-      .hero-badge { max-width: 92vw; line-height: 1.6; }
-    }
-
-    html {
-      width: 100%;
-      max-width: 100%;
-      overflow-x: hidden !important;
-      -webkit-text-size-adjust: 100%;
-      overscroll-behavior-x: none;
-    }
-    body {
-      width: 100%;
-      max-width: 100%;
-      min-width: 0;
-      overflow-x: hidden !important;
-      position: relative;
-      touch-action: pan-y;
-    }
-    section, nav, footer, #hero, #mobile-menu, .footer-vietkite {
-      max-width: 100vw !important;
-      overflow-x: clip !important;
-    }
-    img, video, canvas, svg { max-width: 100%; }
-
-    body, p, a, li, input, select, textarea, button,
-    .nav-link, .mobile-nav-link, .btn-gold, .btn-outline,
-    .tour-highlight, .price-check, .footer-contact-row, .gallery-caption {
-      font-family: 'Be Vietnam Pro', Arial, sans-serif !important;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    .font-serif, .font-elegant,
-    h1, h2, h3, h4, h5, h6,
-    #hero-title, #hero-title span,
-    .tour-card h3, .price-card h3, .testimonial-card h3,
-    .footer-slogan, .timer-num {
-      font-family: 'Noto Serif', 'Times New Roman', serif !important;
-      font-synthesis: none;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: geometricPrecision;
-      font-kerning: normal;
-      word-break: keep-all;
-      overflow-wrap: normal;
-      hyphens: none;
-    }
-
-    h1, h2, h3, .font-serif, .font-elegant {
-      letter-spacing: -0.018em !important;
-    }
-
-    #nav {
-      width: 100% !important;
-      left: 0 !important;
-      right: 0 !important;
-      overflow: hidden !important;
-      transform: translateZ(0);
-    }
-    #nav-links {
-      min-width: 0 !important;
-      flex-wrap: nowrap !important;
-    }
-
-    #hero {
-      height: auto !important;
-      min-height: min(860px, 100svh) !important;
-      padding-top: 98px !important;
-      display: flex !important;
-      align-items: center !important;
-    }
-    #hero-bg {
-      background-size: cover !important;
-      background-position: center center !important;
-      transform: none !important;
-      animation: none !important;
-    }
-    #hero-content {
-      width: min(980px, calc(100vw - 32px)) !important;
-      max-width: min(980px, calc(100vw - 32px)) !important;
-      margin: 0 auto !important;
-      padding-left: 16px !important;
-      padding-right: 16px !important;
-      transform: none !important;
-    }
-    .hero-badge {
-      margin-top: 10px !important;
-      margin-bottom: 22px !important;
-      max-width: calc(100vw - 42px) !important;
-      white-space: normal !important;
-      line-height: 1.5 !important;
-      letter-spacing: 4px !important;
-    }
-    #hero-title {
-      max-width: 980px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      margin-bottom: 24px !important;
-      color: #fff !important;
-      font-weight: 800 !important;
-      line-height: 0.98 !important;
-      font-size: clamp(46px, 6.2vw, 92px) !important;
-      letter-spacing: -0.024em !important;
-      text-wrap: balance;
-    }
-    #hero-title .hero-title-main,
-    #hero-title .hero-title-gold {
-      display: block !important;
-      white-space: normal !important;
-      letter-spacing: -0.024em !important;
-    }
-    #hero-title .hero-title-gold {
-      font-style: italic !important;
-      font-weight: 800 !important;
-      font-size: .92em !important;
-      line-height: 1.02 !important;
-    }
-    #hero p {
-      max-width: min(620px, 92vw) !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-
-    .gallery-grid {
-      width: 100% !important;
-      max-width: 100% !important;
-      columns: unset !important;
-      display: grid !important;
-      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-      grid-auto-flow: row !important;
-      gap: 18px !important;
-      align-items: stretch !important;
-    }
-    .gallery-item,
-    .gallery-item:nth-child(5n + 1),
-    .gallery-item:nth-child(7n + 1),
-    .gallery-item:nth-child(9n + 4) {
-      grid-column: auto !important;
-      grid-row: auto !important;
-      width: 100% !important;
-      height: auto !important;
-      min-height: 0 !important;
-      aspect-ratio: 4 / 3 !important;
-      margin: 0 !important;
-      border-radius: 18px !important;
-      overflow: hidden !important;
-      contain: paint;
-    }
-    .gallery-img-wrap {
-      width: 100% !important;
-      height: 100% !important;
-      overflow: hidden !important;
-      background: #f4efe4 !important;
-    }
-    .gallery-item img.gallery-img {
-      width: 100% !important;
-      height: 100% !important;
-      min-height: 0 !important;
-      object-fit: cover !important;
-      object-position: center center !important;
-      display: block !important;
-    }
-    .gallery-item.gallery-rotate img.gallery-img {
-      width: 100% !important;
-      height: 100% !important;
-      transform: rotate(90deg) scale(1.38) !important;
-      object-fit: cover !important;
-    }
-    .gallery-item.gallery-rotate:hover img.gallery-img {
-      transform: rotate(90deg) scale(1.44) !important;
-    }
-    .gallery-caption {
-      width: 100% !important;
-      max-width: 100% !important;
-      white-space: normal !important;
-      overflow-wrap: anywhere !important;
-      padding: 34px 14px 12px !important;
-    }
-
-    @media (max-width: 1180px) {
-      .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-      #hero-title { font-size: clamp(44px, 7.2vw, 76px) !important; }
-    }
-
-    @media (max-width: 1024px) {
-      #nav {
-        height: 66px !important;
-        padding: 0 16px !important;
-      }
-      #nav.scrolled { height: 62px !important; }
-      #nav > a {
-        height: 58px !important;
-        max-width: 86px !important;
-        flex-shrink: 0 !important;
-        padding: 7px 0 !important;
-      }
-      #nav > a img { height: 100% !important; width: auto !important; }
-      #nav-links { display: none !important; visibility: hidden !important; }
-      #hamburger {
-        display: flex !important;
-        margin-left: auto !important;
-        width: 42px !important;
-        height: 42px !important;
-        align-items: center !important;
-        justify-content: center !important;
-      }
-      #mobile-menu {
-        width: 100dvw !important;
-        max-width: 100dvw !important;
-        padding: 92px 24px 38px !important;
-        gap: 24px !important;
-        overflow: hidden auto !important;
-      }
-      #mobile-menu.open { transform: translate3d(0,0,0) !important; }
-      .mobile-nav-link {
-        font-size: clamp(20px, 6vw, 30px) !important;
-        line-height: 1.15 !important;
-        letter-spacing: 2px !important;
-        text-align: center !important;
-      }
-      #hero {
-        min-height: 720px !important;
-        padding-top: 78px !important;
-      }
-      #hero-bg { background-position: center center !important; }
-      #hero-title {
-        font-size: clamp(44px, 10vw, 76px) !important;
-        line-height: 1 !important;
-      }
-      .hero-badge { letter-spacing: 3px !important; }
-    }
-
-    @media (max-width: 900px) {
-      .about-grid, .tours-grid, .pricing-grid, .testimonials-grid, .footer-grid,
-      .form-row {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 24px !important;
-      }
-      .tour-card, .price-card, .testimonial-card {
-        width: 100% !important;
-        max-width: 100% !important;
-        transform: none !important;
-      }
-      .timer-box {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        padding: 24px !important;
-      }
-      .stat-card { min-width: 0 !important; }
-      [data-aos^="fade"], [data-aos^="zoom"] {
-        transform: none !important;
-      }
-    }
-
-    @media (max-width: 720px) {
-      section { padding-left: 18px !important; padding-right: 18px !important; }
-      #hero {
-        min-height: 700px !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-      #hero-content {
-        width: min(100%, calc(100vw - 20px)) !important;
-        max-width: calc(100vw - 20px) !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-      }
-      #hero-title {
-        font-size: clamp(39px, 12.5vw, 58px) !important;
-        letter-spacing: -0.02em !important;
-      }
-      #hero-title .hero-title-gold {
-        font-size: .86em !important;
-        letter-spacing: -0.02em !important;
-      }
-      #hero p {
-        font-size: 14px !important;
-        line-height: 1.65 !important;
-      }
-      #hero .btn-gold, #hero .btn-outline {
-        width: min(320px, calc(100vw - 54px)) !important;
-        max-width: 100% !important;
-        padding: 15px 20px !important;
-        text-align: center !important;
-      }
-      .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px !important;
-      }
-      .gallery-item,
-      .gallery-item:nth-child(5n + 1),
-      .gallery-item:nth-child(7n + 1),
-      .gallery-item:nth-child(9n + 4) {
-        aspect-ratio: 1 / 1 !important;
-        border-radius: 14px !important;
-      }
-      .gallery-caption { font-size: 11px !important; padding: 30px 10px 10px !important; }
-      #social-proof {
-        left: 12px !important;
-        right: 12px !important;
-        bottom: 16px !important;
-        max-width: calc(100vw - 24px) !important;
-        width: auto !important;
-      }
-      #float-btns { right: 12px !important; bottom: 86px !important; }
-      .float-btn { width: 48px !important; height: 48px !important; }
-      #back-top { right: 12px !important; bottom: 24px !important; }
-      #lb-prev, #lb-next { width: 42px !important; height: 42px !important; }
-      #lb-prev { left: 10px !important; }
-      #lb-next { right: 10px !important; }
-    }
-
-    @media (max-width: 430px) {
-      #nav { padding: 0 12px !important; }
-      #hero { min-height: 680px !important; }
-      .hero-badge {
-        font-size: 8px !important;
-        letter-spacing: 2px !important;
-        padding-left: 14px !important;
-        padding-right: 14px !important;
-      }
-      #hero-title { font-size: clamp(36px, 13vw, 50px) !important; }
-      #hero-title .hero-title-gold { font-size: .84em !important; }
-      .gallery-grid { grid-template-columns: 1fr !important; }
-      .gallery-item,
-      .gallery-item:nth-child(5n + 1),
-      .gallery-item:nth-child(7n + 1),
-      .gallery-item:nth-child(9n + 4) {
-        aspect-ratio: 4 / 3 !important;
-      }
-      .timer-num { font-size: 32px !important; }
-    }
-
-    #gallery-grid {
-      min-height: 320px !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-    }
-    #gallery .gallery-item {
-      display: block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-    }
-    #gallery .gallery-img-wrap,
-    #gallery .gallery-img {
-      visibility: visible !important;
-      opacity: 1 !important;
-    }
-
-    @media (max-width: 720px) {
-      #gallery {
-        padding-top: 72px !important;
-        padding-bottom: 72px !important;
-      }
-      #gallery .gallery-grid {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
-        gap: 12px !important;
-      }
-      #gallery .gallery-item {
-        aspect-ratio: 1 / 1 !important;
-        min-height: 0 !important;
-        transform: none !important;
-      }
-    }
-    @media (max-width: 430px) {
-      #gallery .gallery-grid {
-        grid-template-columns: 1fr !important;
-      }
-      #gallery .gallery-item {
-        aspect-ratio: 4 / 3 !important;
-      }
-    }
-
-    #hero-title,
-    #hero-title .hero-title-main,
-    #hero-title .hero-title-gold,
-    #hero-title .hero-gold-part {
-      overflow: visible !important;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    #hero-title {
-      line-height: 1.10 !important;
-      padding-bottom: 0.08em !important;
-    }
-
-    #hero-title .hero-title-main {
-      display: block !important;
-      line-height: 1.04 !important;
-      margin-bottom: 0.02em !important;
-    }
-
-    #hero-title .hero-title-gold {
-      display: block !important;
-      line-height: 1.18 !important;
-      padding-top: 0.02em !important;
-      padding-bottom: 0.12em !important;
-    }
-
-    #hero-title .hero-gold-part {
-      display: inline-block !important;
-      line-height: 1.20 !important;
-      padding: 0.02em 0.03em 0.16em !important;
-      margin: 0 -0.01em -0.10em !important;
-      font-style: italic !important;
-      font-weight: 800 !important;
-      background-size: 100% 155% !important;
-      background-position: center 46% !important;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
-    }
-
-    @media (max-width: 720px) {
-      #hero-title {
-        line-height: 1.08 !important;
-        margin-bottom: 18px !important;
-      }
-      #hero-title .hero-title-gold {
-        font-size: .84em !important;
-        line-height: 1.20 !important;
-      }
-      #hero-title .hero-gold-part {
-        display: block !important;
-        width: 100% !important;
-        line-height: 1.18 !important;
-        padding-top: 0.01em !important;
-        padding-bottom: 0.18em !important;
-        margin-bottom: -0.12em !important;
-        white-space: nowrap !important;
-      }
-    }
-
-    @media (max-width: 430px) {
-      #hero-title {
-        font-size: clamp(36px, 12.6vw, 49px) !important;
-      }
-      #hero-title .hero-title-gold {
-        font-size: .82em !important;
-      }
-    }
-
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #f1f1f1; }
-    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
-
-    #booking.booking-section {
-      position: relative;
-      scroll-margin-top: 92px;
-      overflow: hidden !important;
+    .hero{
+      position:relative;
+      min-height:100vh;
+      color:#fff;
+      display:grid;
+      align-items:center;
+      overflow:hidden;
+      isolation:isolate;
+      background:var(--bg);
+      padding:120px 0 72px;
+    }
+    .hero-bg{position:absolute;inset:0;z-index:-3}
+    .hero-bg img{width:100%;height:100%;object-fit:cover;filter:saturate(1.06) contrast(1.04)}
+    .hero::before{
+      content:"";
+      position:absolute;inset:0;
+      z-index:-2;
       background:
-        radial-gradient(circle at 18% 10%, rgba(197,160,89,.20), transparent 34%),
-        radial-gradient(circle at 90% 88%, rgba(232,201,123,.12), transparent 32%),
-        linear-gradient(145deg, #001426 0%, #05294c 55%, #001529 100%) !important;
+        linear-gradient(90deg,rgba(9,17,30,.92),rgba(9,17,30,.62) 46%,rgba(9,17,30,.24)),
+        linear-gradient(0deg,rgba(9,17,30,.86),transparent 42%);
     }
-    #booking.booking-section::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.030) 1px, transparent 1px);
-      background-size: 46px 46px;
-      mask-image: radial-gradient(circle at center, black 0%, transparent 78%);
-      opacity: .55;
+    .hero::after{
+      content:"";
+      position:absolute;inset:auto 0 0 0;height:160px;z-index:-1;
+      background:linear-gradient(0deg,var(--cream),transparent);
     }
-    #booking .booking-inner { position: relative; z-index: 1; }
-    #booking .booking-urgency {
-      border-radius: 999px !important;
-      width: fit-content;
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 12px 30px rgba(0,0,0,.18);
-      backdrop-filter: blur(14px);
+    .hero-grid{display:grid;grid-template-columns:1.05fr .65fr;gap:52px;align-items:end}
+    .hero-copy{display:grid;gap:24px;max-width:820px}
+    .hero-title span{display:block;color:#f6d894;text-shadow:0 8px 38px rgba(215,168,79,.22)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      min-height:52px;padding:14px 22px;border-radius:999px;
+      border:1px solid transparent;font-weight:900;cursor:pointer;transition:.22s ease;
     }
-    #booking .booking-heading h2 {
-      overflow: visible !important;
-      padding-bottom: .18em;
-      line-height: 1.18 !important;
-      text-shadow: 0 8px 28px rgba(0,0,0,.35);
+    .btn-primary{background:var(--gold);color:#241600;box-shadow:0 18px 45px rgba(215,168,79,.28)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 24px 55px rgba(215,168,79,.38)}
+    .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.24);backdrop-filter:blur(10px)}
+    .btn-ghost:hover{background:rgba(255,255,255,.18)}
+    .hero-card{
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:var(--radius);
+      padding:26px;
+      backdrop-filter:blur(18px);
+      box-shadow:0 28px 80px rgba(0,0,0,.22);
     }
-    #booking .booking-heading .section-label {
-      color: var(--gold-light) !important;
-      text-shadow: 0 4px 18px rgba(0,0,0,.38);
-    }
-    #booking .booking-form-card {
-      position: relative;
-      background: linear-gradient(180deg, rgba(255,255,255,.115), rgba(255,255,255,.050)) !important;
-      border: 1px solid rgba(255,255,255,.18) !important;
-      box-shadow: 0 26px 80px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.10);
-      backdrop-filter: blur(18px);
-    }
-    #booking .booking-form-card::before {
-      content: "";
-      position: absolute;
-      inset: 1px;
-      border-radius: inherit;
-      pointer-events: none;
-      background: linear-gradient(135deg, rgba(232,201,123,.18), transparent 38%, rgba(255,255,255,.08));
-    }
-    #booking .booking-form-card > * { position: relative; z-index: 1; }
-    #booking .form-input {
-      height: 58px;
-      border-radius: 18px !important;
-      border: 1px solid rgba(255,255,255,.74) !important;
-      background: rgba(255,255,255,.96) !important;
-      box-shadow: 0 10px 24px rgba(0,0,0,.16), inset 0 1px 0 rgba(255,255,255,.7);
-      font-size: 16px !important;
-      font-weight: 500;
-      padding: 0 20px !important;
-    }
-    #booking .form-input:focus {
-      border-color: var(--gold-light) !important;
-      box-shadow: 0 0 0 4px rgba(232,201,123,.24), 0 12px 30px rgba(0,0,0,.20) !important;
-      transform: translateY(-1px);
-    }
-    #booking select.form-input {
-      appearance: auto;
-      -webkit-appearance: menulist;
-      color: var(--dark) !important;
-    }
-    #booking #f-note { overflow: hidden; text-overflow: ellipsis; }
-    #booking .booking-submit {
-      min-height: 64px;
-      border-radius: 999px !important;
-      background: linear-gradient(135deg, #b88722 0%, #f2d673 42%, #c6942e 72%, #9f6d16 100%) !important;
-      box-shadow: 0 16px 42px rgba(197,160,89,.42), inset 0 1px 0 rgba(255,255,255,.45) !important;
-      letter-spacing: 1.6px !important;
-      line-height: 1.35 !important;
-      overflow: hidden;
-      isolation: isolate;
-    }
-    #booking .booking-submit::after {
-      content: "";
-      position: absolute;
-      top: -40%; bottom: -40%; left: -45%;
-      width: 38%;
-      transform: rotate(24deg);
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
-      animation: goldSweep 3.4s ease-in-out infinite;
-      z-index: 0;
-    }
-    #booking .booking-submit span { position: relative; z-index: 1; }
-    @keyframes goldSweep {
-      0%, 45% { left: -55%; opacity: 0; }
-      55% { opacity: 1; }
-      100% { left: 120%; opacity: 0; }
-    }
-    #booking .booking-privacy { color: rgba(255,255,255,.52) !important; }
+    .hero-card__label{color:#f6d894;font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;margin-bottom:8px}
+    .hero-card__number{font-family:var(--font-heading);font-size:3rem;line-height:1;color:#fff;margin-bottom:8px}
+    .hero-card__text{color:rgba(255,255,255,.76)}
 
-    #float-btns {
-      right: 22px !important;
-      bottom: 96px !important;
-      gap: 14px !important;
-      z-index: 997 !important;
-    }
-    .float-btn {
-      position: relative;
-      width: 56px !important;
-      height: 56px !important;
-      border: 2px solid rgba(255,255,255,.82);
-      overflow: visible !important;
-      transform: translateZ(0);
-      isolation: isolate;
-    }
-    .float-btn::before {
-      content: "";
-      position: absolute;
-      inset: -7px;
-      border-radius: 999px;
-      z-index: -1;
-      opacity: .72;
-      animation: floatPulse 2.2s ease-out infinite;
-    }
-    .float-btn::after {
-      content: attr(data-label);
-      position: absolute;
-      right: calc(100% + 12px);
-      top: 50%;
-      transform: translateY(-50%) translateX(8px);
-      opacity: 0;
-      pointer-events: none;
-      white-space: nowrap;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(0,21,41,.86);
-      color: #fff;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .3px;
-      box-shadow: 0 12px 28px rgba(0,0,0,.22);
-      transition: .28s ease;
-    }
-    .float-btn:hover::after { opacity: 1; transform: translateY(-50%) translateX(0); }
-    .float-zalo {
-      background: linear-gradient(145deg, #0b88ff, #0057ff) !important;
-      box-shadow: 0 14px 32px rgba(0,104,255,.38) !important;
-    }
-    .float-zalo::before { background: rgba(0,104,255,.38); }
-    .float-phone {
-      background: linear-gradient(145deg, #f0c65c, #b27a16) !important;
-      box-shadow: 0 14px 32px rgba(197,160,89,.40) !important;
-    }
-    .float-phone::before { background: rgba(197,160,89,.38); }
-    .float-btn:hover { transform: translateY(-4px) scale(1.04) !important; }
-    .float-btn svg { width: 26px !important; height: 26px !important; filter: drop-shadow(0 2px 4px rgba(0,0,0,.18)); }
-    .float-phone i { font-size: 23px; filter: drop-shadow(0 2px 4px rgba(0,0,0,.18)); }
-    @keyframes floatPulse {
-      0% { transform: scale(.78); opacity: .72; }
-      70%, 100% { transform: scale(1.35); opacity: 0; }
-    }
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+    .about-media{position:relative;min-height:540px}
+    .about-media img{position:absolute;object-fit:cover;border-radius:30px;box-shadow:var(--shadow)}
+    .about-media img:first-child{width:66%;height:78%;left:0;top:0}
+    .about-media img:last-child{width:56%;height:62%;right:0;bottom:0;border:8px solid var(--cream)}
+    .rich-text{font-size:1.06rem;color:#374151;display:grid;gap:18px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+    .stat{background:#fff;border:1px solid rgba(155,106,33,.16);border-radius:24px;padding:22px;box-shadow:0 18px 45px rgba(19,34,56,.08)}
+    .stat-number{font-family:var(--font-heading);font-size:2.5rem;color:var(--gold-dark);line-height:1}
+    .stat-label{font-weight:800;color:#536076;margin-top:6px}
 
-    @media (max-width: 720px) {
-      #booking.booking-section {
-        scroll-margin-top: 76px;
-        padding: 90px 16px 86px !important;
-      }
-      #booking .booking-inner { width: min(100%, 430px) !important; }
-      #booking .booking-urgency {
-        margin-bottom: 22px !important;
-        padding: 10px 16px !important;
-        font-size: 12px !important;
-        line-height: 1.5 !important;
-      }
-      #booking .timer-box {
-        border-radius: 24px !important;
-        padding: 16px !important;
-        gap: 10px !important;
-        box-shadow: 0 18px 48px rgba(0,0,0,.26) !important;
-      }
-      #booking .timer-unit {
-        padding: 14px 8px !important;
-        border-radius: 16px !important;
-      }
-      #booking .timer-num { font-size: 30px !important; line-height: 1 !important; }
-      #booking .timer-label { letter-spacing: 1.8px !important; }
-      #booking .booking-heading {
-        margin: 34px 0 24px !important;
-      }
-      #booking .booking-heading .section-label {
-        font-size: 9px !important;
-        letter-spacing: 2.8px !important;
-        margin-bottom: 10px !important;
-      }
-      #booking .booking-heading h2 {
-        font-size: clamp(28px, 9vw, 38px) !important;
-        line-height: 1.22 !important;
-        margin-bottom: 12px !important;
-      }
-      #booking .booking-heading p {
-        font-size: 13px !important;
-        line-height: 1.65 !important;
-        max-width: 310px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
-      #booking .booking-form-card {
-        padding: 22px !important;
-        border-radius: 28px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
-      #booking .form-row {
-        gap: 12px !important;
-        margin-bottom: 12px !important;
-      }
-      #booking .form-input {
-        height: 56px !important;
-        min-height: 56px !important;
-        border-radius: 17px !important;
-        font-size: 16px !important;
-        padding: 0 17px !important;
-        margin-bottom: 12px !important;
-      }
-      #booking select.form-input { height: 54px !important; }
-      #booking #f-note { margin-bottom: 18px !important; }
-      #booking .booking-submit {
-        min-height: 58px !important;
-        padding: 15px 18px !important;
-        font-size: 13px !important;
-        letter-spacing: 1.2px !important;
-      }
-      #booking .booking-privacy {
-        font-size: 9px !important;
-        letter-spacing: 1.6px !important;
-        line-height: 1.6 !important;
-        margin-top: 14px !important;
-      }
-      #float-btns {
-        right: 12px !important;
-        bottom: calc(122px + env(safe-area-inset-bottom)) !important;
-        gap: 10px !important;
-      }
-      .float-btn {
-        width: 48px !important;
-        height: 48px !important;
-        border-width: 1.5px !important;
-      }
-      .float-btn::after { display: none !important; }
-      .float-btn svg { width: 22px !important; height: 22px !important; }
-      .float-phone i { font-size: 20px !important; }
-      #back-top {
-        width: 44px !important;
-        height: 44px !important;
-        bottom: calc(28px + env(safe-area-inset-bottom)) !important;
-        background: rgba(0,21,41,.92) !important;
-        border: 1px solid rgba(255,255,255,.2) !important;
-      }
-      #social-proof {
-        display: none !important;
-      }
+    .tour-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .tour-card{
+      background:#fff;
+      border-radius:30px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+      position:relative;
+      border:1px solid rgba(155,106,33,.12);
     }
+    .tour-badge{position:absolute;top:18px;left:18px;z-index:2;background:rgba(13,23,36,.84);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 12px;font-weight:900;font-size:.8rem;backdrop-filter:blur(10px)}
+    .tour-image{height:250px;overflow:hidden;background:#ddd}
+    .tour-image img{width:100%;height:100%;object-fit:cover;transition:.45s ease}
+    .tour-card:hover .tour-image img{transform:scale(1.055)}
+    .tour-body{padding:24px;display:flex;flex-direction:column;gap:16px;flex:1}
+    .tour-meta{display:flex;justify-content:space-between;gap:12px;color:var(--gold-dark);font-weight:900;text-transform:uppercase;font-size:.78rem;letter-spacing:.08em}
+    .tour-route{color:#536076;font-weight:700}
+    .check-list{display:grid;gap:9px;list-style:none;padding:0;margin:0}
+    .check-list li{display:flex;gap:10px;align-items:flex-start;color:#374151;font-weight:650}
+    .check-list li::before{content:"✓";color:var(--accent);font-weight:1000}
+    .price-row{display:flex;align-items:end;gap:10px;margin-top:auto}
+    .old-price{text-decoration:line-through;color:#9ca3af;font-weight:800}
+    .new-price{font-family:var(--font-heading);font-size:1.8rem;color:var(--gold-dark);font-weight:800}
+    .tour-card .btn{width:100%;margin-top:4px}
 
-    @media (max-width: 430px) {
-      #booking.booking-section { padding-left: 12px !important; padding-right: 12px !important; }
-      #booking .booking-form-card { padding: 18px !important; border-radius: 24px !important; }
-      #booking .booking-submit { font-size: 12px !important; letter-spacing: 1px !important; }
-      #float-btns { right: 10px !important; bottom: calc(108px + env(safe-area-inset-bottom)) !important; }
-      .float-btn { width: 46px !important; height: 46px !important; }
+    .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .gallery-item{position:relative;overflow:hidden;border-radius:24px;background:#ddd;aspect-ratio:4/5;box-shadow:0 12px 36px rgba(19,34,56,.1)}
+    .gallery-item:nth-child(6n+1),.gallery-item:nth-child(6n+4){aspect-ratio:1/1}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:.45s ease}
+    .gallery-item:hover img{transform:scale(1.055)}
+    .gallery-caption{position:absolute;inset:auto 10px 10px 10px;background:rgba(13,23,36,.78);color:#fff;padding:10px 12px;border-radius:15px;font-size:.84rem;font-weight:800;backdrop-filter:blur(12px)}
+
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+    .price-card{background:#fff;border-radius:30px;padding:28px;box-shadow:var(--shadow);border:1px solid rgba(215,168,79,.18);position:relative;display:grid;gap:18px}
+    .price-card.is-featured{background:linear-gradient(180deg,#15243b,#0d1724);color:#fff;transform:translateY(-16px)}
+    .price-tag{position:absolute;top:16px;right:16px;background:var(--gold);color:#231600;border-radius:999px;padding:7px 12px;font-weight:1000;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}
+    .price-subtitle{font-weight:900;color:var(--gold-dark);text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
+    .price-card.is-featured .price-subtitle{color:#f4d68e}
+    .price-card .old-price{font-size:1rem}
+    .price-card .new-price{font-size:2.2rem}
+    .price-card.is-featured .new-price{color:#f4d68e}
+
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .testimonial{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:24px;display:grid;gap:18px}
+    .stars{color:#f4d68e;letter-spacing:.08em}
+    .quote{color:rgba(255,255,255,.84);font-size:1rem}
+    .person{display:flex;align-items:center;gap:14px;margin-top:auto}
+    .person img{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(244,214,142,.55)}
+    .person strong{display:block;color:#fff}
+    .person span{display:block;color:rgba(255,255,255,.6);font-size:.9rem}
+
+    .cta-wrap{display:grid;grid-template-columns:.85fr 1fr;gap:32px;align-items:stretch}
+    .countdown-card,.form-card{background:#fff;border-radius:32px;box-shadow:var(--shadow);padding:32px;border:1px solid rgba(215,168,79,.18)}
+    .countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+    .time-box{background:linear-gradient(180deg,#fff8e7,#f3dfb2);border-radius:20px;padding:16px 10px;text-align:center;border:1px solid rgba(155,106,33,.16)}
+    .time-number{font-family:var(--font-heading);font-size:2rem;color:var(--gold-dark);font-weight:800;line-height:1}
+    .time-label{font-weight:900;color:#536076;font-size:.8rem;margin-top:6px}
+    .form{display:grid;gap:12px;margin-top:22px}
+    .field{display:grid;gap:6px}
+    .field label{font-weight:900;color:#374151;font-size:.88rem}
+    .field input,.field select{
+      width:100%;border:1px solid rgba(19,34,56,.14);background:#fffaf0;border-radius:16px;padding:14px 15px;outline:none;color:var(--ink);
     }
+    .field input:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(215,168,79,.16)}
+    .form-note{font-size:.88rem;color:var(--muted);font-weight:700;text-align:center;margin-top:4px}
+    .success-message{display:none;margin-top:16px;padding:16px;border-radius:18px;background:#ebf9f5;color:#0f766e;font-weight:900;text-align:center}
+    .success-message.is-visible{display:block}
 
+    .footer{background:#08111d;color:#fff;padding:56px 0 28px}
+    .footer-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}
+    .footer-logo{width:92px;height:92px;border-radius:22px;object-fit:cover;background:#fff;margin-bottom:18px}
+    .footer p,.footer li{color:rgba(255,255,255,.72)}
+    .footer h3{font-size:1.55rem;margin-bottom:10px}
+    .contact-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+    .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:34px;padding-top:24px;color:rgba(255,255,255,.58);font-size:.9rem;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .zalo-float{position:fixed;right:18px;bottom:18px;z-index:90;background:#0877ff;color:#fff;border-radius:999px;padding:13px 18px;font-weight:1000;box-shadow:0 18px 48px rgba(8,119,255,.35);display:flex;align-items:center;gap:8px}
+    .zalo-float:hover{transform:translateY(-2px)}
+
+    .hidden-netlify-form{display:none}
+
+    @media (max-width: 960px){
+      .container{width:min(100% - 28px,720px)}
+      .nav-links{
+        position:fixed;inset:74px 14px auto 14px;
+        background:rgba(13,23,36,.96);
+        border:1px solid rgba(255,255,255,.12);
+        border-radius:24px;
+        padding:14px;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        box-shadow:0 24px 80px rgba(0,0,0,.28);
+      }
+      .nav-links.is-open{display:flex}
+      .nav-link,.nav-cta{text-align:center}
+      .menu-toggle{display:inline-flex}
+      .hero-grid,.about-grid,.cta-wrap,.footer-grid{grid-template-columns:1fr}
+      .hero{min-height:860px;padding-top:112px}
+      .hero-card{max-width:420px}
+      .about-media{min-height:420px;order:-1}
+      .tour-grid,.pricing-grid,.testimonials{grid-template-columns:1fr}
+      .price-card.is-featured{transform:none}
+      .gallery-grid{grid-template-columns:repeat(2,1fr)}
+      .stats,.countdown-grid{grid-template-columns:repeat(2,1fr)}
+      .section{padding:72px 0}
+    }
+    @media (max-width: 560px){
+      .brand-name{font-size:.82rem;letter-spacing:.08em}
+      .hero-actions .btn{width:100%}
+      .gallery-grid{gap:10px}
+      .gallery-caption{font-size:.74rem;padding:8px 10px}
+      .countdown-card,.form-card{padding:24px}
+      .stats{grid-template-columns:1fr}
+      .time-number{font-size:1.55rem}
+      .zalo-float{left:14px;right:14px;justify-content:center}
+    }
   </style>
 </head>
 <body>
-
-<div id="lightbox" role="dialog" aria-modal="true">
-  <span id="lb-close" onclick="closeLightbox()" aria-label="Đóng">&times;</span>
-  <button id="lb-prev" onclick="lbNav(-1)" aria-label="Ảnh trước"><i class="fas fa-chevron-left"></i></button>
-  <img id="lb-img" src="" alt="Gallery">
-  <button id="lb-next" onclick="lbNav(1)" aria-label="Ảnh tiếp theo"><i class="fas fa-chevron-right"></i></button>
-  <div id="lb-counter"></div>
-</div>
-
-<div id="mobile-menu">
-  <a href="#about" class="mobile-nav-link" onclick="closeMobile()">Trải nghiệm</a>
-  <a href="#tours" class="mobile-nav-link" onclick="closeMobile()">Hành trình</a>
-  <a href="#gallery" class="mobile-nav-link" onclick="closeMobile()">Thư viện</a>
-  <a href="#pricing" class="mobile-nav-link" onclick="closeMobile()">Báo giá</a>
-  <a href="#testimonials" class="mobile-nav-link" onclick="closeMobile()">Khách hàng</a>
-  <a href="#booking" class="btn-gold mt-4" onclick="closeMobile()"><span>Đăng ký ngay</span></a>
-</div>
-
-<nav id="nav">
-  <a href="#" style="height:100%;padding:10px 0;display:block;">
-    <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" 
-         style="height:100%;object-fit:contain;display:block;" alt="Vietkite Travel"
-         onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-    <span style="display:none;font-family:'Noto Serif','Be Vietnam Pro',serif;font-size:18px;font-weight:700;color:var(--dark)">VIETKITE</span>
-  </a>
-  <ul id="nav-links" style="display:flex;gap:36px;list-style:none;margin:0;padding:0;align-items:center;">
-    <li><a href="#about" class="nav-link">Trải nghiệm</a></li>
-    <li><a href="#tours" class="nav-link">Hành trình</a></li>
-    <li><a href="#gallery" class="nav-link">Thư viện</a></li>
-    <li><a href="#pricing" class="nav-link">Báo giá</a></li>
-    <li><a href="#testimonials" class="nav-link">Khách hàng</a></li>
-    <li><a href="#booking" class="btn-gold" style="padding:12px 28px;font-size:11px;"><span>Đăng ký ngay</span></a></li>
-  </ul>
-  <div id="hamburger" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<div id="social-proof">
-  <div class="sp-icon"><i class="fas fa-user-check"></i></div>
-  <div>
-    <p id="sp-text" style="font-size:13px;font-weight:600;color:var(--dark);margin:0 0 2px;"></p>
-    <p style="font-size:11px;color:#aaa;margin:0;">cách đây vài phút</p>
-  </div>
-</div>
-
-<section id="hero">
-  <div id="hero-bg"></div>
-  <div id="hero-overlay"></div>
-  <div id="hero-content" style="position:relative;z-index:10;text-align:center;padding:0 24px;max-width:920px;margin:0 auto;">
-    <div class="hero-badge" data-aos="fade-down" style="display:inline-block;margin-bottom:24px;padding:8px 24px;border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(8px);border-radius:999px;color:rgba(255,255,255,0.9);font-size:10px;letter-spacing:4px;text-transform:uppercase;">
-      ✦ Cơ hội cuối cùng trong năm ✦
-    </div>
-    <h1 id="hero-title" data-aos="zoom-in" data-aos-delay="150" class="font-serif" style="font-size:clamp(42px,8vw,90px);color:white;line-height:1.1;margin-bottom:20px;font-weight:700;">
-      <span class="hero-title-main">Chạm Vào</span>
-      <span class="hero-title-gold">
-        <span class="hero-gold-part text-gold">Châu Âu</span>
-        <span class="hero-gold-part text-gold">Huyền Diệu</span>
-      </span>
-    </h1>
-    <p data-aos="fade-up" data-aos-delay="300" style="color:rgba(255,255,255,0.8);font-size:clamp(14px,2vw,18px);font-weight:300;line-height:1.7;max-width:580px;margin:0 auto 40px;">
-      Cùng Vietkite Travel kiến tạo những ký ức không phai — hành trình đẳng cấp 4 sao qua trái tim Châu Âu.
-    </p>
-    <div data-aos="fade-up" data-aos-delay="450" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="#booking" class="btn-gold"><span>🎁 Nhận ưu đãi 7 triệu</span></a>
-      <a href="#gallery" class="btn-outline">Xem ảnh thực tế</a>
-    </div>
-    <div data-aos="fade-up" data-aos-delay="700" style="margin-top:60px;">
-      <div style="width:1px;height:50px;background:linear-gradient(to bottom,rgba(255,255,255,0.6),transparent);margin:0 auto;"></div>
-    </div>
-  </div>
-</section>
-
-<section id="about" style="padding:100px 24px;max-width:1200px;margin:0 auto;">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" class="about-grid">
-    <div data-aos="fade-right">
-      <span class="section-label">Về Vietkite Travel</span>
-      <h2 class="font-serif" style="font-size:clamp(28px,4vw,48px);line-height:1.2;margin-bottom:20px;">
-        Hơn 16 Năm Kiến Tạo<br>Những Kỷ Niệm Vô Giá
-      </h2>
-      <div class="gold-divider" style="justify-content:flex-start;margin:20px 0;"><i class="fas fa-star" style="color:var(--gold);font-size:10px;"></i></div>
-      <p style="color:#666;line-height:1.8;margin-bottom:16px;font-size:15px;">
-        Vietkite Travel – Thương hiệu hàng đầu chuyên tổ chức tour Châu Âu cao cấp. Chúng tôi không chỉ bán tour, chúng tôi tạo những kỷ niệm vô giá cho mỗi gia đình Việt.
-      </p>
-      <p style="color:#666;line-height:1.8;margin-bottom:32px;font-size:15px;">
-        Quy trình xử lý hồ sơ chuyên nghiệp, tối ưu hóa hồ sơ cá nhân giúp đạt tỷ lệ đậu <strong>Visa Schengen cao nhất</strong>. Trưởng đoàn kinh nghiệm từ Việt Nam theo suốt hành trình, chăm sóc từng bữa ăn, giấc ngủ của bạn.
-      </p>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
-        <div class="stat-card">
-          <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:4px;">16+</div>
-          <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;">Năm kinh nghiệm</div>
-        </div>
-        <div class="stat-card">
-          <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:4px;">99%</div>
-          <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;">Tỷ lệ đậu Visa</div>
-        </div>
-        <div class="stat-card">
-          <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:4px;">5K+</div>
-          <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;">Khách hài lòng</div>
-        </div>
-      </div>
-    </div>
-    <div data-aos="fade-left" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
-      <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" 
-           style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);margin-top:40px;display:block;"
-           alt="Vietkite Travel Châu Âu" loading="lazy">
-      <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" 
-           style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);display:block;"
-           alt="Vietkite Travel Châu Âu" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<section id="tours" style="padding:80px 24px;background:var(--cream);">
-  <div style="max-width:1200px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
-      <span class="section-label">3 Tuyến Đặc Quyền</span>
-      <h2 class="font-serif" style="font-size:clamp(28px,4vw,52px);margin-bottom:16px;">Chọn Hành Trình Của Bạn</h2>
-      <p style="color:#888;font-size:14px;max-width:500px;margin:0 auto;">Bay cùng <strong>Vietnam Airlines</strong> & <strong>Turkish Airlines 5★</strong></p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="tours-grid">
-      
-      <div class="tour-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="tour-card-img">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" alt="Tây Âu Hoa Lệ" loading="lazy">
-          <div class="tour-card-img-overlay"></div>
-          <span class="tour-badge">Siêu Vip</span>
-          <div style="position:absolute;bottom:16px;left:16px;color:white;">
-            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px;">Tây Âu</div>
-            <div class="font-serif" style="font-size:20px;font-weight:700;">6 Quốc Gia</div>
-          </div>
-        </div>
-        <div style="padding:24px;">
-          <h3 class="font-serif" style="font-size:20px;margin-bottom:4px;">Tây Âu Hoa Lệ</h3>
-          <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:20px;">Đức – Hà Lan – Bỉ – Pháp – Thụy Sĩ – Ý</p>
-          <div style="border-top:1px solid #f0f0f0;padding-top:20px;margin-bottom:20px;">
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Tháp Eiffel & Paris ánh sáng</span></div>
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Colosseum Rome cổ kính</span></div>
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Interlaken – Thụy Sĩ thơ mộng</span></div>
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Vườn Tulip Keukenhof Hà Lan</span></div>
-          </div>
-          <div style="display:flex;align-items:center;justify-content:space-between;">
-            <div>
-              <span style="text-decoration:line-through;color:#bbb;font-size:12px;">72.000.000 đ</span>
-              <div class="font-serif text-gold" style="font-size:24px;font-weight:700;">64.900.000 đ</div>
-            </div>
-            <a href="#booking" class="btn-gold" style="padding:12px 24px;font-size:11px;"><span>Đăng ký</span></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="tour-card" data-aos="fade-up" data-aos-delay="100" style="border:2px solid var(--gold);transform:translateY(-12px);">
-        <div style="position:absolute;top:0;left:0;right:0;background:var(--gold);color:white;text-align:center;padding:8px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;z-index:2;">
-          ⭐ Bán Chạy Nhất
-        </div>
-        <div class="tour-card-img" style="margin-top:36px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" alt="Đông Âu Cổ Kính" loading="lazy">
-          <div class="tour-card-img-overlay"></div>
-          <div style="position:absolute;bottom:16px;left:16px;color:white;">
-            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px;">Đông Âu</div>
-            <div class="font-serif" style="font-size:20px;font-weight:700;">5 Quốc Gia</div>
-          </div>
-        </div>
-        <div style="padding:24px;">
-          <h3 class="font-serif" style="font-size:20px;margin-bottom:4px;">Đông Âu Cổ Kính</h3>
-          <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:20px;">Đức – Séc – Slovakia – Hungary – Áo</p>
-          <div style="border-top:1px solid #f0f0f0;padding-top:20px;margin-bottom:20px;">
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Lâu đài Prague & Cầu Charles</span></div>
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Neuschwanstein – cảm hứng Disney</span></div>
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Thị trấn cổ tích Hallstatt</span></div>
-            <div class="tour-highlight"><i class="fas fa-clock"></i><span>10 Ngày 9 Đêm trọn vẹn</span></div>
-          </div>
-          <div style="display:flex;align-items:center;justify-content:space-between;">
-            <div>
-              <span style="text-decoration:line-through;color:#bbb;font-size:12px;">69.000.000 đ</span>
-              <div class="font-serif text-gold" style="font-size:24px;font-weight:700;">63.900.000 đ</div>
-            </div>
-            <a href="#booking" class="btn-gold" style="padding:12px 24px;font-size:11px;"><span>Đăng ký</span></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="tour-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="tour-card-img">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" alt="Bắc Âu Hùng Vĩ" loading="lazy">
-          <div class="tour-card-img-overlay"></div>
-          <span class="tour-badge">Cao cấp</span>
-          <div style="position:absolute;bottom:16px;left:16px;color:white;">
-            <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px;">Bắc Âu</div>
-            <div class="font-serif" style="font-size:20px;font-weight:700;">4 Quốc Gia</div>
-          </div>
-        </div>
-        <div style="padding:24px;">
-          <h3 class="font-serif" style="font-size:20px;margin-bottom:4px;">Bắc Âu Hùng Vĩ</h3>
-          <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:20px;">Thụy Điển – Phần Lan – Na Uy – Đan Mạch</p>
-          <div style="border-top:1px solid #f0f0f0;padding-top:20px;margin-bottom:20px;">
-            <div class="tour-highlight"><i class="fas fa-ship"></i><span>Du thuyền Vịnh Geirangerfjord</span></div>
-            <div class="tour-highlight"><i class="fas fa-globe"></i><span>Di sản thiên nhiên thế giới</span></div>
-            <div class="tour-highlight"><i class="fas fa-star"></i><span>Dịch vụ 5 sao quốc tế</span></div>
-            <div class="tour-highlight"><i class="fas fa-clock"></i><span>11 Ngày trải nghiệm</span></div>
-          </div>
-          <div style="display:flex;align-items:center;justify-content:space-between;">
-            <div>
-              <span style="text-decoration:line-through;color:#bbb;font-size:12px;">112.000.000 đ</span>
-              <div class="font-serif text-gold" style="font-size:24px;font-weight:700;">109.000.000 đ</div>
-            </div>
-            <a href="#booking" class="btn-gold" style="padding:12px 24px;font-size:11px;"><span>Đăng ký</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" style="padding:100px 24px;background:white;">
-  <div style="max-width:1400px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
-      <span class="section-label">Thư Viện Hình Ảnh</span>
-      <h2 class="font-serif" style="font-size:clamp(28px,4vw,56px);margin-bottom:16px;">Cảm Hứng Châu Âu</h2>
-      <p style="color:#777;font-size:14px;line-height:1.8;max-width:620px;margin:0 auto;">Trọn bộ 28 hình ảnh Châu Âu — Paris, Venice, Prague, Thụy Sĩ, Bắc Âu, Hà Lan và nhiều điểm đến nổi bật.</p>
-    </div>
-    <div class="gallery-grid" id="gallery-grid">
-      <div class="gallery-item" onclick="openLightbox(0)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" alt="Cầu Charles và Lâu đài Prague" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cầu Charles và Lâu đài Prague, Séc</div></div>
-      <div class="gallery-item" onclick="openLightbox(1)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" alt="Amsterdam, Hà Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Amsterdam, Hà Lan</div></div>
-      <div class="gallery-item" onclick="openLightbox(2)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" alt="Bảo tàng Louvre, Pháp" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Bảo tàng Louvre, Pháp</div></div>
-      <div class="gallery-item" onclick="openLightbox(3)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif" alt="Cầu Charles Prague" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cầu Charles và Lâu đài Prague</div></div>
-      <div class="gallery-item" onclick="openLightbox(4)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg" alt="Làng Santa Claus Phần Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Làng Santa Claus, Rovaniemi, Phần Lan</div></div>
-      <div class="gallery-item" onclick="openLightbox(5)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg" alt="Santa Claus Phần Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Làng Santa Claus, Phần Lan</div></div>
-      <div class="gallery-item" onclick="openLightbox(6)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg" alt="Rovaniemi mùa đông" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Rovaniemi mùa đông, Phần Lan</div></div>
-      <div class="gallery-item" onclick="openLightbox(7)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg" alt="Giáng sinh Rovaniemi" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Không khí Giáng sinh tại Rovaniemi</div></div>
-      <div class="gallery-item" onclick="openLightbox(8)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg" alt="Santa Claus tuyết trắng" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Làng Santa Claus tuyết trắng</div></div>
-      <div class="gallery-item" onclick="openLightbox(9)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg" alt="Bắc Âu Phần Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Trải nghiệm Bắc Âu tại Phần Lan</div></div>
-      <div class="gallery-item" onclick="openLightbox(10)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" alt="Phong cảnh Na Uy" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Phong cảnh Na Uy</div></div>
-      <div class="gallery-item" onclick="openLightbox(11)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg" alt="Na Uy hùng vĩ" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Na Uy hùng vĩ</div></div>
-      <div class="gallery-item" onclick="openLightbox(12)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg" alt="Cáp treo Titlis" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cáp treo núi tuyết Titlis</div></div>
-      <div class="gallery-item" onclick="openLightbox(13)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg" alt="Trượt tuyết Titlis" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Trượt tuyết tại núi Titlis</div></div>
-      <div class="gallery-item" onclick="openLightbox(14)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg" alt="Titlis quanh năm" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Núi tuyết Titlis quanh năm</div></div>
-      <div class="gallery-item" onclick="openLightbox(15)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" alt="Venice Ý" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Thành phố nổi Venice, Ý</div></div>
-      <div class="gallery-item gallery-rotate" onclick="openLightbox(16)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg" alt="Kênh đào Venice" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Kênh đào Venice</div></div>
-      <div class="gallery-item gallery-rotate" onclick="openLightbox(17)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg" alt="Venice lãng mạn" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Venice lãng mạn</div></div>
-      <div class="gallery-item" onclick="openLightbox(18)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" alt="Tháp Eiffel Khải Hoàn Môn" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Tháp Eiffel và Khải Hoàn Môn</div></div>
-      <div class="gallery-item" onclick="openLightbox(19)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg" alt="Tháp Eiffel Paris" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Tháp Eiffel, Paris</div></div>
-      <div class="gallery-item" onclick="openLightbox(20)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg" alt="Paris Tháp Eiffel" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Paris và Tháp Eiffel</div></div>
-      <div class="gallery-item" onclick="openLightbox(21)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg" alt="Tháp nghiêng Pisa" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Tháp nghiêng Pisa, Ý</div></div>
-      <div class="gallery-item" onclick="openLightbox(22)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" alt="Interlaken Lucerne" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Interlaken và Lucerne, Thụy Sĩ</div></div>
-      <div class="gallery-item" onclick="openLightbox(23)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg" alt="Lucerne thơ mộng" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Lucerne thơ mộng</div></div>
-      <div class="gallery-item" onclick="openLightbox(24)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" alt="Vịnh Geirangerfjord Na Uy" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Vịnh hẹp Geirangerfjord, Na Uy</div></div>
-      <div class="gallery-item" onclick="openLightbox(25)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg" alt="Cung điện Versailles Pháp" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cung điện Versailles, Pháp</div></div>
-      <div class="gallery-item" onclick="openLightbox(26)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg" alt="Cối xay gió Hà Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cối xay gió Hà Lan</div></div>
-      <div class="gallery-item" onclick="openLightbox(27)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg" alt="Đấu trường La Mã Ý" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Đấu trường La Mã, Ý</div></div>
-    </div>
-  </div>
-</section>
-
-<section id="pricing" style="padding:100px 24px;background:var(--cream);">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
-      <span class="section-label">Bảng Giá Vàng</span>
-      <h2 class="font-serif" style="font-size:clamp(28px,4vw,52px);margin-bottom:12px;">Báo Giá Đặc Quyền</h2>
-      <p style="color:#aaa;font-size:12px;letter-spacing:3px;text-transform:uppercase;">Bay cùng Vietnam Airlines & Turkish Airlines 5★</p>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start;" class="pricing-grid">
-      <div class="price-card" data-aos="fade-up">
-        <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Tây Âu Hoa Lệ</h3>
-        <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:24px;">Đức – Hà Lan – Bỉ – Pháp – Thụy Sĩ – Ý</p>
-        <div style="text-decoration:line-through;color:#ccc;margin-bottom:4px;font-size:13px;">72.000.000 đ</div>
-        <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">64.900.000 đ</div>
-        <div style="margin-bottom:28px;">
-          <div class="price-check"><i class="fas fa-check"></i><span>Trải nghiệm Siêu VIP</span></div>
-          <div class="price-check"><i class="fas fa-check"></i><span>Khách sạn 4★ trung tâm</span></div>
-          <div class="price-check"><i class="fas fa-check"></i><span>Bữa ăn cao cấp mỗi ngày</span></div>
-          <div class="price-check"><i class="fas fa-check"></i><span>Visa Schengen hỗ trợ 99%</span></div>
-        </div>
-        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.background='var(--gold)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">Chọn hành trình</a>
-      </div>
-      <div class="price-card featured" data-aos="fade-up" data-aos-delay="100" style="transform:scale(1.04);">
-        <div style="position:absolute;top:20px;right:20px;background:var(--gold);color:white;font-size:9px;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:1px;text-transform:uppercase;">Bán chạy nhất</div>
-        <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Đông Âu Cổ Kính</h3>
-        <p style="color:rgba(255,255,255,0.4);font-size:12px;font-style:italic;margin-bottom:24px;">10 Ngày 9 Đêm</p>
-        <div style="text-decoration:line-through;color:rgba(255,255,255,0.25);margin-bottom:4px;font-size:13px;">69.000.000 đ</div>
-        <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">63.900.000 đ</div>
-        <div style="margin-bottom:28px;">
-          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Prague & Lâu đài Disney</span></div>
-          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Hallstatt thị trấn cổ tích</span></div>
-          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Trưởng đoàn tận tâm 24/7</span></div>
-          <div class="price-check" style="color:rgba(255,255,255,0.8);"><i class="fas fa-check"></i><span>Neuschwanstein huyền thoại</span></div>
-        </div>
-        <a href="#booking" class="btn-gold" style="display:block;text-align:center;padding:14px 24px;"><span>ĐĂNG KÝ NGAY</span></a>
-      </div>
-      <div class="price-card" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Bắc Âu Hùng Vĩ</h3>
-        <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:24px;">11 Ngày Trải Nghiệm</p>
-        <div style="text-decoration:line-through;color:#ccc;margin-bottom:4px;font-size:13px;">112.000.000 đ</div>
-        <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">109.000.000 đ</div>
-        <div style="margin-bottom:28px;">
-          <div class="price-check"><i class="fas fa-check"></i><span>Du thuyền Vịnh Na Uy</span></div>
-          <div class="price-check"><i class="fas fa-check"></i><span>Di sản thế giới nghẹt thở</span></div>
-          <div class="price-check"><i class="fas fa-check"></i><span>Dịch vụ 5 sao quốc tế</span></div>
-          <div class="price-check"><i class="fas fa-check"></i><span>Khách sạn 4★ chuẩn quốc tế</span></div>
-        </div>
-        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.background='var(--gold)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">Chọn hành trình</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" style="padding:100px 24px;background:white;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
-      <span class="section-label">Khách Hàng Nói Gì</span>
-      <h2 class="font-serif" style="font-size:clamp(28px,4vw,52px);">Hàng Nghìn Gia Đình Hạnh Phúc</h2>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="testimonials-grid">
-      <div class="testimonial-card" data-aos="fade-up">
-        <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
-        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">"Chưa bao giờ đi Châu Âu mà thảnh thơi đến thế. Hướng dẫn viên của Vietkite quá nhiệt tình, khách sạn 4 sao trung tâm đúng như cam kết!"</p>
-        <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" alt="Khách hàng" loading="lazy">
-          <div><div style="font-weight:700;font-size:14px;">Chị Minh Anh</div><div style="font-size:11px;color:#aaa;">Hà Nội · Tour Tây Âu</div></div>
-        </div>
-      </div>
-      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
-        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">"Gia đình tôi 5 người, lo lắng về visa nhưng Vietkite xử lý cực nhanh. Tour Đông Âu Prague cực kỳ ấn tượng, con gái mê Hallstatt lắm!"</p>
-        <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" alt="Khách hàng" loading="lazy">
-          <div><div style="font-weight:700;font-size:14px;">Anh Trọng Hiếu</div><div style="font-size:11px;color:#aaa;">TP.HCM · Tour Đông Âu</div></div>
-        </div>
-      </div>
-      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
-        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">"Du thuyền Bắc Âu là trải nghiệm không thể quên trong đời. Vietkite lo từng chi tiết nhỏ, tôi chỉ việc tận hưởng. Năm sau chắc chắn đăng ký tiếp!"</p>
-        <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" alt="Khách hàng" loading="lazy">
-          <div><div style="font-weight:700;font-size:14px;">Chị Lan Phương</div><div style="font-size:11px;color:#aaa;">Đà Nẵng · Tour Bắc Âu</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="booking" class="booking-section" style="padding:100px 24px;">
-  <div class="booking-inner" style="max-width:860px;margin:0 auto;">
-    <div class="booking-urgency" style="background:rgba(197,160,89,0.15);border:1px solid rgba(197,160,89,0.3);border-radius:12px;padding:14px 24px;text-align:center;margin-bottom:40px;" data-aos="fade-up">
-      <span style="color:var(--gold-light);font-size:13px;">⚡ </span>
-      <span style="color:rgba(255,255,255,0.9);font-size:13px;font-weight:500;">Chỉ còn đúng <strong style="color:var(--gold-light);">3 suất</strong> giá khuyến mãi cuối cùng!</span>
-    </div>
-    <div class="timer-box" data-aos="zoom-in">
-      <div class="timer-unit"><span class="timer-num" id="t-days">00</span><span class="timer-label">Ngày</span></div>
-      <div class="timer-unit"><span class="timer-num" id="t-hours">00</span><span class="timer-label">Giờ</span></div>
-      <div class="timer-unit"><span class="timer-num" id="t-mins">00</span><span class="timer-label">Phút</span></div>
-      <div class="timer-unit"><span class="timer-num" id="t-secs">00</span><span class="timer-label">Giây</span></div>
-    </div>
-    <div class="booking-heading" style="text-align:center;margin:48px 0 36px;" data-aos="fade-up">
-      <span class="section-label">Đăng Ký Tư Vấn Miễn Phí</span>
-      <h2 class="font-serif" style="font-size:clamp(24px,4vw,40px);color:white;margin-bottom:12px;">Nhận Ưu Đãi Giảm 7 Triệu</h2>
-      <p style="color:rgba(255,255,255,0.5);font-size:13px;">Ưu đãi chỉ áp dụng cho <strong style="color:var(--gold);">15 khách hàng đăng ký sớm nhất!</strong></p>
-    </div>
-    <div class="booking-form-card" style="border-radius:24px;padding:40px;" data-aos="fade-up">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;" class="form-row">
-        <input type="text" id="f-name" class="form-input" placeholder="Họ và tên của bạn *" required>
-        <input type="tel" id="f-phone" class="form-input" placeholder="Số điện thoại *" required>
-      </div>
-      <select id="f-tour" class="form-input" style="margin-bottom:16px;cursor:pointer;">
-        <option value="">— Chọn tuyến tour bạn quan tâm —</option>
-        <option value="tay-au">Tây Âu Hoa Lệ (6 Nước) – 64.900.000đ</option>
-        <option value="dong-au">Đông Âu Cổ Kính (5 Nước) – 63.900.000đ</option>
-        <option value="bac-au">Bắc Âu Hùng Vĩ (4 Nước) – 109.000.000đ</option>
-      </select>
-      <input type="text" id="f-note" class="form-input" placeholder="Ghi chú thêm (số người, thời gian mong muốn...)" style="margin-bottom:24px;">
-      <button onclick="submitForm()" class="btn-gold booking-submit" style="width:100%;font-size:15px;padding:20px;text-align:center;border:none;cursor:pointer;">
-        <span>🎁 NHẬN ƯU ĐÃI GIẢM 7 TRIỆU NGAY</span>
-      </button>
-      <p class="booking-privacy" style="text-align:center;font-size:10px;margin-top:16px;letter-spacing:2px;text-transform:uppercase;">🔒 Thông tin của bạn được bảo mật tuyệt đối</p>
-    </div>
-    <div id="form-success" style="display:none;text-align:center;padding:40px;background:rgba(197,160,89,0.1);border:1px solid var(--gold);border-radius:24px;margin-top:20px;">
-      <div style="font-size:48px;margin-bottom:16px;">✅</div>
-      <h3 class="font-serif" style="color:white;font-size:24px;margin-bottom:8px;">Đăng ký thành công!</h3>
-      <p style="color:rgba(255,255,255,0.6);font-size:14px;">Tư vấn viên Vietkite sẽ liên hệ với bạn trong vòng <strong style="color:var(--gold);">30 phút</strong>.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="footer-vietkite">
-  <div class="footer-vietkite-wrap footer-grid">
+  <div class="site-loader" id="site-loader">
     <div>
-      <img class="footer-logo" src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" alt="Vietkite Travel">
-      <div class="footer-slogan">Đồng hành cùng bạn trong mọi chuyến đi</div>
-      <p class="footer-desc">Công ty TNHH TM DV Du Lịch Vietkite — đơn vị lữ hành chuyên nghiệp tổ chức tour trong và ngoài nước, teambuilding, visa và vé máy bay từ năm 2011.</p>
-    </div>
-    <div>
-      <div class="footer-heading">Liên hệ</div>
-      <a class="footer-phone" href="tel:+84912992447"><i class="fas fa-phone"></i> 0912.992.447</a>
-      <div class="footer-contact-list">
-        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 1:</strong> 276 Nơ Trang Long, Phường Bình Thạnh, TP HCM</span></div>
-        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 2:</strong> 160/25/31 Bùi Đình Túy, Phường Bình Thạnh, TP HCM</span></div>
-        <div class="footer-contact-row"><span class="ico">✉️</span><span>info@vietkite.com.vn</span></div>
-        <div class="footer-contact-row"><span class="ico">🕘</span><span>Thứ 2–6: 8:30–17:30 | Thứ 7: 8:30–12:00</span></div>
-        <div class="footer-contact-row"><span class="ico">🔢</span><span><strong>MST:</strong> 0311304593</span></div>
-      </div>
+      <div class="site-loader__mark" aria-hidden="true"></div>
+      <strong>Đang tải nội dung website...</strong>
+      <p style="opacity:.72;margin-top:8px">Nếu khách sửa trong CMS, nội dung sẽ tự cập nhật tại đây.</p>
     </div>
   </div>
-  <div class="footer-bottom">© 2026 VIETKITE TRAVEL. All Rights Reserved.</div>
-</footer>
 
-<div id="float-btns">
-  <a href="https://zalo.me/84912992447" class="float-btn float-zalo" data-label="Chat Zalo" aria-label="Chat Zalo" target="_blank">
-    <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M24 8C15.163 8 8 14.716 8 23c0 4.573 2.197 8.674 5.664 11.47L12 38l5.122-1.637C18.924 37.41 21.4 38 24 38c8.837 0 16-6.716 16-15S32.837 8 24 8z" fill="white"/>
-      <text x="24" y="28" text-anchor="middle" fill="#0068FF" font-size="12" font-weight="bold" font-family="Arial">Zalo</text>
-    </svg>
-  </a>
-  <a href="tel:+84912992447" class="float-btn float-phone" data-label="Gọi ngay" aria-label="Gọi ngay">
-    <i class="fas fa-phone"></i>
-  </a>
-</div>
+  <div class="site-shell" id="site-shell">
+    <header class="topbar" id="topbar">
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a class="brand" href="#home" aria-label="Trang chủ">
+          <img class="brand-logo" id="brand-logo" alt="" />
+          <span class="brand-name" id="brand-name"></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Mở menu">☰</button>
+        <div class="nav-links" id="nav-links"></div>
+      </nav>
+    </header>
 
-<div id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
-  <i class="fas fa-chevron-up"></i>
-</div>
+    <main id="site-main"></main>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  if (window.AOS) AOS.init({ duration: 850, once: true, offset: 70, disable: () => window.innerWidth < 768 });
+    <footer class="footer" id="footer"></footer>
+    <a class="zalo-float" id="zalo-float" target="_blank" rel="noopener">Zalo</a>
+  </div>
 
-  window.addEventListener('scroll', () => {
-    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 80);
-    document.getElementById('back-top').classList.toggle('show', window.scrollY > 400);
-  });
+  <form name="lead-form" class="hidden-netlify-form" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="lead-form" />
+    <input name="name" />
+    <input name="phone" />
+    <input name="email" />
+    <select name="tour"><option value=""></option></select>
+  </form>
 
-  function toggleMenu() {
-    document.getElementById('hamburger').classList.toggle('active');
-    document.getElementById('mobile-menu').classList.toggle('open');
-    document.body.style.overflow = document.getElementById('mobile-menu').classList.contains('open') ? 'hidden' : '';
-  }
-  function closeMobile() {
-    document.getElementById('hamburger').classList.remove('active');
-    document.getElementById('mobile-menu').classList.remove('open');
-    document.body.style.overflow = '';
-  }
+  <script>
+    const DEFAULT_SITE = '/data/site.json';
+    const REPO_BASE_PATH = location.hostname.endsWith('github.io') ? '/chauau' : '';
 
-  const galleryImages = [
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg",title:"Cầu Charles và Lâu đài Prague, Séc"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg",title:"Amsterdam, Hà Lan"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg",title:"Bảo tàng Louvre, Pháp"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif",title:"Cầu Charles và Lâu đài Prague"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg",title:"Làng Santa Claus, Rovaniemi, Phần Lan"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg",title:"Làng Santa Claus, Phần Lan"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg",title:"Rovaniemi mùa đông, Phần Lan"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg",title:"Không khí Giáng sinh tại Rovaniemi"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg",title:"Làng Santa Claus tuyết trắng"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg",title:"Trải nghiệm Bắc Âu tại Phần Lan"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg",title:"Phong cảnh Na Uy"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg",title:"Na Uy hùng vĩ"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg",title:"Cáp treo núi tuyết Titlis"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg",title:"Trượt tuyết tại núi Titlis"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg",title:"Núi tuyết Titlis quanh năm"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg",title:"Thành phố nổi Venice, Ý"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg",title:"Kênh đào Venice",rotate:true},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg",title:"Venice lãng mạn",rotate:true},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg",title:"Tháp Eiffel và Khải Hoàn Môn"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg",title:"Tháp Eiffel, Paris"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg",title:"Paris và Tháp Eiffel"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg",title:"Tháp nghiêng Pisa, Ý"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg",title:"Interlaken và Lucerne, Thụy Sĩ"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg",title:"Lucerne thơ mộng"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg",title:"Vịnh hẹp Geirangerfjord, Na Uy"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg",title:"Cung điện Versailles, Pháp"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg",title:"Cối xay gió Hà Lan"},
-    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg",title:"Đấu trường La Mã, Ý"}
-  ];
-  const TOTAL = galleryImages.length;
-  const lbImages = galleryImages.map(i => i.src);
-  let lbCurrent = 0;
+    const $ = (selector, parent = document) => parent.querySelector(selector);
+    const escapeHTML = (value = '') => String(value)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;');
 
-  function openLightbox(idx) {
-    lbCurrent = idx;
-    const img = document.getElementById('lb-img');
-    img.src = lbImages[idx];
-    img.alt = galleryImages[idx].title;
-    img.classList.toggle('lb-rotate', !!galleryImages[idx].rotate);
-    document.getElementById('lb-counter').textContent = (idx+1)+' / '+TOTAL+' — '+galleryImages[idx].title;
-    document.getElementById('lightbox').classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  function lbNav(dir) {
-    lbCurrent = (lbCurrent + dir + TOTAL) % TOTAL;
-    const img = document.getElementById('lb-img');
-    img.style.opacity = '0';
-    setTimeout(() => {
-      img.src = lbImages[lbCurrent];
-      img.alt = galleryImages[lbCurrent].title;
-      img.classList.toggle('lb-rotate', !!galleryImages[lbCurrent].rotate);
-      img.style.opacity = '1';
-      document.getElementById('lb-counter').textContent = (lbCurrent+1)+' / '+TOTAL+' — '+galleryImages[lbCurrent].title;
-    }, 150);
-  }
-  document.getElementById('lightbox').addEventListener('click', e => { if(e.target===document.getElementById('lightbox')) closeLightbox(); });
-  document.addEventListener('keydown', e => {
-    if(document.getElementById('lightbox').classList.contains('active')) {
-      if(e.key==='ArrowRight') lbNav(1);
-      if(e.key==='ArrowLeft') lbNav(-1);
-      if(e.key==='Escape') closeLightbox();
+    function assetUrl(value) {
+      if (!value) return '';
+      if (/^(https?:|mailto:|tel:|#)/.test(value)) return value;
+      if (value.startsWith('/')) return `${REPO_BASE_PATH}${value}`;
+      return `${REPO_BASE_PATH}/${value}`;
     }
-  });
-  document.getElementById('lb-img').style.transition = 'opacity 0.15s';
 
-  const deadline = new Date(); deadline.setDate(deadline.getDate()+20);
-  function pad(n){return String(n).padStart(2,'0');}
-  function tick(){
-    const diff = deadline - Date.now();
-    if(diff<=0) return;
-    document.getElementById('t-days').textContent=pad(Math.floor(diff/86400000));
-    document.getElementById('t-hours').textContent=pad(Math.floor((diff%86400000)/3600000));
-    document.getElementById('t-mins').textContent=pad(Math.floor((diff%3600000)/60000));
-    document.getElementById('t-secs').textContent=pad(Math.floor((diff%60000)/1000));
-  }
-  tick(); setInterval(tick,1000);
+    function renderParagraphs(text = '') {
+      return String(text).split('\n').filter(Boolean).map(line => `<p>${escapeHTML(line)}</p>`).join('');
+    }
 
-  const proofs=['Anh Trần Văn B. vừa cọc thành công Tour Tây Âu 6 nước','Chị Nguyễn Thị H. đã đăng ký 2 suất Tour Đông Âu','Anh Minh Quân vừa nhận ưu đãi giảm 7 triệu','Chị Lan Anh vừa hoàn tất hồ sơ Visa Châu Âu','Gia đình anh Tuấn vừa chốt Tour Bắc Âu 11 ngày'];
-  let spIdx=0;
-  function showProof(){
-    const el=document.getElementById('social-proof');
-    document.getElementById('sp-text').textContent=proofs[spIdx];
-    el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),5500);
-    spIdx=(spIdx+1)%proofs.length;
-  }
-  setTimeout(showProof,3000); setInterval(showProof,30000);
+    function renderHeroTitle(title = '') {
+      const parts = String(title).split('|').map(part => escapeHTML(part.trim())).filter(Boolean);
+      if (parts.length <= 1) return escapeHTML(title);
+      return `${parts[0]}<span>${parts.slice(1).join(' ')}</span>`;
+    }
 
-  function submitForm(){
-    const name=document.getElementById('f-name').value.trim();
-    const phone=document.getElementById('f-phone').value.trim();
-    if(!name){document.getElementById('f-name').focus();document.getElementById('f-name').style.borderColor='#e74c3c';return;}
-    if(!phone){document.getElementById('f-phone').focus();document.getElementById('f-phone').style.borderColor='#e74c3c';return;}
-    document.querySelector('#booking .booking-form-card').style.display='none';
-    document.getElementById('form-success').style.display='block';
-  }
+    function renderButtons(buttons = []) {
+      return buttons.map(button => {
+        const style = button.style === 'ghost' ? 'btn-ghost' : 'btn-primary';
+        return `<a class="btn ${style}" href="${assetUrl(button.url || '#lead')}">${escapeHTML(button.text || 'Xem thêm')}</a>`;
+      }).join('');
+    }
 
-  function applyResponsive(){
-    const w=window.innerWidth;
-    const ag=document.querySelector('.about-grid');
-    if(ag) ag.style.gridTemplateColumns=w<768?'1fr':'1fr 1fr';
-    const tg=document.querySelector('.tours-grid');
-    if(tg) tg.style.gridTemplateColumns=w<768?'1fr':w<1024?'1fr 1fr':'repeat(3,1fr)';
-    const pg=document.querySelector('.pricing-grid');
-    if(pg) pg.style.gridTemplateColumns=w<768?'1fr':w<1024?'1fr 1fr':'repeat(3,1fr)';
-    const tsg=document.querySelector('.testimonials-grid');
-    if(tsg) tsg.style.gridTemplateColumns=w<768?'1fr':w<1024?'1fr 1fr':'repeat(3,1fr)';
-    const fr=document.querySelector('.form-row');
-    if(fr) fr.style.gridTemplateColumns=w<640?'1fr':'1fr 1fr';
-    const fg=document.querySelector('.footer-grid');
-    if(fg) fg.style.gridTemplateColumns=w<768?'1fr':'0.9fr 1.1fr';
-  }
-  applyResponsive(); window.addEventListener('resize',applyResponsive);
-</script>
+    function updateSEO(site) {
+      const seo = site.seo || {};
+      const title = seo.title || site.brand?.name || document.title;
+      const description = seo.description || '';
+      document.title = title;
+      setMeta('description', description);
+      setMeta('robots', seo.robots || 'index,follow');
+      setLink('canonical', seo.canonical || location.origin + location.pathname);
+      setProperty('og:title', title);
+      setProperty('og:description', description);
+      setProperty('og:site_name', seo.site_name || site.brand?.name || 'Website');
+      setProperty('og:image', assetUrl(seo.og_image || site.hero?.background_image || ''));
+      setProperty('og:url', seo.canonical || location.href);
+      setMeta('twitter:card', 'summary_large_image');
+      setMeta('twitter:title', title);
+      setMeta('twitter:description', description);
+      setMeta('twitter:image', assetUrl(seo.og_image || site.hero?.background_image || ''));
+      if (site.theme?.background) document.querySelector('meta[name="theme-color"]')?.setAttribute('content', site.theme.background);
+
+      const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'TravelAgency',
+        name: site.brand?.name || 'Travel Agency',
+        url: seo.canonical || location.origin,
+        logo: assetUrl(site.brand?.logo || site.footer?.logo || ''),
+        image: assetUrl(seo.og_image || site.hero?.background_image || ''),
+        telephone: site.footer?.phone || '',
+        email: site.footer?.email || '',
+        address: site.footer?.addresses?.join(', ') || '',
+        sameAs: [site.footer?.website].filter(Boolean)
+      };
+      let script = document.getElementById('structured-data');
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = 'structured-data';
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(jsonLd);
+    }
+
+    function setMeta(name, content) {
+      if (!content) return;
+      let el = document.querySelector(`meta[name="${name}"]`);
+      if (!el) { el = document.createElement('meta'); el.setAttribute('name', name); document.head.appendChild(el); }
+      el.setAttribute('content', content);
+    }
+    function setProperty(property, content) {
+      if (!content) return;
+      let el = document.querySelector(`meta[property="${property}"]`);
+      if (!el) { el = document.createElement('meta'); el.setAttribute('property', property); document.head.appendChild(el); }
+      el.setAttribute('content', content);
+    }
+    function setLink(rel, href) {
+      if (!href) return;
+      let el = document.querySelector(`link[rel="${rel}"]`);
+      if (!el) { el = document.createElement('link'); el.setAttribute('rel', rel); document.head.appendChild(el); }
+      el.setAttribute('href', href);
+    }
+
+    function applyTheme(theme = {}) {
+      const root = document.documentElement;
+      Object.entries({
+        '--bg': theme.background,
+        '--bg-soft': theme.background_soft,
+        '--cream': theme.cream,
+        '--gold': theme.gold,
+        '--gold-dark': theme.gold_dark,
+        '--accent': theme.accent,
+        '--font-heading': theme.heading_font,
+        '--font-body': theme.body_font
+      }).forEach(([key, value]) => value && root.style.setProperty(key, value));
+    }
+
+    function renderNavigation(site) {
+      $('#brand-logo').src = assetUrl(site.brand?.logo || site.footer?.logo || '');
+      $('#brand-logo').alt = site.brand?.name || '';
+      $('#brand-name').textContent = site.brand?.name || '';
+      const navLinks = $('#nav-links');
+      navLinks.innerHTML = (site.navigation || []).map(item => {
+        const cls = item.is_button ? 'nav-cta' : 'nav-link';
+        return `<a class="${cls}" href="${assetUrl(item.url || '#')}">${escapeHTML(item.label || '')}</a>`;
+      }).join('');
+    }
+
+    function renderHero(hero = {}) {
+      return `
+        <section class="hero" id="home">
+          <div class="hero-bg"><img src="${assetUrl(hero.background_image)}" alt="${escapeHTML(hero.background_alt || hero.title || '')}"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              ${hero.badge ? `<div class="eyebrow">${escapeHTML(hero.badge)}</div>` : ''}
+              <h1 class="hero-title">${renderHeroTitle(hero.title || '')}</h1>
+              <p class="lead">${escapeHTML(hero.subtitle || '')}</p>
+              <div class="hero-actions">${renderButtons(hero.buttons || [])}</div>
+            </div>
+            <aside class="hero-card">
+              <div class="hero-card__label">${escapeHTML(hero.highlight_label || '')}</div>
+              <div class="hero-card__number">${escapeHTML(hero.highlight_number || '')}</div>
+              <p class="hero-card__text">${escapeHTML(hero.highlight_text || '')}</p>
+            </aside>
+          </div>
+        </section>`;
+    }
+
+    function renderAbout(about = {}) {
+      return `
+        <section class="section" id="experience">
+          <div class="container about-grid">
+            <div class="about-media">
+              <img src="${assetUrl(about.image_1)}" alt="${escapeHTML(about.image_1_alt || '')}">
+              <img src="${assetUrl(about.image_2)}" alt="${escapeHTML(about.image_2_alt || '')}">
+            </div>
+            <div>
+              <div class="section-intro">
+                ${about.eyebrow ? `<div class="eyebrow">${escapeHTML(about.eyebrow)}</div>` : ''}
+                <h2>${escapeHTML(about.title || '')}</h2>
+                <div class="rich-text">${renderParagraphs(about.body || '')}</div>
+              </div>
+              <div class="stats">
+                ${(about.stats || []).map(stat => `
+                  <div class="stat">
+                    <div class="stat-number">${escapeHTML(stat.number || '')}</div>
+                    <div class="stat-label">${escapeHTML(stat.label || '')}</div>
+                  </div>`).join('')}
+              </div>
+            </div>
+          </div>
+        </section>`;
+    }
+
+    function renderTours(section = {}) {
+      return `
+        <section class="section section--soft" id="tours">
+          <div class="container">
+            <div class="section-intro">
+              ${section.eyebrow ? `<div class="eyebrow">${escapeHTML(section.eyebrow)}</div>` : ''}
+              <h2>${escapeHTML(section.title || '')}</h2>
+              <p class="text-muted">${escapeHTML(section.subtitle || '')}</p>
+            </div>
+            <div class="tour-grid">
+              ${(section.items || []).map(tour => `
+                <article class="tour-card">
+                  ${tour.badge ? `<div class="tour-badge">${escapeHTML(tour.badge)}</div>` : ''}
+                  <div class="tour-image"><img src="${assetUrl(tour.image)}" alt="${escapeHTML(tour.image_alt || tour.title || '')}"></div>
+                  <div class="tour-body">
+                    <div class="tour-meta"><span>${escapeHTML(tour.category || '')}</span><span>${escapeHTML(tour.country_count || '')}</span></div>
+                    <h3>${escapeHTML(tour.title || '')}</h3>
+                    <p class="tour-route">${escapeHTML(tour.route || '')}</p>
+                    <ul class="check-list">${(tour.highlights || []).map(item => `<li>${escapeHTML(item.text || item)}</li>`).join('')}</ul>
+                    <div class="price-row"><span class="old-price">${escapeHTML(tour.old_price || '')}</span><span class="new-price">${escapeHTML(tour.new_price || '')}</span></div>
+                    <a class="btn btn-primary" href="${assetUrl(tour.button_url || '#lead')}">${escapeHTML(tour.button_text || 'Đăng ký')}</a>
+                  </div>
+                </article>`).join('')}
+            </div>
+          </div>
+        </section>`;
+    }
+
+    function renderGallery(gallery = {}) {
+      return `
+        <section class="section" id="gallery">
+          <div class="container">
+            <div class="section-intro">
+              ${gallery.eyebrow ? `<div class="eyebrow">${escapeHTML(gallery.eyebrow)}</div>` : ''}
+              <h2>${escapeHTML(gallery.title || '')}</h2>
+              <p class="text-muted">${escapeHTML(gallery.subtitle || '')}</p>
+            </div>
+            <div class="gallery-grid">
+              ${(gallery.items || []).map(item => `
+                <figure class="gallery-item">
+                  <img loading="lazy" src="${assetUrl(item.image)}" alt="${escapeHTML(item.alt || item.caption || '')}">
+                  <figcaption class="gallery-caption">${escapeHTML(item.caption || '')}</figcaption>
+                </figure>`).join('')}
+            </div>
+          </div>
+        </section>`;
+    }
+
+    function renderPricing(pricing = {}) {
+      return `
+        <section class="section section--soft" id="pricing">
+          <div class="container">
+            <div class="section-intro">
+              ${pricing.eyebrow ? `<div class="eyebrow">${escapeHTML(pricing.eyebrow)}</div>` : ''}
+              <h2>${escapeHTML(pricing.title || '')}</h2>
+              <p class="text-muted">${escapeHTML(pricing.subtitle || '')}</p>
+            </div>
+            <div class="pricing-grid">
+              ${(pricing.items || []).map(item => `
+                <article class="price-card ${item.featured ? 'is-featured' : ''}">
+                  ${item.tag ? `<div class="price-tag">${escapeHTML(item.tag)}</div>` : ''}
+                  <div class="price-subtitle">${escapeHTML(item.subtitle || '')}</div>
+                  <h3>${escapeHTML(item.title || '')}</h3>
+                  <div><span class="old-price">${escapeHTML(item.old_price || '')}</span><br><span class="new-price">${escapeHTML(item.new_price || '')}</span></div>
+                  <ul class="check-list">${(item.features || []).map(feature => `<li>${escapeHTML(feature.text || feature)}</li>`).join('')}</ul>
+                  <a class="btn ${item.featured ? 'btn-primary' : 'btn-ghost'}" style="${item.featured ? '' : 'background:#132238;color:#fff'}" href="${assetUrl(item.button_url || '#lead')}">${escapeHTML(item.button_text || 'Chọn hành trình')}</a>
+                </article>`).join('')}
+            </div>
+          </div>
+        </section>`;
+    }
+
+    function renderTestimonials(testimonials = {}) {
+      return `
+        <section class="section section--dark" id="customers">
+          <div class="container">
+            <div class="section-intro">
+              ${testimonials.eyebrow ? `<div class="eyebrow">${escapeHTML(testimonials.eyebrow)}</div>` : ''}
+              <h2>${escapeHTML(testimonials.title || '')}</h2>
+              <p class="lead">${escapeHTML(testimonials.subtitle || '')}</p>
+            </div>
+            <div class="testimonials">
+              ${(testimonials.items || []).map(item => `
+                <article class="testimonial">
+                  <div class="stars">${escapeHTML(item.stars || '★★★★★')}</div>
+                  <p class="quote">“${escapeHTML(item.quote || '')}”</p>
+                  <div class="person">
+                    <img src="${assetUrl(item.avatar)}" alt="${escapeHTML(item.name || '')}">
+                    <div><strong>${escapeHTML(item.name || '')}</strong><span>${escapeHTML(item.meta || '')}</span></div>
+                  </div>
+                </article>`).join('')}
+            </div>
+          </div>
+        </section>`;
+    }
+
+    function renderLead(lead = {}, tours = []) {
+      const options = (lead.form?.tour_options || tours.map(t => t.title)).map(option => `<option value="${escapeHTML(option.value || option)}">${escapeHTML(option.label || option)}</option>`).join('');
+      return `
+        <section class="section" id="lead">
+          <div class="container cta-wrap">
+            <aside class="countdown-card">
+              ${lead.eyebrow ? `<div class="eyebrow">${escapeHTML(lead.eyebrow)}</div>` : ''}
+              <h2 style="margin-top:12px">${escapeHTML(lead.title || '')}</h2>
+              <p class="text-muted" style="margin-top:14px">${escapeHTML(lead.subtitle || '')}</p>
+              <div class="countdown-grid" id="countdown" data-deadline="${escapeHTML(lead.deadline || '')}">
+                ${['Ngày','Giờ','Phút','Giây'].map(label => `<div class="time-box"><div class="time-number">00</div><div class="time-label">${label}</div></div>`).join('')}
+              </div>
+            </aside>
+            <section class="form-card">
+              <h2>${escapeHTML(lead.form?.title || '')}</h2>
+              <p class="text-muted" style="margin-top:12px">${escapeHTML(lead.form?.subtitle || '')}</p>
+              <form class="form" name="lead-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="${assetUrl('/thank-you.html')}">
+                <input type="hidden" name="form-name" value="lead-form">
+                <p style="display:none"><label>Không điền ô này <input name="bot-field"></label></p>
+                <div class="field"><label for="name">${escapeHTML(lead.form?.name_label || 'Họ tên')}</label><input id="name" name="name" required placeholder="${escapeHTML(lead.form?.name_placeholder || '')}"></div>
+                <div class="field"><label for="phone">${escapeHTML(lead.form?.phone_label || 'Số điện thoại')}</label><input id="phone" name="phone" required placeholder="${escapeHTML(lead.form?.phone_placeholder || '')}"></div>
+                <div class="field"><label for="email">${escapeHTML(lead.form?.email_label || 'Email')}</label><input id="email" name="email" type="email" placeholder="${escapeHTML(lead.form?.email_placeholder || '')}"></div>
+                <div class="field"><label for="tour">${escapeHTML(lead.form?.tour_label || 'Tuyến tour')}</label><select id="tour" name="tour" required><option value="">${escapeHTML(lead.form?.tour_placeholder || 'Chọn tuyến tour')}</option>${options}</select></div>
+                <button class="btn btn-primary" type="submit">${escapeHTML(lead.form?.button_text || 'Gửi đăng ký')}</button>
+                <div class="form-note">${escapeHTML(lead.form?.privacy_note || '')}</div>
+              </form>
+            </section>
+          </div>
+        </section>`;
+    }
+
+    function renderFooter(footer = {}) {
+      return `
+        <div class="container footer-grid">
+          <div>
+            <img class="footer-logo" src="${assetUrl(footer.logo)}" alt="${escapeHTML(footer.logo_alt || footer.title || '')}">
+            <h3>${escapeHTML(footer.title || '')}</h3>
+            <p>${escapeHTML(footer.description || '')}</p>
+          </div>
+          <div>
+            <h3>${escapeHTML(footer.contact_title || 'Liên hệ')}</h3>
+            <ul class="contact-list">
+              ${footer.phone ? `<li>☎ ${escapeHTML(footer.phone)}</li>` : ''}
+              ${(footer.addresses || []).map(item => `<li>📍 ${escapeHTML(item.text || item)}</li>`).join('')}
+              ${footer.email ? `<li>✉ ${escapeHTML(footer.email)}</li>` : ''}
+              ${footer.hours ? `<li>⏰ ${escapeHTML(footer.hours)}</li>` : ''}
+              ${footer.tax_code ? `<li>MST: ${escapeHTML(footer.tax_code)}</li>` : ''}
+            </ul>
+          </div>
+        </div>
+        <div class="container copyright">
+          <span>${escapeHTML(footer.copyright || '')}</span>
+          ${footer.website ? `<a href="${assetUrl(footer.website)}" target="_blank" rel="noopener">${escapeHTML(footer.website_label || footer.website)}</a>` : ''}
+        </div>`;
+    }
+
+    function startCountdown() {
+      const countdown = $('#countdown');
+      if (!countdown) return;
+      const boxes = [...countdown.querySelectorAll('.time-number')];
+      const deadlineRaw = countdown.dataset.deadline;
+      const deadline = deadlineRaw ? new Date(deadlineRaw) : new Date(Date.now() + 72 * 3600 * 1000);
+      function tick() {
+        let diff = Math.max(0, deadline.getTime() - Date.now());
+        const days = Math.floor(diff / 86400000); diff %= 86400000;
+        const hours = Math.floor(diff / 3600000); diff %= 3600000;
+        const minutes = Math.floor(diff / 60000); diff %= 60000;
+        const seconds = Math.floor(diff / 1000);
+        [days,hours,minutes,seconds].forEach((value, i) => boxes[i].textContent = String(value).padStart(2, '0'));
+      }
+      tick();
+      setInterval(tick, 1000);
+    }
+
+    function initInteractions() {
+      const topbar = $('#topbar');
+      const menuToggle = $('#menu-toggle');
+      const navLinks = $('#nav-links');
+      const onScroll = () => topbar.classList.toggle('is-scrolled', window.scrollY > 16);
+      onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('is-open');
+        document.body.classList.toggle('menu-open', navLinks.classList.contains('is-open'));
+      });
+      navLinks.addEventListener('click', event => {
+        if (event.target.closest('a')) {
+          navLinks.classList.remove('is-open');
+          document.body.classList.remove('menu-open');
+        }
+      });
+    }
+
+    function renderSite(site) {
+      applyTheme(site.theme || {});
+      updateSEO(site);
+      renderNavigation(site);
+      const main = $('#site-main');
+      main.innerHTML = [
+        renderHero(site.hero),
+        renderAbout(site.about),
+        renderTours(site.tours),
+        renderGallery(site.gallery),
+        renderPricing(site.pricing),
+        renderTestimonials(site.testimonials),
+        renderLead(site.lead, site.tours?.items || [])
+      ].join('');
+      $('#footer').innerHTML = renderFooter(site.footer || {});
+      const zalo = $('#zalo-float');
+      zalo.href = assetUrl(site.floating_contact?.url || '#lead');
+      zalo.textContent = site.floating_contact?.label || 'Zalo';
+      $('#site-loader').style.display = 'none';
+      $('#site-shell').classList.add('is-ready');
+      initInteractions();
+      startCountdown();
+    }
+
+    fetch(`${REPO_BASE_PATH}${DEFAULT_SITE}`, { cache: 'no-cache' })
+      .then(response => {
+        if (!response.ok) throw new Error('Không tải được data/site.json');
+        return response.json();
+      })
+      .then(renderSite)
+      .catch(error => {
+        console.error(error);
+        $('#site-loader').innerHTML = '<div><h1 style="font-size:2rem">Không tải được nội dung</h1><p style="opacity:.75">Kiểm tra file data/site.json đã upload đúng chưa.</p></div>';
+      });
+
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
