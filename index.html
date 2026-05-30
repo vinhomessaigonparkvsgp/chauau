@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Châu Âu Huyền Diệu | Vietkite Travel Luxury</title>
+
+  <!-- ══ FAVICON ══ -->
+  <link rel="icon" type="image/jpeg" href="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg">
+  <link rel="shortcut icon" type="image/jpeg" href="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg">
+  <link rel="apple-touch-icon" href="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg">
+
+  <!-- ══ OPEN GRAPH / ZALO / FACEBOOK PREVIEW ══ -->
+  <meta property="og:title" content="Châu Âu Huyền Diệu | Vietkite Travel Luxury">
+  <meta property="og:description" content="Cùng Vietkite Travel kiến tạo những ký ức không phai — hành trình đẳng cấp 4 sao qua trái tim Châu Âu. Ưu đãi giảm 7 triệu!">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tourchauauvietkite.click/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vietkite Travel">
+  <meta name="description" content="Cùng Vietkite Travel kiến tạo những ký ức không phai — hành trình đẳng cấp 4 sao qua trái tim Châu Âu. Ưu đãi giảm 7 triệu!">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
@@ -416,8 +433,6 @@
       animation: pulse-ring 1.5s ease-out infinite;
     }
 
-
-
     /* ──── VIETNAMESE FONT FIX ──── */
     html, body, input, select, textarea, button { font-family: 'Be Vietnam Pro', Arial, sans-serif; }
     .font-serif, .font-elegant { font-family: 'Noto Serif', 'Be Vietnam Pro', serif; }
@@ -502,9 +517,6 @@
       .gallery-caption { opacity: 1; transform: none; }
     }
 
-
-
-    /* ──── FIX 2: CLEAN MOBILE MENU + NO VIETNAMESE FONT BREAK + HERO/GALLERY ──── */
     *, *::before, *::after { box-sizing: border-box; }
 
     html, body, input, select, textarea, button,
@@ -567,7 +579,6 @@
       letter-spacing: -0.06em;
     }
 
-    /* Gallery is now a stable responsive grid, so tall/rotated photos cannot break the layout */
     .gallery-grid {
       columns: unset !important;
       display: grid !important;
@@ -669,10 +680,6 @@
       .hero-badge { max-width: 92vw; line-height: 1.6; }
     }
 
-
-
-
-    /* ──── FIX 3: IOS MOBILE STABILITY + LUXURY VIETNAMESE SERIF + CLEAN GALLERY ──── */
     html {
       width: 100%;
       max-width: 100%;
@@ -691,9 +698,6 @@
     section, nav, footer, #hero, #mobile-menu, .footer-vietkite {
       max-width: 100vw !important;
       overflow-x: clip !important;
-    }
-    @supports not (overflow: clip) {
-      section, nav, footer, #hero, #mobile-menu, .footer-vietkite { overflow-x: hidden !important; }
     }
     img, video, canvas, svg { max-width: 100%; }
 
@@ -795,7 +799,6 @@
       margin-right: auto !important;
     }
 
-    /* Gallery: bỏ masonry/span để không còn lủng lổ, tất cả ảnh đều nằm trong card đều nhau */
     .gallery-grid {
       width: 100% !important;
       max-width: 100% !important;
@@ -1006,8 +1009,6 @@
       .timer-num { font-size: 32px !important; }
     }
 
-
-    /* ──── FIX 4: GALLERY ALWAYS VISIBLE ON IOS ──── */
     #gallery-grid {
       min-height: 320px !important;
       visibility: visible !important;
@@ -1023,19 +1024,7 @@
       visibility: visible !important;
       opacity: 1 !important;
     }
-    #gallery .gallery-error::after {
-      content: 'Ảnh đang tải lại';
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(0,21,41,.65);
-      font-size: 12px;
-      font-weight: 700;
-      background: #f4efe4;
-      z-index: 1;
-    }
+
     @media (max-width: 720px) {
       #gallery {
         padding-top: 72px !important;
@@ -1061,9 +1050,6 @@
       }
     }
 
-
-
-    /* ──── FIX 5: HERO TITLE ON REAL IOS ──── */
     #hero-title,
     #hero-title .hero-title-main,
     #hero-title .hero-title-gold,
@@ -1133,12 +1119,10 @@
       }
     }
 
-    /* ──── SCROLLBAR ──── */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #f1f1f1; }
     ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
 
-    /* ──── FIX 6: BEAUTIFUL MOBILE BOOKING + FLOATING BUTTONS ──── */
     #booking.booking-section {
       position: relative;
       scroll-margin-top: 92px;
@@ -1245,7 +1229,6 @@
     }
     #booking .booking-privacy { color: rgba(255,255,255,.52) !important; }
 
-    /* Floating contact buttons */
     #float-btns {
       right: 22px !important;
       bottom: 96px !important;
@@ -1384,7 +1367,6 @@
         line-height: 1.6 !important;
         margin-top: 14px !important;
       }
-      /* Mobile: keep the contact buttons elegant and away from the CTA */
       #float-btns {
         right: 12px !important;
         bottom: calc(122px + env(safe-area-inset-bottom)) !important;
@@ -1422,9 +1404,6 @@
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════
-     LIGHTBOX
-══════════════════════════════════════════ -->
 <div id="lightbox" role="dialog" aria-modal="true">
   <span id="lb-close" onclick="closeLightbox()" aria-label="Đóng">&times;</span>
   <button id="lb-prev" onclick="lbNav(-1)" aria-label="Ảnh trước"><i class="fas fa-chevron-left"></i></button>
@@ -1433,9 +1412,6 @@
   <div id="lb-counter"></div>
 </div>
 
-<!-- ══════════════════════════════════════════
-     MOBILE MENU
-══════════════════════════════════════════ -->
 <div id="mobile-menu">
   <a href="#about" class="mobile-nav-link" onclick="closeMobile()">Trải nghiệm</a>
   <a href="#tours" class="mobile-nav-link" onclick="closeMobile()">Hành trình</a>
@@ -1445,9 +1421,6 @@
   <a href="#booking" class="btn-gold mt-4" onclick="closeMobile()"><span>Đăng ký ngay</span></a>
 </div>
 
-<!-- ══════════════════════════════════════════
-     NAV
-══════════════════════════════════════════ -->
 <nav id="nav">
   <a href="#" style="height:100%;padding:10px 0;display:block;">
     <img src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" 
@@ -1468,9 +1441,6 @@
   </div>
 </nav>
 
-<!-- ══════════════════════════════════════════
-     SOCIAL PROOF POPUP
-══════════════════════════════════════════ -->
 <div id="social-proof">
   <div class="sp-icon"><i class="fas fa-user-check"></i></div>
   <div>
@@ -1479,9 +1449,6 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════
-     HERO
-══════════════════════════════════════════ -->
 <section id="hero">
   <div id="hero-bg"></div>
   <div id="hero-overlay"></div>
@@ -1503,16 +1470,12 @@
       <a href="#booking" class="btn-gold"><span>🎁 Nhận ưu đãi 7 triệu</span></a>
       <a href="#gallery" class="btn-outline">Xem ảnh thực tế</a>
     </div>
-    <!-- Scroll indicator -->
     <div data-aos="fade-up" data-aos-delay="700" style="margin-top:60px;">
       <div style="width:1px;height:50px;background:linear-gradient(to bottom,rgba(255,255,255,0.6),transparent);margin:0 auto;"></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     ABOUT / WHY VIETKITE
-══════════════════════════════════════════ -->
 <section id="about" style="padding:100px 24px;max-width:1200px;margin:0 auto;">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" class="about-grid">
     <div data-aos="fade-right">
@@ -1545,19 +1508,14 @@
     <div data-aos="fade-left" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;">
       <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" 
            style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);margin-top:40px;display:block;"
-           alt="Vietkite Travel Châu Âu" loading="lazy"
-           onerror="this.src='https://via.placeholder.com/400x500/C5A059/ffffff?text=Châu+Âu'">
+           alt="Vietkite Travel Châu Âu" loading="lazy">
       <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" 
            style="width:100%;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,0.15);display:block;"
-           alt="Vietkite Travel Châu Âu" loading="lazy"
-           onerror="this.src='https://via.placeholder.com/400x500/C5A059/ffffff?text=Châu+Âu'">
+           alt="Vietkite Travel Châu Âu" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     TOURS / HÀNH TRÌNH
-══════════════════════════════════════════ -->
 <section id="tours" style="padding:80px 24px;background:var(--cream);">
   <div style="max-width:1200px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
@@ -1567,12 +1525,9 @@
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="tours-grid">
       
-      <!-- Tour 1: Tây Âu -->
       <div class="tour-card" data-aos="fade-up" data-aos-delay="0">
         <div class="tour-card-img">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" 
-               alt="Tây Âu Hoa Lệ" loading="lazy"
-               onerror="this.src='https://via.placeholder.com/600x400/C5A059/fff?text=Tây+Âu'">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" alt="Tây Âu Hoa Lệ" loading="lazy">
           <div class="tour-card-img-overlay"></div>
           <span class="tour-badge">Siêu Vip</span>
           <div style="position:absolute;bottom:16px;left:16px;color:white;">
@@ -1587,7 +1542,7 @@
             <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Tháp Eiffel & Paris ánh sáng</span></div>
             <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Colosseum Rome cổ kính</span></div>
             <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Interlaken – Thụy Sĩ thơ mộng</span></div>
-            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Vườn Tulip Keukenhof hà lan</span></div>
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Vườn Tulip Keukenhof Hà Lan</span></div>
           </div>
           <div style="display:flex;align-items:center;justify-content:space-between;">
             <div>
@@ -1599,15 +1554,12 @@
         </div>
       </div>
 
-      <!-- Tour 2: Đông Âu (FEATURED) -->
       <div class="tour-card" data-aos="fade-up" data-aos-delay="100" style="border:2px solid var(--gold);transform:translateY(-12px);">
         <div style="position:absolute;top:0;left:0;right:0;background:var(--gold);color:white;text-align:center;padding:8px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;z-index:2;">
           ⭐ Bán Chạy Nhất
         </div>
         <div class="tour-card-img" style="margin-top:36px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" 
-               alt="Đông Âu Cổ Kính" loading="lazy"
-               onerror="this.src='https://via.placeholder.com/600x400/001529/C5A059?text=Đông+Âu'">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" alt="Đông Âu Cổ Kính" loading="lazy">
           <div class="tour-card-img-overlay"></div>
           <div style="position:absolute;bottom:16px;left:16px;color:white;">
             <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px;">Đông Âu</div>
@@ -1618,8 +1570,8 @@
           <h3 class="font-serif" style="font-size:20px;margin-bottom:4px;">Đông Âu Cổ Kính</h3>
           <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:20px;">Đức – Séc – Slovakia – Hungary – Áo</p>
           <div style="border-top:1px solid #f0f0f0;padding-top:20px;margin-bottom:20px;">
-            <div class="tour-highlight"><i class="fas fa-castle"></i><span>Lâu đài Prague & Cầu Charles</span></div>
-            <div class="tour-highlight"><i class="fas fa-castle"></i><span>Neuschwanstein – cảm hứng Disney</span></div>
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Lâu đài Prague & Cầu Charles</span></div>
+            <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Neuschwanstein – cảm hứng Disney</span></div>
             <div class="tour-highlight"><i class="fas fa-map-marker-alt"></i><span>Thị trấn cổ tích Hallstatt</span></div>
             <div class="tour-highlight"><i class="fas fa-clock"></i><span>10 Ngày 9 Đêm trọn vẹn</span></div>
           </div>
@@ -1633,12 +1585,9 @@
         </div>
       </div>
 
-      <!-- Tour 3: Bắc Âu -->
       <div class="tour-card" data-aos="fade-up" data-aos-delay="200">
         <div class="tour-card-img">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" 
-               alt="Bắc Âu Hùng Vĩ" loading="lazy"
-               onerror="this.src='https://via.placeholder.com/600x400/C5A059/fff?text=Bắc+Âu'">
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" alt="Bắc Âu Hùng Vĩ" loading="lazy">
           <div class="tour-card-img-overlay"></div>
           <span class="tour-badge">Cao cấp</span>
           <div style="position:absolute;bottom:16px;left:16px;color:white;">
@@ -1668,276 +1617,46 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     GALLERY (28 HÌNH + LIGHTBOX)
-══════════════════════════════════════════ -->
 <section id="gallery" style="padding:100px 24px;background:white;">
   <div style="max-width:1400px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
       <span class="section-label">Thư Viện Hình Ảnh</span>
       <h2 class="font-serif" style="font-size:clamp(28px,4vw,56px);margin-bottom:16px;">Cảm Hứng Châu Âu</h2>
-      <p style="color:#777;font-size:14px;line-height:1.8;max-width:620px;margin:0 auto;">Trọn bộ 28 hình ảnh Châu Âu được gắn trực tiếp từ thư mục GitHub — Paris, Venice, Prague, Thụy Sĩ, Bắc Âu, Hà Lan và nhiều điểm đến nổi bật.</p>
+      <p style="color:#777;font-size:14px;line-height:1.8;max-width:620px;margin:0 auto;">Trọn bộ 28 hình ảnh Châu Âu — Paris, Venice, Prague, Thụy Sĩ, Bắc Âu, Hà Lan và nhiều điểm đến nổi bật.</p>
     </div>
     <div class="gallery-grid" id="gallery-grid">
-      <div class="gallery-item" data-gallery-index="0" onclick="openLightbox(0)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" alt="Cầu Charles và Lâu đài Prague, Cộng hòa Séc" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Cầu Charles và Lâu đài Prague, Cộng hòa Séc</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="1" onclick="openLightbox(1)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" alt="Amsterdam, Hà Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Amsterdam, Hà Lan</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="2" onclick="openLightbox(2)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" alt="Bảo tàng Louvre, Pháp" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Bảo tàng Louvre, Pháp</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="3" onclick="openLightbox(3)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif" alt="Cầu Charles và Lâu đài Prague" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Cầu Charles và Lâu đài Prague</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="4" onclick="openLightbox(4)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg" alt="Làng Santa Claus, Rovaniemi, Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Làng Santa Claus, Rovaniemi, Phần Lan</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="5" onclick="openLightbox(5)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg" alt="Làng Santa Claus, Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Làng Santa Claus, Phần Lan</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="6" onclick="openLightbox(6)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg" alt="Rovaniemi mùa đông, Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Rovaniemi mùa đông, Phần Lan</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="7" onclick="openLightbox(7)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg" alt="Không khí Giáng sinh tại Rovaniemi" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Không khí Giáng sinh tại Rovaniemi</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="8" onclick="openLightbox(8)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg" alt="Làng Santa Claus tuyết trắng" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Làng Santa Claus tuyết trắng</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="9" onclick="openLightbox(9)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg" alt="Trải nghiệm Bắc Âu tại Phần Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Trải nghiệm Bắc Âu tại Phần Lan</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="10" onclick="openLightbox(10)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" alt="Phong cảnh Na Uy" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Phong cảnh Na Uy</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="11" onclick="openLightbox(11)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/NAUY.jpg" alt="Na Uy hùng vĩ" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Na Uy hùng vĩ</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="12" onclick="openLightbox(12)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg" alt="Cáp treo núi tuyết Titlis" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Cáp treo núi tuyết Titlis</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="13" onclick="openLightbox(13)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg" alt="Trượt tuyết tại núi Titlis" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Trượt tuyết tại núi Titlis</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="14" onclick="openLightbox(14)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg" alt="Núi tuyết Titlis quanh năm" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Núi tuyết Titlis quanh năm</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="15" onclick="openLightbox(15)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" alt="Thành phố nổi Venice, Ý" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Thành phố nổi Venice, Ý</div>
-      </div>
-      <div class="gallery-item gallery-rotate" data-gallery-index="16" onclick="openLightbox(16)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg" alt="Kênh đào Venice" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Kênh đào Venice</div>
-      </div>
-      <div class="gallery-item gallery-rotate" data-gallery-index="17" onclick="openLightbox(17)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg" alt="Venice lãng mạn" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Venice lãng mạn</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="18" onclick="openLightbox(18)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" alt="Tháp Eiffel và Khải Hoàn Môn" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Tháp Eiffel và Khải Hoàn Môn</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="19" onclick="openLightbox(19)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg" alt="Tháp Eiffel, Paris" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Tháp Eiffel, Paris</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="20" onclick="openLightbox(20)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg" alt="Paris và Tháp Eiffel" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Paris và Tháp Eiffel</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="21" onclick="openLightbox(21)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg" alt="Tháp nghiêng Pisa, Ý" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Tháp nghiêng Pisa, Ý</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="22" onclick="openLightbox(22)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" alt="Interlaken và Lucerne, Thụy Sĩ" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Interlaken và Lucerne, Thụy Sĩ</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="23" onclick="openLightbox(23)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg" alt="Lucerne thơ mộng" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Lucerne thơ mộng</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="24" onclick="openLightbox(24)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" alt="Vịnh hẹp Geirangerfjord, Na Uy" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Vịnh hẹp Geirangerfjord, Na Uy</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="25" onclick="openLightbox(25)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg" alt="Cung điện Versailles, Pháp" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Cung điện Versailles, Pháp</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="26" onclick="openLightbox(26)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg" alt="Cối xay gió Hà Lan" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Cối xay gió Hà Lan</div>
-      </div>
-      <div class="gallery-item" data-gallery-index="27" onclick="openLightbox(27)">
-        <div class="gallery-img-wrap">
-          <img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg" data-fallback="https://cdn.jsdelivr.net/gh/vinhomessaigonparkvsgp/chauau@main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg" alt="Đấu trường La Mã, Ý" loading="lazy" decoding="async" onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.gallery-item').classList.add('gallery-error');}">
-        </div>
-        <div class="gallery-item-overlay">
-          <i class="fas fa-search-plus"></i>
-        </div>
-        <div class="gallery-caption">Đấu trường La Mã, Ý</div>
-      </div>
+      <div class="gallery-item" onclick="openLightbox(0)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg" alt="Cầu Charles và Lâu đài Prague" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cầu Charles và Lâu đài Prague, Séc</div></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg" alt="Amsterdam, Hà Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Amsterdam, Hà Lan</div></div>
+      <div class="gallery-item" onclick="openLightbox(2)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg" alt="Bảo tàng Louvre, Pháp" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Bảo tàng Louvre, Pháp</div></div>
+      <div class="gallery-item" onclick="openLightbox(3)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif" alt="Cầu Charles Prague" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cầu Charles và Lâu đài Prague</div></div>
+      <div class="gallery-item" onclick="openLightbox(4)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg" alt="Làng Santa Claus Phần Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Làng Santa Claus, Rovaniemi, Phần Lan</div></div>
+      <div class="gallery-item" onclick="openLightbox(5)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg" alt="Santa Claus Phần Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Làng Santa Claus, Phần Lan</div></div>
+      <div class="gallery-item" onclick="openLightbox(6)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg" alt="Rovaniemi mùa đông" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Rovaniemi mùa đông, Phần Lan</div></div>
+      <div class="gallery-item" onclick="openLightbox(7)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg" alt="Giáng sinh Rovaniemi" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Không khí Giáng sinh tại Rovaniemi</div></div>
+      <div class="gallery-item" onclick="openLightbox(8)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg" alt="Santa Claus tuyết trắng" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Làng Santa Claus tuyết trắng</div></div>
+      <div class="gallery-item" onclick="openLightbox(9)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg" alt="Bắc Âu Phần Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Trải nghiệm Bắc Âu tại Phần Lan</div></div>
+      <div class="gallery-item" onclick="openLightbox(10)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" alt="Phong cảnh Na Uy" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Phong cảnh Na Uy</div></div>
+      <div class="gallery-item" onclick="openLightbox(11)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg" alt="Na Uy hùng vĩ" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Na Uy hùng vĩ</div></div>
+      <div class="gallery-item" onclick="openLightbox(12)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg" alt="Cáp treo Titlis" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cáp treo núi tuyết Titlis</div></div>
+      <div class="gallery-item" onclick="openLightbox(13)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg" alt="Trượt tuyết Titlis" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Trượt tuyết tại núi Titlis</div></div>
+      <div class="gallery-item" onclick="openLightbox(14)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg" alt="Titlis quanh năm" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Núi tuyết Titlis quanh năm</div></div>
+      <div class="gallery-item" onclick="openLightbox(15)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" alt="Venice Ý" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Thành phố nổi Venice, Ý</div></div>
+      <div class="gallery-item gallery-rotate" onclick="openLightbox(16)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg" alt="Kênh đào Venice" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Kênh đào Venice</div></div>
+      <div class="gallery-item gallery-rotate" onclick="openLightbox(17)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg" alt="Venice lãng mạn" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Venice lãng mạn</div></div>
+      <div class="gallery-item" onclick="openLightbox(18)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg" alt="Tháp Eiffel Khải Hoàn Môn" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Tháp Eiffel và Khải Hoàn Môn</div></div>
+      <div class="gallery-item" onclick="openLightbox(19)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg" alt="Tháp Eiffel Paris" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Tháp Eiffel, Paris</div></div>
+      <div class="gallery-item" onclick="openLightbox(20)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg" alt="Paris Tháp Eiffel" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Paris và Tháp Eiffel</div></div>
+      <div class="gallery-item" onclick="openLightbox(21)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg" alt="Tháp nghiêng Pisa" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Tháp nghiêng Pisa, Ý</div></div>
+      <div class="gallery-item" onclick="openLightbox(22)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" alt="Interlaken Lucerne" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Interlaken và Lucerne, Thụy Sĩ</div></div>
+      <div class="gallery-item" onclick="openLightbox(23)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg" alt="Lucerne thơ mộng" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Lucerne thơ mộng</div></div>
+      <div class="gallery-item" onclick="openLightbox(24)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg" alt="Vịnh Geirangerfjord Na Uy" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Vịnh hẹp Geirangerfjord, Na Uy</div></div>
+      <div class="gallery-item" onclick="openLightbox(25)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg" alt="Cung điện Versailles Pháp" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cung điện Versailles, Pháp</div></div>
+      <div class="gallery-item" onclick="openLightbox(26)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg" alt="Cối xay gió Hà Lan" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Cối xay gió Hà Lan</div></div>
+      <div class="gallery-item" onclick="openLightbox(27)"><div class="gallery-img-wrap"><img class="gallery-img" src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg" alt="Đấu trường La Mã Ý" loading="lazy"></div><div class="gallery-item-overlay"><i class="fas fa-search-plus"></i></div><div class="gallery-caption">Đấu trường La Mã, Ý</div></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     PRICING
-══════════════════════════════════════════ -->
 <section id="pricing" style="padding:100px 24px;background:var(--cream);">
   <div style="max-width:1100px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
@@ -1946,11 +1665,9 @@
       <p style="color:#aaa;font-size:12px;letter-spacing:3px;text-transform:uppercase;">Bay cùng Vietnam Airlines & Turkish Airlines 5★</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start;" class="pricing-grid">
-      
       <div class="price-card" data-aos="fade-up">
         <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Tây Âu Hoa Lệ</h3>
         <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:24px;">Đức – Hà Lan – Bỉ – Pháp – Thụy Sĩ – Ý</p>
-        <p style="color:#ccc;font-size:13px;margin-bottom:4px;">Siêu VIP Package</p>
         <div style="text-decoration:line-through;color:#ccc;margin-bottom:4px;font-size:13px;">72.000.000 đ</div>
         <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">64.900.000 đ</div>
         <div style="margin-bottom:28px;">
@@ -1959,18 +1676,12 @@
           <div class="price-check"><i class="fas fa-check"></i><span>Bữa ăn cao cấp mỗi ngày</span></div>
           <div class="price-check"><i class="fas fa-check"></i><span>Visa Schengen hỗ trợ 99%</span></div>
         </div>
-        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;"
-           onmouseover="this.style.background='var(--gold)';this.style.color='white'"
-           onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">
-          Chọn hành trình
-        </a>
+        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.background='var(--gold)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">Chọn hành trình</a>
       </div>
-
       <div class="price-card featured" data-aos="fade-up" data-aos-delay="100" style="transform:scale(1.04);">
         <div style="position:absolute;top:20px;right:20px;background:var(--gold);color:white;font-size:9px;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:1px;text-transform:uppercase;">Bán chạy nhất</div>
         <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Đông Âu Cổ Kính</h3>
         <p style="color:rgba(255,255,255,0.4);font-size:12px;font-style:italic;margin-bottom:24px;">10 Ngày 9 Đêm</p>
-        <p style="color:rgba(255,255,255,0.3);font-size:13px;margin-bottom:4px;">Best Seller</p>
         <div style="text-decoration:line-through;color:rgba(255,255,255,0.25);margin-bottom:4px;font-size:13px;">69.000.000 đ</div>
         <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">63.900.000 đ</div>
         <div style="margin-bottom:28px;">
@@ -1981,11 +1692,9 @@
         </div>
         <a href="#booking" class="btn-gold" style="display:block;text-align:center;padding:14px 24px;"><span>ĐĂNG KÝ NGAY</span></a>
       </div>
-
       <div class="price-card" data-aos="fade-up" data-aos-delay="200">
         <h3 class="font-serif" style="font-size:22px;margin-bottom:4px;">Bắc Âu Hùng Vĩ</h3>
         <p style="color:#aaa;font-size:12px;font-style:italic;margin-bottom:24px;">11 Ngày Trải Nghiệm</p>
-        <p style="color:#ccc;font-size:13px;margin-bottom:4px;">Premium Package</p>
         <div style="text-decoration:line-through;color:#ccc;margin-bottom:4px;font-size:13px;">112.000.000 đ</div>
         <div class="font-serif text-gold" style="font-size:36px;font-weight:700;margin-bottom:28px;">109.000.000 đ</div>
         <div style="margin-bottom:28px;">
@@ -1994,19 +1703,12 @@
           <div class="price-check"><i class="fas fa-check"></i><span>Dịch vụ 5 sao quốc tế</span></div>
           <div class="price-check"><i class="fas fa-check"></i><span>Khách sạn 4★ chuẩn quốc tế</span></div>
         </div>
-        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;"
-           onmouseover="this.style.background='var(--gold)';this.style.color='white'"
-           onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">
-          Chọn hành trình
-        </a>
+        <a href="#booking" style="display:block;width:100%;padding:14px;border:1.5px solid var(--gold);color:var(--gold);border-radius:999px;font-weight:700;font-size:12px;text-align:center;letter-spacing:1px;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.background='var(--gold)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">Chọn hành trình</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     TESTIMONIALS
-══════════════════════════════════════════ -->
 <section id="testimonials" style="padding:100px 24px;background:white;">
   <div style="max-width:1100px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:60px;" data-aos="fade-up">
@@ -2014,101 +1716,52 @@
       <h2 class="font-serif" style="font-size:clamp(28px,4vw,52px);">Hàng Nghìn Gia Đình Hạnh Phúc</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="testimonials-grid">
-      
       <div class="testimonial-card" data-aos="fade-up">
         <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
-        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">
-          "Chưa bao giờ đi Châu Âu mà thảnh thơi đến thế. Hướng dẫn viên của Vietkite quá nhiệt tình, khách sạn 4 sao trung tâm đúng như cam kết!"
-        </p>
+        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">"Chưa bao giờ đi Châu Âu mà thảnh thơi đến thế. Hướng dẫn viên của Vietkite quá nhiệt tình, khách sạn 4 sao trung tâm đúng như cam kết!"</p>
         <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" 
-               style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
-               alt="Khách hàng" loading="lazy"
-               onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=MA'">
-          <div>
-            <div style="font-weight:700;font-size:14px;">Chị Minh Anh</div>
-            <div style="font-size:11px;color:#aaa;">Hà Nội · Tour Tây Âu</div>
-          </div>
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg" style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" alt="Khách hàng" loading="lazy">
+          <div><div style="font-weight:700;font-size:14px;">Chị Minh Anh</div><div style="font-size:11px;color:#aaa;">Hà Nội · Tour Tây Âu</div></div>
         </div>
       </div>
-
       <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
         <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
-        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">
-          "Gia đình tôi 5 người, lo lắng về visa nhưng Vietkite xử lý cực nhanh. Tour Đông Âu Prague cực kỳ ấn tượng, con gái mê Hallstatt lắm!"
-        </p>
+        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">"Gia đình tôi 5 người, lo lắng về visa nhưng Vietkite xử lý cực nhanh. Tour Đông Âu Prague cực kỳ ấn tượng, con gái mê Hallstatt lắm!"</p>
         <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" 
-               style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
-               alt="Khách hàng" loading="lazy"
-               onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=TH'">
-          <div>
-            <div style="font-weight:700;font-size:14px;">Anh Trọng Hiếu</div>
-            <div style="font-size:11px;color:#aaa;">TP.HCM · Tour Đông Âu</div>
-          </div>
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg" style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" alt="Khách hàng" loading="lazy">
+          <div><div style="font-weight:700;font-size:14px;">Anh Trọng Hiếu</div><div style="font-size:11px;color:#aaa;">TP.HCM · Tour Đông Âu</div></div>
         </div>
       </div>
-
       <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
         <div class="star-rating" style="margin-bottom:16px;">★★★★★</div>
-        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">
-          "Du thuyền Bắc Âu là trải nghiệm không thể quên trong đời. Vietkite lo từng chi tiết nhỏ, tôi chỉ việc tận hưởng. Năm sau chắc chắn đăng ký tiếp!"
-        </p>
+        <p style="color:#555;line-height:1.7;font-size:14px;margin-bottom:24px;padding-top:8px;">"Du thuyền Bắc Âu là trải nghiệm không thể quên trong đời. Vietkite lo từng chi tiết nhỏ, tôi chỉ việc tận hưởng. Năm sau chắc chắn đăng ký tiếp!"</p>
         <div style="display:flex;align-items:center;gap:14px;">
-          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" 
-               style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" 
-               alt="Khách hàng" loading="lazy"
-               onerror="this.src='https://via.placeholder.com/50x50/C5A059/fff?text=LA'">
-          <div>
-            <div style="font-weight:700;font-size:14px;">Chị Lan Phương</div>
-            <div style="font-size:11px;color:#aaa;">Đà Nẵng · Tour Bắc Âu</div>
-          </div>
+          <img src="https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg" style="width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);" alt="Khách hàng" loading="lazy">
+          <div><div style="font-weight:700;font-size:14px;">Chị Lan Phương</div><div style="font-size:11px;color:#aaa;">Đà Nẵng · Tour Bắc Âu</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     BOOKING + COUNTDOWN
-══════════════════════════════════════════ -->
-<section id="booking" class="booking-section" style="padding:100px 24px;background:linear-gradient(135deg,var(--dark) 0%,#002347 100%);">
+<section id="booking" class="booking-section" style="padding:100px 24px;">
   <div class="booking-inner" style="max-width:860px;margin:0 auto;">
-    
-    <!-- Urgency bar -->
     <div class="booking-urgency" style="background:rgba(197,160,89,0.15);border:1px solid rgba(197,160,89,0.3);border-radius:12px;padding:14px 24px;text-align:center;margin-bottom:40px;" data-aos="fade-up">
       <span style="color:var(--gold-light);font-size:13px;">⚡ </span>
       <span style="color:rgba(255,255,255,0.9);font-size:13px;font-weight:500;">Chỉ còn đúng <strong style="color:var(--gold-light);">3 suất</strong> giá khuyến mãi cuối cùng!</span>
     </div>
-
-    <!-- Countdown -->
     <div class="timer-box" data-aos="zoom-in">
-      <div class="timer-unit">
-        <span class="timer-num" id="t-days">00</span>
-        <span class="timer-label">Ngày</span>
-      </div>
-      <div class="timer-unit">
-        <span class="timer-num" id="t-hours">00</span>
-        <span class="timer-label">Giờ</span>
-      </div>
-      <div class="timer-unit">
-        <span class="timer-num" id="t-mins">00</span>
-        <span class="timer-label">Phút</span>
-      </div>
-      <div class="timer-unit">
-        <span class="timer-num" id="t-secs">00</span>
-        <span class="timer-label">Giây</span>
-      </div>
+      <div class="timer-unit"><span class="timer-num" id="t-days">00</span><span class="timer-label">Ngày</span></div>
+      <div class="timer-unit"><span class="timer-num" id="t-hours">00</span><span class="timer-label">Giờ</span></div>
+      <div class="timer-unit"><span class="timer-num" id="t-mins">00</span><span class="timer-label">Phút</span></div>
+      <div class="timer-unit"><span class="timer-num" id="t-secs">00</span><span class="timer-label">Giây</span></div>
     </div>
-
     <div class="booking-heading" style="text-align:center;margin:48px 0 36px;" data-aos="fade-up">
       <span class="section-label">Đăng Ký Tư Vấn Miễn Phí</span>
       <h2 class="font-serif" style="font-size:clamp(24px,4vw,40px);color:white;margin-bottom:12px;">Nhận Ưu Đãi Giảm 7 Triệu</h2>
       <p style="color:rgba(255,255,255,0.5);font-size:13px;">Ưu đãi chỉ áp dụng cho <strong style="color:var(--gold);">15 khách hàng đăng ký sớm nhất!</strong></p>
     </div>
-
-    <!-- Form -->
-    <div class="booking-form-card" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:40px;" data-aos="fade-up">
+    <div class="booking-form-card" style="border-radius:24px;padding:40px;" data-aos="fade-up">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;" class="form-row">
         <input type="text" id="f-name" class="form-input" placeholder="Họ và tên của bạn *" required>
         <input type="tel" id="f-phone" class="form-input" placeholder="Số điện thoại *" required>
@@ -2123,11 +1776,8 @@
       <button onclick="submitForm()" class="btn-gold booking-submit" style="width:100%;font-size:15px;padding:20px;text-align:center;border:none;cursor:pointer;">
         <span>🎁 NHẬN ƯU ĐÃI GIẢM 7 TRIỆU NGAY</span>
       </button>
-      <p class="booking-privacy" style="text-align:center;font-size:10px;color:rgba(255,255,255,0.3);margin-top:16px;letter-spacing:2px;text-transform:uppercase;">
-        🔒 Thông tin của bạn được bảo mật tuyệt đối
-      </p>
+      <p class="booking-privacy" style="text-align:center;font-size:10px;margin-top:16px;letter-spacing:2px;text-transform:uppercase;">🔒 Thông tin của bạn được bảo mật tuyệt đối</p>
     </div>
-    <!-- Success message -->
     <div id="form-success" style="display:none;text-align:center;padding:40px;background:rgba(197,160,89,0.1);border:1px solid var(--gold);border-radius:24px;margin-top:20px;">
       <div style="font-size:48px;margin-bottom:16px;">✅</div>
       <h3 class="font-serif" style="color:white;font-size:24px;margin-bottom:8px;">Đăng ký thành công!</h3>
@@ -2136,72 +1786,53 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     FOOTER
-══════════════════════════════════════════ -->
 <footer class="footer-vietkite">
   <div class="footer-vietkite-wrap footer-grid">
     <div>
       <img class="footer-logo" src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" alt="Vietkite Travel">
       <div class="footer-slogan">Đồng hành cùng bạn trong mọi chuyến đi</div>
-      <p class="footer-desc">
-        Công ty TNHH TM DV Du Lịch Vietkite — đơn vị lữ hành chuyên nghiệp tổ chức tour trong và ngoài nước,
-        teambuilding, visa và vé máy bay từ năm 2011.
-      </p>
+      <p class="footer-desc">Công ty TNHH TM DV Du Lịch Vietkite — đơn vị lữ hành chuyên nghiệp tổ chức tour trong và ngoài nước, teambuilding, visa và vé máy bay từ năm 2011.</p>
     </div>
-
     <div>
       <div class="footer-heading">Liên hệ</div>
       <a class="footer-phone" href="tel:+84912992447"><i class="fas fa-phone"></i> 0912.992.447</a>
       <div class="footer-contact-list">
-        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 1:</strong> 276 Nơ Trang Long, Phường Bình Thạnh, TP HCM, Việt Nam</span></div>
-        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 2:</strong> 160/25/31 Bùi Đình Túy, khu phố 17, Phường Bình Thạnh, TP Hồ Chí Minh, Việt Nam</span></div>
+        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 1:</strong> 276 Nơ Trang Long, Phường Bình Thạnh, TP HCM</span></div>
+        <div class="footer-contact-row"><span class="ico">📍</span><span><strong>VP 2:</strong> 160/25/31 Bùi Đình Túy, Phường Bình Thạnh, TP HCM</span></div>
         <div class="footer-contact-row"><span class="ico">✉️</span><span>info@vietkite.com.vn</span></div>
-        <div class="footer-contact-row"><span class="ico">🕘</span><span>Thứ 2–6: 8:30–17:30<br>Thứ 7: 8:30–12:00</span></div>
+        <div class="footer-contact-row"><span class="ico">🕘</span><span>Thứ 2–6: 8:30–17:30 | Thứ 7: 8:30–12:00</span></div>
         <div class="footer-contact-row"><span class="ico">🔢</span><span><strong>MST:</strong> 0311304593</span></div>
-        <div class="footer-contact-row"><span class="ico">🏢</span><span><strong>Thành lập:</strong> 02/11/2011</span></div>
       </div>
     </div>
   </div>
   <div class="footer-bottom">© 2026 VIETKITE TRAVEL. All Rights Reserved.</div>
 </footer>
 
-<!-- ══════════════════════════════════════════
-     FLOATING BUTTONS
-══════════════════════════════════════════ -->
 <div id="float-btns">
-  <a href="https://zalo.me/84912992447" class="float-btn float-zalo" data-label="Chat Zalo" aria-label="Chat Zalo" title="Chat Zalo" target="_blank">
+  <a href="https://zalo.me/84912992447" class="float-btn float-zalo" data-label="Chat Zalo" aria-label="Chat Zalo" target="_blank">
     <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="48" height="48" rx="24" fill="#0068FF"/>
       <path d="M24 8C15.163 8 8 14.716 8 23c0 4.573 2.197 8.674 5.664 11.47L12 38l5.122-1.637C18.924 37.41 21.4 38 24 38c8.837 0 16-6.716 16-15S32.837 8 24 8z" fill="white"/>
       <text x="24" y="28" text-anchor="middle" fill="#0068FF" font-size="12" font-weight="bold" font-family="Arial">Zalo</text>
     </svg>
   </a>
-  <a href="tel:+84912992447" class="float-btn float-phone" data-label="Gọi ngay" aria-label="Gọi ngay" title="Gọi ngay">
+  <a href="tel:+84912992447" class="float-btn float-phone" data-label="Gọi ngay" aria-label="Gọi ngay">
     <i class="fas fa-phone"></i>
   </a>
 </div>
 
-<!-- Back to top -->
 <div id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
   <i class="fas fa-chevron-up"></i>
 </div>
 
-<!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  // ── AOS Init ──────────────────────────────────────────
-  if (window.AOS) {
-    AOS.init({ duration: 850, once: true, offset: 70, disable: () => window.innerWidth < 768 });
-  }
+  if (window.AOS) AOS.init({ duration: 850, once: true, offset: 70, disable: () => window.innerWidth < 768 });
 
-  // ── Navbar scroll ─────────────────────────────────────
   window.addEventListener('scroll', () => {
     document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 80);
     document.getElementById('back-top').classList.toggle('show', window.scrollY > 400);
   });
 
-  // ── Mobile menu ───────────────────────────────────────
   function toggleMenu() {
     document.getElementById('hamburger').classList.toggle('active');
     document.getElementById('mobile-menu').classList.toggle('open');
@@ -2213,135 +1844,47 @@
     document.body.style.overflow = '';
   }
 
-  // ── Gallery inject: 28 real GitHub images ─────────────────
   const galleryImages = [
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg",
-    "title": "Cầu Charles và Lâu đài Prague, Cộng hòa Séc"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg",
-    "title": "Amsterdam, Hà Lan"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg",
-    "title": "Bảo tàng Louvre, Pháp"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif",
-    "title": "Cầu Charles và Lâu đài Prague"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg",
-    "title": "Làng Santa Claus, Rovaniemi, Phần Lan"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg",
-    "title": "Làng Santa Claus, Phần Lan"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg",
-    "title": "Rovaniemi mùa đông, Phần Lan"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg",
-    "title": "Không khí Giáng sinh tại Rovaniemi"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg",
-    "title": "Làng Santa Claus tuyết trắng"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg",
-    "title": "Trải nghiệm Bắc Âu tại Phần Lan"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg",
-    "title": "Phong cảnh Na Uy"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg",
-    "title": "Na Uy hùng vĩ"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg",
-    "title": "Cáp treo núi tuyết Titlis"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg",
-    "title": "Trượt tuyết tại núi Titlis"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg",
-    "title": "Núi tuyết Titlis quanh năm"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg",
-    "title": "Thành phố nổi Venice, Ý"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg",
-    "title": "Kênh đào Venice",
-    "rotate": true
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg",
-    "title": "Venice lãng mạn",
-    "rotate": true
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg",
-    "title": "Tháp Eiffel và Khải Hoàn Môn"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg",
-    "title": "Tháp Eiffel, Paris"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg",
-    "title": "Paris và Tháp Eiffel"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg",
-    "title": "Tháp nghiêng Pisa, Ý"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg",
-    "title": "Interlaken và Lucerne, Thụy Sĩ"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg",
-    "title": "Lucerne thơ mộng"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg",
-    "title": "Vịnh hẹp Geirangerfjord, Na Uy"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg",
-    "title": "Cung điện Versailles, Pháp"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg",
-    "title": "Cối xay gió Hà Lan"
-  },
-  {
-    "src": "https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg",
-    "title": "Đấu trường La Mã, Ý"
-  }
-];
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/5.%20C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jpg",title:"Cầu Charles và Lâu đài Prague, Séc"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Amsterdam%20h%C3%A0%20lan.jpg",title:"Amsterdam, Hà Lan"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/B%E1%BA%A3o%20t%C3%A0ng%20Louvre%20-%20PH%C3%81P.jpg",title:"Bảo tàng Louvre, Pháp"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/C%E1%BA%A7u%20Charles%20%26%20L%C3%A2u%20%C4%91%C3%A0i%20Prague%20%28C%E1%BB%99ng%20h%C3%B2a%20S%C3%A9c%29.jfif",title:"Cầu Charles và Lâu đài Prague"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29%2B3.jpg",title:"Làng Santa Claus, Rovaniemi, Phần Lan"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29.jpg",title:"Làng Santa Claus, Phần Lan"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_2.jpg",title:"Rovaniemi mùa đông, Phần Lan"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_3.jpg",title:"Không khí Giáng sinh tại Rovaniemi"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_4.jpg",title:"Làng Santa Claus tuyết trắng"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/L%C3%A0ng%20Santa%20Claus%20%28Rovaniemi%2C%20Ph%E1%BA%A7n%20Lan%29_5.jpg",title:"Trải nghiệm Bắc Âu tại Phần Lan"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY-2.jpg",title:"Phong cảnh Na Uy"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/NAUY.jpg",title:"Na Uy hùng vĩ"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_cap%20treo.jpg",title:"Cáp treo núi tuyết Titlis"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_truot%20tuyet.jpg",title:"Trượt tuyết tại núi Titlis"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/N%C3%BAi%20tuy%E1%BA%BFt%20Titlis_tr%C6%B0%E1%BB%A3t%20tuy%E1%BA%BFt%20quanh%20n%C4%83m.jpg",title:"Núi tuyết Titlis quanh năm"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice.jpg",title:"Thành phố nổi Venice, Ý"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_2.jpg",title:"Kênh đào Venice",rotate:true},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A0nh%20ph%E1%BB%91%20n%E1%BB%95i%20Venice_new.jpg",title:"Venice lãng mạn",rotate:true},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel%20va%20kh%E1%BA%A3i%20ho%C3%A0n%20m%C3%B4n.jpg",title:"Tháp Eiffel và Khải Hoàn Môn"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel.jpg",title:"Tháp Eiffel, Paris"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20Eiffel_2.jpg",title:"Paris và Tháp Eiffel"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%C3%A1p%20nghi%C3%AAng%20Pisa_%C3%BD.jpg",title:"Tháp nghiêng Pisa, Ý"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne.jpg",title:"Interlaken và Lucerne, Thụy Sĩ"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/Th%E1%BB%8B%20tr%E1%BA%A5n%20Interlaken%20%26%20Lucerne_2.jpg",title:"Lucerne thơ mộng"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/V%E1%BB%8Bnh%20h%E1%BA%B9p%20Geirangerfjord%20%28Na%20Uy%29.jpg",title:"Vịnh hẹp Geirangerfjord, Na Uy"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/cung%20%C4%91i%E1%BB%87n%20versailles%20%28ph%C3%A1p%29.jpg",title:"Cung điện Versailles, Pháp"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/c%E1%BB%91i%20xoay%20gi%C3%B3%20h%C3%A0%20lan.jpg",title:"Cối xay gió Hà Lan"},
+    {src:"https://raw.githubusercontent.com/vinhomessaigonparkvsgp/chauau/main/CH%C3%82U%20%C3%82U/%C4%90%E1%BA%A5u%20tr%C6%B0%E1%BB%9Dng%20La%20M%C3%A3.jpg",title:"Đấu trường La Mã, Ý"}
+  ];
   const TOTAL = galleryImages.length;
-// ── Lightbox ──────────────────────────────────────────
+  const lbImages = galleryImages.map(i => i.src);
   let lbCurrent = 0;
-  const lbImages = galleryImages.map(image => image.src);
 
   function openLightbox(idx) {
     lbCurrent = idx;
-    const lbImg = document.getElementById('lb-img');
-    lbImg.src = lbImages[idx];
-    lbImg.alt = galleryImages[idx].title;
-    lbImg.classList.toggle('lb-rotate', !!galleryImages[idx].rotate);
-    document.getElementById('lb-counter').textContent = (idx + 1) + ' / ' + TOTAL + ' — ' + galleryImages[idx].title;
+    const img = document.getElementById('lb-img');
+    img.src = lbImages[idx];
+    img.alt = galleryImages[idx].title;
+    img.classList.toggle('lb-rotate', !!galleryImages[idx].rotate);
+    document.getElementById('lb-counter').textContent = (idx+1)+' / '+TOTAL+' — '+galleryImages[idx].title;
     document.getElementById('lightbox').classList.add('active');
     document.body.style.overflow = 'hidden';
   }
@@ -2351,125 +1894,73 @@
   }
   function lbNav(dir) {
     lbCurrent = (lbCurrent + dir + TOTAL) % TOTAL;
-    document.getElementById('lb-img').style.opacity = '0';
+    const img = document.getElementById('lb-img');
+    img.style.opacity = '0';
     setTimeout(() => {
-      const lbImg = document.getElementById('lb-img');
-      lbImg.src = lbImages[lbCurrent];
-      lbImg.alt = galleryImages[lbCurrent].title;
-      lbImg.classList.toggle('lb-rotate', !!galleryImages[lbCurrent].rotate);
-      lbImg.style.opacity = '1';
-      document.getElementById('lb-counter').textContent = (lbCurrent + 1) + ' / ' + TOTAL + ' — ' + galleryImages[lbCurrent].title;
+      img.src = lbImages[lbCurrent];
+      img.alt = galleryImages[lbCurrent].title;
+      img.classList.toggle('lb-rotate', !!galleryImages[lbCurrent].rotate);
+      img.style.opacity = '1';
+      document.getElementById('lb-counter').textContent = (lbCurrent+1)+' / '+TOTAL+' — '+galleryImages[lbCurrent].title;
     }, 150);
   }
-  document.getElementById('lightbox').addEventListener('click', function(e) {
-    if (e.target === this) closeLightbox();
-  });
+  document.getElementById('lightbox').addEventListener('click', e => { if(e.target===document.getElementById('lightbox')) closeLightbox(); });
   document.addEventListener('keydown', e => {
-    if (document.getElementById('lightbox').classList.contains('active')) {
-      if (e.key === 'ArrowRight') lbNav(1);
-      if (e.key === 'ArrowLeft') lbNav(-1);
-      if (e.key === 'Escape') closeLightbox();
+    if(document.getElementById('lightbox').classList.contains('active')) {
+      if(e.key==='ArrowRight') lbNav(1);
+      if(e.key==='ArrowLeft') lbNav(-1);
+      if(e.key==='Escape') closeLightbox();
     }
   });
   document.getElementById('lb-img').style.transition = 'opacity 0.15s';
 
-  // ── Countdown ─────────────────────────────────────────
-  const deadline = new Date();
-  deadline.setDate(deadline.getDate() + 20);
-  function pad(n) { return String(n).padStart(2, '0'); }
-  function tick() {
+  const deadline = new Date(); deadline.setDate(deadline.getDate()+20);
+  function pad(n){return String(n).padStart(2,'0');}
+  function tick(){
     const diff = deadline - Date.now();
-    if (diff <= 0) { ['t-days','t-hours','t-mins','t-secs'].forEach(id => document.getElementById(id).textContent = '00'); return; }
-    document.getElementById('t-days').textContent  = pad(Math.floor(diff / 86400000));
-    document.getElementById('t-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
-    document.getElementById('t-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
-    document.getElementById('t-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
+    if(diff<=0) return;
+    document.getElementById('t-days').textContent=pad(Math.floor(diff/86400000));
+    document.getElementById('t-hours').textContent=pad(Math.floor((diff%86400000)/3600000));
+    document.getElementById('t-mins').textContent=pad(Math.floor((diff%3600000)/60000));
+    document.getElementById('t-secs').textContent=pad(Math.floor((diff%60000)/1000));
   }
-  tick(); setInterval(tick, 1000);
+  tick(); setInterval(tick,1000);
 
-  // ── Social Proof ──────────────────────────────────────
-  const proofs = [
-    'Anh Trần Văn B. vừa cọc thành công Tour Tây Âu 6 nước',
-    'Chị Nguyễn Thị H. đã đăng ký 2 suất Tour Đông Âu',
-    'Anh Minh Quân vừa nhận ưu đãi giảm 7 triệu',
-    'Chị Lan Anh vừa hoàn tất hồ sơ Visa Châu Âu',
-    'Gia đình anh Tuấn vừa chốt Tour Bắc Âu 11 ngày'
-  ];
-  let spIdx = 0;
-  function showProof() {
-    const el = document.getElementById('social-proof');
-    document.getElementById('sp-text').textContent = proofs[spIdx];
-    el.classList.add('show');
-    setTimeout(() => el.classList.remove('show'), 5500);
-    spIdx = (spIdx + 1) % proofs.length;
+  const proofs=['Anh Trần Văn B. vừa cọc thành công Tour Tây Âu 6 nước','Chị Nguyễn Thị H. đã đăng ký 2 suất Tour Đông Âu','Anh Minh Quân vừa nhận ưu đãi giảm 7 triệu','Chị Lan Anh vừa hoàn tất hồ sơ Visa Châu Âu','Gia đình anh Tuấn vừa chốt Tour Bắc Âu 11 ngày'];
+  let spIdx=0;
+  function showProof(){
+    const el=document.getElementById('social-proof');
+    document.getElementById('sp-text').textContent=proofs[spIdx];
+    el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),5500);
+    spIdx=(spIdx+1)%proofs.length;
   }
-  setTimeout(showProof, 3000);
-  setInterval(showProof, 30000);
+  setTimeout(showProof,3000); setInterval(showProof,30000);
 
-  // ── Form Submit ───────────────────────────────────────
-  function submitForm() {
-    const name = document.getElementById('f-name').value.trim();
-    const phone = document.getElementById('f-phone').value.trim();
-    const tour = document.getElementById('f-tour').value;
-    if (!name) { document.getElementById('f-name').focus(); document.getElementById('f-name').style.borderColor='#e74c3c'; return; }
-    if (!phone) { document.getElementById('f-phone').focus(); document.getElementById('f-phone').style.borderColor='#e74c3c'; return; }
-    // Show success
-    document.querySelector('#booking .btn-gold').closest('div').style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-    // Social proof trigger
-    setTimeout(() => {
-      const sp = document.getElementById('social-proof');
-      document.getElementById('sp-text').textContent = name.split(' ').pop() + ' vừa đăng ký thành công!';
-      sp.classList.add('show');
-      setTimeout(() => sp.classList.remove('show'), 6000);
-    }, 2000);
+  function submitForm(){
+    const name=document.getElementById('f-name').value.trim();
+    const phone=document.getElementById('f-phone').value.trim();
+    if(!name){document.getElementById('f-name').focus();document.getElementById('f-name').style.borderColor='#e74c3c';return;}
+    if(!phone){document.getElementById('f-phone').focus();document.getElementById('f-phone').style.borderColor='#e74c3c';return;}
+    document.querySelector('#booking .booking-form-card').style.display='none';
+    document.getElementById('form-success').style.display='block';
   }
 
-  // ── Responsive grid ───────────────────────────────────
-  function applyResponsive() {
-    const w = window.innerWidth;
-    // About grid
-    const ag = document.querySelector('.about-grid');
-    if (ag) ag.style.gridTemplateColumns = w < 768 ? '1fr' : '1fr 1fr';
-    // Tours
-    const tg = document.querySelector('.tours-grid');
-    if (tg) tg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : 'repeat(3,1fr)';
-    // Pricing
-    const pg = document.querySelector('.pricing-grid');
-    if (pg) pg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : 'repeat(3,1fr)';
-    // Testimonials
-    const tsg = document.querySelector('.testimonials-grid');
-    if (tsg) tsg.style.gridTemplateColumns = w < 768 ? '1fr' : w < 1024 ? '1fr 1fr' : 'repeat(3,1fr)';
-    // Form row
-    const fr = document.querySelector('.form-row');
-    if (fr) fr.style.gridTemplateColumns = w < 640 ? '1fr' : '1fr 1fr';
-    // Footer
-    const fg = document.querySelector('.footer-grid');
-    if (fg) fg.style.gridTemplateColumns = w < 768 ? '1fr' : '0.9fr 1.1fr';
-    // Tour card center featured
-    if (w < 768) {
-      const featured = document.querySelector('.tour-card[style*="translateY(-12px)"]');
-      if (featured) featured.style.transform = 'none';
-    }
+  function applyResponsive(){
+    const w=window.innerWidth;
+    const ag=document.querySelector('.about-grid');
+    if(ag) ag.style.gridTemplateColumns=w<768?'1fr':'1fr 1fr';
+    const tg=document.querySelector('.tours-grid');
+    if(tg) tg.style.gridTemplateColumns=w<768?'1fr':w<1024?'1fr 1fr':'repeat(3,1fr)';
+    const pg=document.querySelector('.pricing-grid');
+    if(pg) pg.style.gridTemplateColumns=w<768?'1fr':w<1024?'1fr 1fr':'repeat(3,1fr)';
+    const tsg=document.querySelector('.testimonials-grid');
+    if(tsg) tsg.style.gridTemplateColumns=w<768?'1fr':w<1024?'1fr 1fr':'repeat(3,1fr)';
+    const fr=document.querySelector('.form-row');
+    if(fr) fr.style.gridTemplateColumns=w<640?'1fr':'1fr 1fr';
+    const fg=document.querySelector('.footer-grid');
+    if(fg) fg.style.gridTemplateColumns=w<768?'1fr':'0.9fr 1.1fr';
   }
-  applyResponsive();
-  window.addEventListener('resize', applyResponsive);
+  applyResponsive(); window.addEventListener('resize',applyResponsive);
 </script>
-
-
-<script>
-  // Mobile polish: reduce clutter while the booking form is on screen.
-  (function () {
-    const booking = document.getElementById('booking');
-    if (!booking || !('IntersectionObserver' in window)) return;
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        document.body.classList.toggle('booking-in-view', entry.isIntersecting);
-      });
-    }, { threshold: 0.18 });
-    obs.observe(booking);
-  })();
-</script>
-
 </body>
 </html>
