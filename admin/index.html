@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>CMS Vietkite Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--gold:#d8aa4d;--dark:#07111f;--card:#111b2b;--line:rgba(255,255,255,.12)}
+    html,body{margin:0;min-height:100%;font-family:'Be Vietnam Pro',system-ui,sans-serif;background:#07111f;color:#fff}
+    .cms-welcome{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle at top,#20314d,#07111f 62%);z-index:0;pointer-events:none}
+    .cms-welcome-card{width:min(560px,calc(100vw - 32px));border:1px solid var(--line);border-radius:28px;background:rgba(17,27,43,.72);box-shadow:0 30px 90px rgba(0,0,0,.35);padding:34px;text-align:center;backdrop-filter:blur(14px)}
+    .cms-logo{width:68px;height:68px;margin:0 auto 16px;border-radius:50%;object-fit:cover;background:#fff;padding:5px}
+    .cms-title{margin:0 0 8px;font-size:28px;line-height:1.2;font-weight:800;letter-spacing:-.04em}
+    .cms-sub{margin:0;color:#c8d3e6;line-height:1.7;font-size:14px}
+    .cms-badge{display:inline-flex;margin-bottom:16px;padding:8px 13px;border-radius:999px;background:rgba(216,170,77,.14);border:1px solid rgba(216,170,77,.25);color:#ffd98a;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    body > div[class*="App"], body > div[id="nc-root"]{position:relative;z-index:2}
+    [class*="AppHeader"]{background:#07111f!important;border-bottom:1px solid rgba(255,255,255,.08)!important}
+    button{border-radius:12px!important}
+  </style>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div class="cms-welcome" aria-hidden="true">
+    <div class="cms-welcome-card">
+      <img class="cms-logo" src="https://vietkite.com.vn/wp-content/uploads/2024/12/logo-cty-canh-dieu-viet-vietkite.jpg" alt="Vietkite">
+      <div class="cms-badge">Vietkite Admin CMS</div>
+      <h1 class="cms-title">Quản trị nội dung website</h1>
+      <p class="cms-sub">Sửa chữ, thay ảnh, cập nhật giá tour, review khách hàng, SEO và nút liên hệ. Giao diện ngoài web được giữ nguyên.</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
+</body>
+</html>
